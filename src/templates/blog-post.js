@@ -89,7 +89,6 @@ class BlogPostTemplate extends React.Component {
           apikey="adbf3de4-0508-4600-9524-a2425165e346"
           disablesociallogin="true"
           hideattribution="true"
-          apikey="YOUR_API_KEY"
         />
       </Layout>
     )
