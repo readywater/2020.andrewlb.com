@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
+import EmailSignup from "../components/mailsignup"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -37,6 +38,7 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
+        flexWrap: `wrap`,
         marginBottom: rhythm(2.5),
       }}
     >
@@ -54,13 +56,14 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
-        {` `}
+        Written by <strong>{author}</strong>. He travels around, but is
+        currently in Copenhagen with his wife Ayla and his son Emil. He might be
+        working on <a href="https://knowsi.com">Knowsi</a>.{` `}
         <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
+          You should follow Andrew on Twitter
         </a>
       </p>
+      <EmailSignup />
     </div>
   )
 }

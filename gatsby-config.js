@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Andrew Lovett-Barron`,
+    subtitle: `Writing on Product, Politics, and Design`,
+    author: `Andrew Lovett-Barron`,
+    description: `Some writing by Andrew.`,
+    siteUrl: `https://log.andrewlb.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `readywater`,
     },
   },
   plugins: [
@@ -14,6 +15,12 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
       },
     },
     {
