@@ -1,12 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Background from "../components/background"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import EmailSignup from "../components/mailsignup"
 import { rhythm } from "../utils/typography"
+import Image from "gatsby-image"
 
 class BlogIndex extends React.Component {
   render() {
@@ -23,20 +23,30 @@ class BlogIndex extends React.Component {
             flexWrap: "wrap",
           }}
         >
-          <div style={{ maxWidth: "30%", marginRight: rhythm(1) }}>
+          <div style={{ width: "auto", marginRight: rhythm(1) }}>
             {/* <Bio /> */}
             <EmailSignup />
             <hr />
             <Background />
           </div>
-          <div style={{ maxWidth: "65%" }}>
+          <div style={{ minWidth: "65%" }}>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
-                <article key={node.fields.slug}>
-                  <header>
+                <article
+                  key={node.fields.slug}
+                  style={{ marginBottom: rhythm(2) }}
+                >
+                  <header
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignContent: "bottom",
+                    }}
+                  >
                     <h3
                       style={{
+                        marginTop: 0,
                         marginBottom: rhythm(1 / 4),
                       }}
                     >
@@ -46,13 +56,27 @@ class BlogIndex extends React.Component {
                     </h3>
                     <small>{node.frontmatter.date}</small>
                   </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: node.frontmatter.description || node.excerpt,
+                  <div
+                    style={{ display: "grid", gridTemplateColumns: "1fr 3fr" }}
+                  >
+                    <Image
+                      fluid={node.frontmatter.image.childImageSharp.fluid}
+                      alt={title}
+                      style={{
+                        marginRight: rhythm(1 / 2),
+                        marginBottom: 0,
+                        minWidth: 50,
+                        maxWidth: 300,
                       }}
                     />
-                  </section>
+                    <section>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: node.frontmatter.description || node.excerpt,
+                        }}
+                      />
+                    </section>
+                  </div>
                 </article>
               )
             })}
@@ -83,6 +107,15 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            category
+            tags
+            image {
+              childImageSharp {
+                fluid(maxWidth: 300, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
