@@ -34,6 +34,7 @@
     "react-floating-label-input": "^4.2.1",
     "react-helmet": "^5.2.1",
     "react-modal": "^3.11.1",
+    "react-scroll-to-component-ssr": "^1.0.0",
     "react-typography": "^0.16.19",
     "styled-components": "^4.4.1",
     "typeface-merriweather": "0.0.72",

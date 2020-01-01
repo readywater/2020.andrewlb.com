@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import EmailSignup from "../components/mailsignup"
 import { rhythm } from "../utils/typography"
 import Image from "gatsby-image"
+import { Nav } from "../templates/blog-post"
 
 const RespLayout = styled.div`
   display: flex;
@@ -27,6 +28,12 @@ const RespLayout = styled.div`
   }
 `
 
+const RespNav = styled(Nav)`
+  @media (min-width: 700px) {
+    display: none;
+  }
+`
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -35,15 +42,30 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="" />
+        <RespNav>
+          <li>
+            <a href="#newsletter">Newsletter</a>
+          </li>
+          <li>
+            <a href="#background">About</a>
+          </li>
+          <li>
+            <a href="#posts">Posts</a>
+          </li>
+        </RespNav>
         <RespLayout>
           <div className="left" style={{ marginRight: rhythm(1) }}>
             {/* <Bio /> */}
-            <EmailSignup />
+            <div id="newsletter">
+              <EmailSignup />
+            </div>
             <hr />
-            <Background />
+            <div id="background">
+              <Background />
+            </div>
           </div>
-          <div className="right">
+          <div className="right" id="posts">
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (

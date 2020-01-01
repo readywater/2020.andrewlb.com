@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
@@ -37,26 +36,28 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
+        <>
+          <h3
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
+              fontFamily: `Montserrat, sans-serif`,
+              marginTop: 0,
             }}
-            to={`/`}
           >
-            {title}{" "}
-            <span style={{ fontSize: ".8rem" }}>
-              Writing on Product, Politics, and Design
-            </span>
-          </Link>
-        </h3>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={`/`}
+            >
+              {title}{" "}
+              <span style={{ fontSize: ".8rem" }}>
+                Writing on Product, Politics, and Design
+              </span>
+            </Link>
+          </h3>
+        </>
       )
     }
 

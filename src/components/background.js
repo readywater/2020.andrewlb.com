@@ -11,27 +11,72 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
 
-const Li = props => (
-  <li
-    style={{
-      marginBottom: rhythm(0.5),
-      marginRight: rhythm(0.5),
-      marginLeft: 0,
-      maxWidth: "150px",
-    }}
-    aStyle={{
-      textDecoration: "none",
-      border: 0,
-      boxShadow: 0,
-      outline: "none",
-      borderWidth: 0,
-      outlineWidth: 0,
-      borderBottom: "none",
-    }}
-  >
-    {props.children}
-  </li>
-)
+import styled from "styled-components"
+const Button = styled.a`
+  border-radius: 5px;
+  background: #eee;
+  border: 1px solid #eee;
+  padding: ${rhythm(0.25)};
+  &:hover {
+    border: 1px solid #000;
+    background: #fff;
+  }
+`
+
+const List = styled.ul`
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 340px;
+  li {
+    margin-bottom: ${rhythm(0.5)};
+    margin-right: ${rhythm(0.5)};
+    margin-left: 0;
+    max-width: 150px;
+    position: relative;
+    @media (max-width: 700px) {
+      * > {
+        max-width: 150px;
+      }
+    }
+    @media (min-width: 700px) {
+      a,
+      p {
+        transition: opacity 0.6s;
+      }
+      .gatsby-image-wrapper {
+        text-decoration: none;
+        border: 0;
+        box-shadow: 0;
+      }
+      p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 150px;
+        opacity: 0;
+        z-index: 0;
+        font-size: ${rhythm(0.5)};
+      }
+      .gatsby-image-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        z-index: 1;
+      }
+      &:hover {
+        .gatsby-image-wrapper {
+          opacity: 0;
+        }
+        p {
+          opacity: 1;
+        }
+      }
+    }
+  }
+`
 
 const Background = () => {
   const data = useStaticQuery(graphql`
@@ -144,100 +189,77 @@ const Background = () => {
           in Denmark, and <b>building my own products</b> as an indie dev.
         </p>
         <p>Interested in a collaboration?</p>
-        <a href="mailto:alb@andrewlb.com" class="btn">
+        <Button href="mailto:alb@andrewlb.com" class="btn">
           Let's chat
-        </a>
+        </Button>
 
         <h2>Recent Work</h2>
-        <ul
-          style={{
-            listStyle: "none",
-            margin: 0,
-            display: "flex",
-            flexWrap: "wrap",
-            minWidth: "340px",
-          }}
-        >
-          <Li>
-            <Image
-              fixed={data.knowsi.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-              }}
-            />
+        <List>
+          <li>
+            <a href="https://knowsi.com" target="_blank">
+              <Image
+                fixed={data.knowsi.childImageSharp.fixed}
+                alt={author}
+                style={{
+                  marginRight: rhythm(1 / 2),
+                  marginBottom: 0,
+                  minWidth: 50,
+                }}
+              />
 
-            <p>
-              <a href="https://knowsi.com" target="_blank">
-                Consent Management for Researchers
-              </a>
-            </p>
-          </Li>
-          <Li>
-            <Image
-              fixed={data.grantcalc.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-              }}
-            />
+              <p>Consent Management for Researchers</p>
+            </a>
+          </li>
+          <li>
+            <a href="http://netgrant.org/" target="_blank">
+              <Image
+                fixed={data.grantcalc.childImageSharp.fixed}
+                alt={author}
+                style={{
+                  marginRight: rhythm(1 / 2),
+                  marginBottom: 0,
+                  minWidth: 50,
+                }}
+              />
 
-            <p>
-              <a href="http://netgrant.org/" target="_blank">
-                Grant Analytics, collab with Dahna Goldstein
-              </a>
-            </p>
-          </Li>
-          <Li>
-            <Image
-              fixed={data.pedalpedal.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-              }}
-            />
+              <p>Grant Analytics, collab with Dahna Goldstein</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pedalpedal.club/" target="_blank">
+              <Image
+                fixed={data.pedalpedal.childImageSharp.fixed}
+                alt={author}
+                style={{
+                  marginRight: rhythm(1 / 2),
+                  marginBottom: 0,
+                  minWidth: 50,
+                }}
+              />
 
-            <p>
-              <a href="https://www.pedalpedal.club/" target="_blank">
-                Reward yourself as a new cyclist (closed)
-              </a>
-            </p>
-          </Li>
-          <Li>
-            <Image
-              fixed={data.stoke.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-              }}
-            />
+              <p>Reward yourself as a new cyclist</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://vimeo.com/80308354" target="_blank">
+              <Image
+                fixed={data.stoke.childImageSharp.fixed}
+                alt={author}
+                style={{
+                  marginRight: rhythm(1 / 2),
+                  marginBottom: 0,
+                  minWidth: 50,
+                }}
+              />
 
-            <p>
-              <a href="https://vimeo.com/80308354" target="_blank">
-                Large scale interactive installation for Nuit Blanche 2013
-              </a>
-            </p>
-          </Li>
-        </ul>
+              <p>Large scale interactive installation for Nuit Blanche 2013</p>
+            </a>
+          </li>
+        </List>
 
         <h2>Recent Roles</h2>
-        <ul
-          style={{
-            listStyle: "none",
-            margin: 0,
-            display: "flex",
-            flexWrap: "wrap",
-          }}
-        >
-          <Li>
+        <List>
+          <li>
             <Image
               fixed={data.ideo.childImageSharp.fixed}
               alt={author}
@@ -251,8 +273,8 @@ const Background = () => {
             <p>
               Principal Designer and Project Lead <small>(2013-2016)</small>
             </p>
-          </Li>
-          <Li>
+          </li>
+          <li>
             <Image
               fixed={data.dds.childImageSharp.fixed}
               alt={author}
@@ -266,8 +288,8 @@ const Background = () => {
             <p>
               Digital Service Expert <small>(2016-2017)</small>
             </p>
-          </Li>
-          <Li>
+          </li>
+          <li>
             <Image
               fixed={data.newamerica.childImageSharp.fixed}
               alt={author}
@@ -281,24 +303,23 @@ const Background = () => {
             <p>
               Public Interest Tech Fellow <small>(2017-2018)</small>
             </p>
-          </Li>
-          <Li>
-            <p class="image">
-              <Image
-                fixed={data.ciid.childImageSharp.fixed}
-                alt={author}
-                style={{
-                  marginRight: rhythm(1 / 2),
-                  marginBottom: 0,
-                  minWidth: 50,
-                }}
-              />
-            </p>
+          </li>
+          <li>
+            <Image
+              fixed={data.ciid.childImageSharp.fixed}
+              alt={author}
+              style={{
+                marginRight: rhythm(1 / 2),
+                marginBottom: 0,
+                minWidth: 50,
+              }}
+            />
+
             <p>
               Design Resident <small>(2018-Now)</small>
             </p>
-          </Li>
-          <Li>
+          </li>
+          <li>
             <Image
               fixed={data.innofounder.childImageSharp.fixed}
               alt={author}
@@ -311,8 +332,8 @@ const Background = () => {
             <p>
               Lead Design Mentor <small>(2018-Now)</small>
             </p>
-          </Li>
-        </ul>
+          </li>
+        </List>
         <small>
           <a href="http://www.linkedin.com/in/andrewlb" target="_blank">
             Full CV on Linkedin

@@ -52,7 +52,7 @@ class EmailSignup extends Component {
       )
     }
     return (
-      <div>
+      <div id="newsletter">
         <h3
           style={{
             margin: "0",

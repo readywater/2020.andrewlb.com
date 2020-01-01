@@ -1,11 +1,34 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import styled from "styled-components"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import JustComments from "gatsby-plugin-just-comments"
 import { rhythm, scale } from "../utils/typography"
+
+export const Nav = styled.ul`
+  margin: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  li {
+    margin-right: 1rem;
+    list-style: none;
+    flex: none;
+    width: auto;
+    a {
+      border-radius: 5px;
+      background: #eee;
+      border: 1px solid #eee;
+      padding: ${rhythm(0.25)};
+      &:hover {
+        border: 1px solid #000;
+        background: #fff;
+      }
+    }
+  }
+`
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -45,6 +68,14 @@ class BlogPostTemplate extends React.Component {
                 {post.frontmatter.category}
               </span>
             </p>
+            <Nav>
+              <li>
+                <a href="#newsletter">Follow Newsletter</a>
+              </li>
+              <li>
+                <a href="#comment">Leave Comments</a>
+              </li>
+            </Nav>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
@@ -84,12 +115,13 @@ class BlogPostTemplate extends React.Component {
           </ul>
         </nav>
         <mailsignup />
-
-        <JustComments
-          apikey="adbf3de4-0508-4600-9524-a2425165e346"
-          disablesociallogin="true"
-          hideattribution="true"
-        />
+        <div id="comment">
+          <JustComments
+            apikey="adbf3de4-0508-4600-9524-a2425165e346"
+            disablesociallogin="true"
+            hideattribution="true"
+          />
+        </div>
       </Layout>
     )
   }
