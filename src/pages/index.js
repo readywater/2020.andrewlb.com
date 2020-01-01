@@ -64,7 +64,10 @@ class BlogIndex extends React.Component {
                         marginBottom: rhythm(1 / 4),
                       }}
                     >
-                      <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                      <Link
+                        style={{ boxShadow: `none` }}
+                        to={`/${node.frontmatter.category}${node.fields.slug}`}
+                      >
                         {title}
                       </Link>
                     </h3>
@@ -73,7 +76,10 @@ class BlogIndex extends React.Component {
                   <div
                     style={{ display: "grid", gridTemplateColumns: "1fr 3fr" }}
                   >
-                    <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                    <Link
+                      style={{ boxShadow: `none` }}
+                      to={`/${node.frontmatter.category}${node.fields.slug}`}
+                    >
                       <Image
                         fluid={node.frontmatter.image.childImageSharp.fluid}
                         alt={title}
@@ -88,7 +94,7 @@ class BlogIndex extends React.Component {
                     <section>
                       <Link
                         style={{ boxShadow: `none`, color: "#000" }}
-                        to={node.fields.slug}
+                        to={`/${node.frontmatter.category}${node.fields.slug}`}
                       >
                         <p
                           dangerouslySetInnerHTML={{
