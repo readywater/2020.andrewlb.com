@@ -35,7 +35,14 @@ class BlogPostTemplate extends React.Component {
                 marginBottom: rhythm(1),
               }}
             >
-              {post.frontmatter.date}
+              Published {post.frontmatter.date} under{" "}
+              <span
+                style={{
+                  textTransform: "capitalize",
+                }}
+              >
+                {post.frontmatter.category}
+              </span>
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -98,6 +105,8 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
+        category
       }
     }
   }
