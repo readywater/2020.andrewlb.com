@@ -170,7 +170,7 @@ const Background = () => {
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
   return (
     <div
       style={{
@@ -196,7 +196,11 @@ const Background = () => {
         <h2>Recent Work</h2>
         <List>
           <li>
-            <a href="https://knowsi.com" target="_blank">
+            <a
+              href="https://knowsi.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 fixed={data.knowsi.childImageSharp.fixed}
                 alt={author}
@@ -211,7 +215,11 @@ const Background = () => {
             </a>
           </li>
           <li>
-            <a href="http://netgrant.org/" target="_blank">
+            <a
+              href="http://netgrant.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 fixed={data.grantcalc.childImageSharp.fixed}
                 alt={author}
@@ -226,7 +234,11 @@ const Background = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.pedalpedal.club/" target="_blank">
+            <a
+              href="https://www.pedalpedal.club/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 fixed={data.pedalpedal.childImageSharp.fixed}
                 alt={author}
@@ -241,7 +253,11 @@ const Background = () => {
             </a>
           </li>
           <li>
-            <a href="https://vimeo.com/80308354" target="_blank">
+            <a
+              href="https://vimeo.com/80308354"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 fixed={data.stoke.childImageSharp.fixed}
                 alt={author}
@@ -335,7 +351,11 @@ const Background = () => {
           </li>
         </List>
         <small>
-          <a href="http://www.linkedin.com/in/andrewlb" target="_blank">
+          <a
+            href="http://www.linkedin.com/in/andrewlb"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Full CV on Linkedin
           </a>
         </small>

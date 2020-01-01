@@ -9,6 +9,7 @@ import EmailSignup from "../components/mailsignup"
 import { rhythm } from "../utils/typography"
 import Image from "gatsby-image"
 import { Nav } from "../templates/blog-post"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 const RespLayout = styled.div`
   display: flex;
@@ -45,13 +46,19 @@ class BlogIndex extends React.Component {
         <SEO title="" />
         <RespNav>
           <li>
-            <a href="#newsletter">Newsletter</a>
+            <AnchorLink offset="100" href="#newsletter">
+              Newsletter
+            </AnchorLink>
           </li>
           <li>
-            <a href="#background">About</a>
+            <AnchorLink offset="100" href="#background">
+              About
+            </AnchorLink>
           </li>
           <li>
-            <a href="#posts">Posts</a>
+            <AnchorLink offset="100" href="#posts">
+              Posts
+            </AnchorLink>
           </li>
         </RespNav>
         <RespLayout>

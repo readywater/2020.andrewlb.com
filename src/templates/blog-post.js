@@ -7,10 +7,19 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import JustComments from "gatsby-plugin-just-comments"
 import { rhythm, scale } from "../utils/typography"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 export const Nav = styled.ul`
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: ${rhythm(0.25)} 0;
+  z-index: 1;
   margin: 1rem 0;
   display: flex;
+  width: 100%;
   justify-content: flex-start;
   li {
     margin-right: 1rem;
@@ -68,25 +77,25 @@ class BlogPostTemplate extends React.Component {
                 {post.frontmatter.category}
               </span>
             </p>
-            <Nav>
-              <li>
-                <a href="#newsletter">Follow Newsletter</a>
-              </li>
-              <li>
-                <a href="#comment">Leave Comments</a>
-              </li>
-            </Nav>
           </header>
+          <Nav>
+            <li>
+              <AnchorLink href="#newsletter">Follow Newsletter</AnchorLink>
+            </li>
+            <li>
+              <AnchorLink href="#comment">Leave Comments</AnchorLink>
+            </li>
+          </Nav>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
             style={{
               marginBottom: rhythm(1),
             }}
           />
-          <footer>
-            <Bio />
-          </footer>
         </article>
+        <footer>
+          <Bio />
+        </footer>
 
         <nav>
           <ul
