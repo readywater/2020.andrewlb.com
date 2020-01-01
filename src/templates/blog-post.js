@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import JustComments from "gatsby-plugin-just-comments"
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
@@ -83,6 +84,13 @@ class BlogPostTemplate extends React.Component {
           </ul>
         </nav>
         <mailsignup />
+
+        <JustComments
+          apikey="adbf3de4-0508-4600-9524-a2425165e346"
+          disablesociallogin="true"
+          hideattribution="true"
+          apikey="YOUR_API_KEY"
+        />
       </Layout>
     )
   }
