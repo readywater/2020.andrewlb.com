@@ -2,6 +2,7 @@
 title: 2019 – a baby, a degree, a product
 date: "2019-12-31T22:12:03.284Z"
 description: "Four big things happened in 2019. My son was born, Knowsi was launched, I started a grad program, and I learned a bit about how these different things came together."
+tags: ["reflection", "emil", "knowsi", "2019"]
 ---
 
 ![](./img/IMG_8230.JPG)
