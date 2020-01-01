@@ -75,7 +75,6 @@ class EmailSignup extends Component {
         >
           <label htmlFor="name">
             <FloatingLabelInput
-              style={{ marginBottom: "1rem" }}
               type="text"
               name="name"
               label="Name"
@@ -84,6 +83,7 @@ class EmailSignup extends Component {
               value={this.state.name || ""}
             />
           </label>
+          <br />
           <label htmlFor="email">
             <FloatingLabelInput
               type="email"

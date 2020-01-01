@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import styled from "styled-components"
 
 import Background from "../components/background"
 import Layout from "../components/layout"
@@ -7,6 +8,24 @@ import SEO from "../components/seo"
 import EmailSignup from "../components/mailsignup"
 import { rhythm } from "../utils/typography"
 import Image from "gatsby-image"
+
+const RespLayout = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse column-reverse;
+  .left {
+    width: 40%;
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+  }
+  .right {
+    width: 55%;
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+  }
+`
 
 class BlogIndex extends React.Component {
   render() {
@@ -17,19 +36,14 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-          }}
-        >
-          <div style={{ width: "auto", marginRight: rhythm(1) }}>
+        <RespLayout>
+          <div className="left" style={{ marginRight: rhythm(1) }}>
             {/* <Bio /> */}
             <EmailSignup />
             <hr />
             <Background />
           </div>
-          <div style={{ minWidth: "65%" }}>
+          <div className="right">
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
@@ -59,29 +73,37 @@ class BlogIndex extends React.Component {
                   <div
                     style={{ display: "grid", gridTemplateColumns: "1fr 3fr" }}
                   >
-                    <Image
-                      fluid={node.frontmatter.image.childImageSharp.fluid}
-                      alt={title}
-                      style={{
-                        marginRight: rhythm(1 / 2),
-                        marginBottom: 0,
-                        minWidth: 50,
-                        maxWidth: 300,
-                      }}
-                    />
-                    <section>
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: node.frontmatter.description || node.excerpt,
+                    <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                      <Image
+                        fluid={node.frontmatter.image.childImageSharp.fluid}
+                        alt={title}
+                        style={{
+                          marginRight: rhythm(1 / 2),
+                          marginBottom: 0,
+                          minWidth: 50,
+                          maxWidth: 300,
                         }}
                       />
+                    </Link>
+                    <section>
+                      <Link
+                        style={{ boxShadow: `none`, color: "#000" }}
+                        to={node.fields.slug}
+                      >
+                        <p
+                          dangerouslySetInnerHTML={{
+                            __html:
+                              node.frontmatter.description || node.excerpt,
+                          }}
+                        />
+                      </Link>
                     </section>
                   </div>
                 </article>
               )
             })}
           </div>
-        </div>
+        </RespLayout>
       </Layout>
     )
   }
