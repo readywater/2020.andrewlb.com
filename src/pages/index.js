@@ -43,7 +43,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="" />
+        <SEO title={siteTitle} />
         <RespNav>
           <li>
             <AnchorLink offset="100" href="#newsletter">
