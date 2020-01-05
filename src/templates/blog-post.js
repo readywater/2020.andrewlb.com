@@ -41,7 +41,13 @@ export const Nav = styled.ul`
 
 export const Minutes = styled.div`
   display: inline-block;
-
+  &.left {
+    .min,
+    .word {
+      right: auto;
+      left: 0;
+    }
+  }
   position: relative;
   .sizer {
     display: block;
@@ -99,18 +105,34 @@ class BlogPostTemplate extends React.Component {
                 marginBottom: rhythm(1),
               }}
             >
-              <Minutes>
-                <div className="sizer">
-                  {Math.floor(post.fields.readingTime.words / 100) * 100} words
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                }}
+              >
+                <Minutes className="left">
+                  <div className="sizer">
+                    {Math.floor(post.fields.readingTime.words / 100) * 100}{" "}
+                    words to read
+                  </div>
+                  <div className="min">
+                    {Math.floor(post.fields.readingTime.minutes * 0.8)} minutes
+                    to read
+                  </div>
+                  <div className="word">
+                    {Math.floor(post.fields.readingTime.words / 100) * 100}{" "}
+                    words to read
+                  </div>
+                </Minutes>{" "}
+                <div style={{ display: "inline", margin: `0 ${rhythm(0.25)}` }}>
+                  {" "}
+                  —{" "}
                 </div>
-                <div className="min">
-                  {Math.floor(post.fields.readingTime.minutes)} minutes
+                <div style={{ display: "inline" }}>
+                  Written on {post.frontmatter.date}
                 </div>
-                <div className="word">
-                  {Math.floor(post.fields.readingTime.words / 100) * 100} words
-                </div>
-              </Minutes>{" "}
-              to read written on {post.frontmatter.date}
+              </div>
               <div
                 style={{
                   display: "flex",
