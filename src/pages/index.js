@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import EmailSignup from "../components/mailsignup"
 import { rhythm } from "../utils/typography"
 import Image from "gatsby-image"
-import { Nav } from "../templates/blog-post"
+import { Nav, Minutes } from "../templates/blog-post"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
 const RespLayout = styled.div`
@@ -100,8 +100,53 @@ class BlogIndex extends React.Component {
                         {title}
                       </Link>
                     </h3>
-                    <small>{node.frontmatter.date}</small>
+                    <div>
+                      <small>{node.frontmatter.date}</small>
+                    </div>
                   </header>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      marginBottom: rhythm(1 / 4),
+                    }}
+                  >
+                    <div>
+                      <small>
+                        Posted in{" "}
+                        {node.frontmatter.category.charAt(0).toUpperCase() +
+                          node.frontmatter.category.slice(1)}
+                      </small>{" "}
+                      <small>
+                        {node.frontmatter.tags &&
+                          node.frontmatter.tags.length > 0 &&
+                          `with tags ${node.frontmatter.tags
+                            .map(t => t.charAt(0).toUpperCase() + t.slice(1))
+                            .join(", ")}`}
+                      </small>
+                    </div>
+                    <Minutes>
+                      <div className="sizer">
+                        <small>
+                          {Math.floor(node.fields.readingTime.words / 100) *
+                            100}{" "}
+                          words
+                        </small>
+                      </div>
+                      <div className="min">
+                        <small>
+                          {Math.floor(node.fields.readingTime.minutes)} min
+                        </small>
+                      </div>
+                      <div className="word">
+                        <small>
+                          {Math.floor(node.fields.readingTime.words / 100) *
+                            100}{" "}
+                          words
+                        </small>
+                      </div>
+                    </Minutes>
+                  </div>
                   <div
                     style={{ display: "grid", gridTemplateColumns: "1fr 3fr" }}
                   >
@@ -126,6 +171,7 @@ class BlogIndex extends React.Component {
                         to={`/${node.frontmatter.category}${node.fields.slug}`}
                       >
                         <p
+                          style={{ marginBottom: rhythm(0.25) }}
                           dangerouslySetInnerHTML={{
                             __html:
                               node.frontmatter.description || node.excerpt,
@@ -159,6 +205,10 @@ export const pageQuery = graphql`
           excerpt
           fields {
             slug
+            readingTime {
+              minutes
+              words
+            }
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")

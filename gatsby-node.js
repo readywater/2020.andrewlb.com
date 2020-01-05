@@ -1,11 +1,37 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+function dedupeCategories(allMarkdownRemark) {
+  const uniqueCategories = new Set()
+  // Iterate over all articles
+  allMarkdownRemark.edges.forEach(({ node }) => {
+    // Iterate over each category in an article
+    uniqueCategories.add(node.frontmatter.category)
+  })
+  // Create new array with duplicates removed
+  return Array.from(uniqueCategories)
+}
+
+function dedupeTags(allMarkdownRemark) {
+  const uniqueTags = new Set()
+  // Iterate over all articles
+  allMarkdownRemark.edges.forEach(({ node }) => {
+    // Iterate over each category in an article
+    node.frontmatter.tags.forEach(tag => {
+      uniqueTags.add(tag)
+    })
+  })
+  // Create new array with duplicates removed
+  return Array.from(uniqueTags)
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  const tagTemplate = path.resolve("src/templates/tags.js")
+  const tagTemplate = path.resolve("./src/templates/tags.js")
+  const catTemplate = path.resolve("./src/templates/category-list.js")
+  const TagListTemplate = path.resolve("./src/templates/tag-list.js")
 
   const result = await graphql(
     `
@@ -58,8 +84,49 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  const tags = result.data.tagsGroup.group
+  // Generate Category Pages
+  // Note, this assumes a SINGLE category, not arrays
+
+  const dedupedCategories = dedupeCategories(result.data.allMarkdownRemark)
+  dedupedCategories.forEach(category => {
+    createPage({
+      path: `${category}`,
+      component: catTemplate,
+      // Create props for our CategoryList.js component
+      context: {
+        category,
+        // Create an array of ids of articles in this category
+        ids: result.data.allMarkdownRemark.edges
+          .filter(({ node }) => {
+            return node.frontmatter.category == category
+          })
+          .map(({ node }) => node.id),
+      },
+    })
+  })
+
+  // Generate Tag Pages
+  // Note, this assumes a ARRAY category, not arrays
+  const dedupedTags = dedupeTags(result.data.allMarkdownRemark)
+  // Iterate over categories and create page for each
+  dedupedTags.forEach(tag => {
+    createPage({
+      path: `tag/${tag}`,
+      component: TagListTemplate,
+
+      context: {
+        tag,
+        ids: result.data.allMarkdownRemark.edges
+          .filter(({ node }) => {
+            return node.frontmatter.tags.includes(tag)
+          })
+          .map(({ node }) => node.id),
+      },
+    })
+  })
+
   // Make tag pages
+  const tags = result.data.tagsGroup.group
   tags.forEach(tag => {
     createPage({
       path: `/tags/${tag.fieldValue

@@ -39,6 +39,37 @@ export const Nav = styled.ul`
   }
 `
 
+export const Minutes = styled.div`
+  display: inline-block;
+
+  position: relative;
+  .sizer {
+    display: block;
+    opacity: 0;
+  }
+  .min,
+  .word {
+    transition: opacity 0.4s;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .min {
+    opacity: 1;
+  }
+  .word {
+    opacity: 0;
+  }
+  &:hover {
+    .min {
+      opacity: 0;
+    }
+    .word {
+      opacity: 1;
+    }
+  }
+`
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
@@ -68,14 +99,48 @@ class BlogPostTemplate extends React.Component {
                 marginBottom: rhythm(1),
               }}
             >
-              Published {post.frontmatter.date} under{" "}
-              <span
+              <Minutes>
+                <div className="sizer">
+                  {Math.floor(post.fields.readingTime.words / 100) * 100} words
+                </div>
+                <div className="min">
+                  {Math.floor(post.fields.readingTime.minutes)} minutes
+                </div>
+                <div className="word">
+                  {Math.floor(post.fields.readingTime.words / 100) * 100} words
+                </div>
+              </Minutes>{" "}
+              to read written on {post.frontmatter.date}
+              <div
                 style={{
-                  textTransform: "capitalize",
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  marginBottom: rhythm(1 / 4),
                 }}
               >
-                {post.frontmatter.category}
-              </span>
+                <div>
+                  <span>
+                    Published under{" "}
+                    <Link to={`/${post.frontmatter.category}`}>
+                      {post.frontmatter.category.charAt(0).toUpperCase() +
+                        post.frontmatter.category.slice(1)}
+                    </Link>
+                  </span>{" "}
+                  {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
+                    <div style={{ display: "inline" }}>
+                      with tags
+                      {post.frontmatter.tags.map(t => {
+                        return (
+                          <Link to={`/tag/${t}`}>
+                            {" "}
+                            {t.charAt(0).toUpperCase() + t.slice(1)}
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  )}
+                </div>
+              </div>
             </p>
           </header>
           <Nav>
@@ -149,6 +214,13 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        slug
+        readingTime {
+          minutes
+          words
+        }
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
