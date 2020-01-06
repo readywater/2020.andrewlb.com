@@ -135,7 +135,8 @@ class BlogIndex extends React.Component {
                       </div>
                       <div className="min">
                         <small>
-                          {Math.floor(node.fields.readingTime.minutes)} min
+                          {Math.floor(node.fields.readingTime.minutes * 0.8)}{" "}
+                          min
                         </small>
                       </div>
                       <div className="word">
