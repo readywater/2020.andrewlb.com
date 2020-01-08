@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
@@ -35,36 +35,43 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        display: `flex`,
-        flexWrap: `wrap`,
-        marginBottom: rhythm(2.5),
-      }}
-    >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
+    <>
+      <div
         style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
+          display: `flex`,
+          flex: "1 0 0",
+          flexWrap: `nowrap`,
+          marginBottom: rhythm(2.5),
         }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
-      <p>
-        Written by <strong>{author}</strong>. He travels around, but is
-        currently in Copenhagen with his wife Ayla and his son Emil. He might be
-        working on <a href="https://knowsi.com">Knowsi</a>.{` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow Andrew on Twitter
-        </a>
-      </p>
+      >
+        <Image
+          fixed={data.avatar.childImageSharp.fixed}
+          alt={author}
+          style={{
+            marginRight: rhythm(1 / 2),
+            marginBottom: 0,
+            minWidth: 50,
+            borderRadius: `100%`,
+          }}
+          imgStyle={{
+            borderRadius: `50%`,
+          }}
+        />
+        <p>
+          Written by <strong>{author}</strong>. He lives in Copenhagen with his
+          wife Ayla and his son Emil.{` `}Andrew builds{" "}
+          <a href="https://knowsi.com">Knowsi</a> and is a{" "}
+          <Link to="/security">Security Studies MA student</Link>.
+          <br />
+          <a href={`https://twitter.com/${social.twitter}`}>
+            You should follow Andrew on Twitter
+          </a>
+          , <a href="https://www.linkedin.com/in/andrewlb/">Linkedin</a>, or
+          just <a href="mailto:alb@andrewlb.com">email him</a>.
+        </p>
+      </div>
       <EmailSignup />
-    </div>
+    </>
   )
 }
 
