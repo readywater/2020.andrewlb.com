@@ -1,8 +1,8 @@
 ---
-title: The Initial Idea
+title: The Initial Thesis Idea
 date: "2020-01-09T23:12:03.284Z"
 description: "Innovation and security have always been placed together, but what about today's battlefield? In my thesis, I'm hoping to explore how "
-image: ./img/robotgun.webp
+image: ./img/shamii2.jpg
 category: security
 tags:
   - security
