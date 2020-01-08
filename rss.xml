@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Andrew Lovett-Barron]]></title><description><![CDATA[Some writing by Andrew.]]></description><link>https://log.andrewlb.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Jan 2020 13:02:29 GMT</lastBuildDate><item><title><![CDATA[Reflecting on 2019]]></title><description><![CDATA[2019 has been a weird combination of my most exhausting, fulfilling, chaotic, and structured year to date. Midway through 2018, I decided…]]></description><link>https://log.andrewlb.com/reflecting-2019/</link><guid isPermaLink="false">https://log.andrewlb.com/reflecting-2019/</guid><pubDate>Tue, 31 Dec 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Andrew Lovett-Barron]]></title><description><![CDATA[Some writing by Andrew.]]></description><link>https://log.andrewlb.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 08 Jan 2020 23:53:28 GMT</lastBuildDate><item><title><![CDATA[The Initial Thesis Idea]]></title><description><![CDATA[Security and Innovation are described as going hand-in-hand. The logic is pretty simple: existential threats spur on unconventional…]]></description><link>https://log.andrewlb.com/thesis/01-idea/</link><guid isPermaLink="false">https://log.andrewlb.com/thesis/01-idea/</guid><pubDate>Thu, 09 Jan 2020 23:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.57142857142857%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBACdASoUAAsAPtFUo0uoJKMhsAgBABoJQBdiP/wGgWcc+VpuJhTB4AD8iyvqqF0jvzJ/S6w1p0rtfHjUfjLAEu4FPZX6MC8lmtI1K9hksIA4kqTHqzHOiZOwTM5+kYzYFVsmt8ygRgH1N0YT/YAA&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;robotgun&quot;
+        title=&quot;robotgun&quot;
+        src=&quot;/static/10809c0d279a43f443168e551c2b8fd4/5ca24/robotgun.webp&quot;
+        srcset=&quot;/static/10809c0d279a43f443168e551c2b8fd4/cbe2e/robotgun.webp 148w,
+/static/10809c0d279a43f443168e551c2b8fd4/3084c/robotgun.webp 295w,
+/static/10809c0d279a43f443168e551c2b8fd4/5ca24/robotgun.webp 590w,
+/static/10809c0d279a43f443168e551c2b8fd4/dad35/robotgun.webp 885w,
+/static/10809c0d279a43f443168e551c2b8fd4/c139f/robotgun.webp 1050w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+&lt;a href=&quot;https://www.popsci.com/technology/article/2013-05/ten-improvised-weapons-made-syrian-rebels/?image=8&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Image from Popular Science&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Security and Innovation are described as going hand-in-hand. The logic is pretty simple: existential threats spur on unconventional allocation of resources towards R&amp;#x26;D to outpace the enemy at the national level, and lack of resources and necessity drives improvisation and innovation on the ground.&lt;/p&gt;
+&lt;p&gt;But how does it actually happen? In today’s asymmetric conflicts, we’ve seen terrifying effective innovations in IEDs, remote controlled weapons platforms, and conventional arms in the form of home-modified pickup trucks, drones with grenades, AK47 turrets controlled with a playstation controller, or even rudimentary autonomous weapons platforms.&lt;/p&gt;
+&lt;h2&gt;Overall Question&lt;/h2&gt;
+&lt;p&gt;With non-state (and clandestine) war-fighting and/or terrorist organizations that use violence to achieve political ends, are there observable models of TECHNICAL and MANAGEMENT innovation that occur across groups? In other words, are there consistent ways that technical and management problem solving emerges across orgs like AQI, the IRA, ISIS, the FSA, etc? Is there something inherent to the structure of these groups that produce a particular type of innovation?&lt;/p&gt;
+&lt;p&gt;What commonalities, advantages, and/or disadvantages do these models have when compared with models of innovation within conventional state-based war-fighting organizations? How might such models might be compared? Additionally, who are the catalysts and maintainers of these innovation cycles, and does this frame on value and innovation change our understanding of who catalyzes what in these organizations? What kinds of traits to these individuals share with other innovators in the private sector, academia, and government?&lt;/p&gt;
+&lt;h2&gt;Why this Topic?&lt;/h2&gt;
+&lt;p&gt;I was both shocked and fascinated by &lt;a href=&quot;https://www.vice.com/en_us/article/z4mmve/people-are-still-killing-each-other-with-diy-weapons-in-syria&quot;&gt;the remote gun platforms&lt;/a&gt; coming out of Syria and ISIS-occupied Mosul in Iraq. I come from a self-taught engineering and development background: building music and artwork with electronics and software that ultimately turned into a career in innovation and design. Those same skills that I learned in workshops or self-taught online are being applied in conflict zones. In my subsequent exploration, some of the techniques for building and sharing these creations felt a bit too familiar, and it sparked a broader curiosity. As such, my intent is to explore how and if there are consistent and observable ways that these innovations are created, disseminated, and scaled within and between organizations. One tangible example might the SVBIED factories that ISIS managed, and the way that &lt;a href=&quot;https://international-review.org/an-analysis-of-islamic-states-svbied-use-in-raqqa/&quot;&gt;the platforms evolved across the conflict and between cells&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Why Me?&lt;/h2&gt;
+&lt;p&gt;Despite a political science degree, I’ve worked for a decade in startups and innovation consulting. Working within both small and large organizations, I’ve tried to surface the interesting loops within human systems and to apply learning from systems thinking in what I build (eg. Donna Meadows, John Boyd, and more contemporary design thinking work). In this case, I want to do this research based off of the artifacts of the organizations instead of directly observing it as a consultant, employee, or ethnographer might. More broadly, I want to explore whether there is a certain inevitability in the innovation capacity of a business relative to its structure, and whether the same can be said the organizations I propose to study.&lt;/p&gt;
+&lt;h2&gt;Research Methods&lt;/h2&gt;
+&lt;p&gt;I hope to leverage databases like &lt;a href=&quot;https://ctc.usma.edu/harmony-program/&quot;&gt;Westpoint’s Harmony DB&lt;/a&gt; (captured and translated management literature from terror orgs, especially AQI) and mimic some of the methodologies that Jacob Shapiro describes in &lt;a href=&quot;https://press.princeton.edu/books/hardcover/9780691157214/the-terrorists-dilemma&quot;&gt;The Terrorist’s Dilemma&lt;/a&gt;. I plan on leveraging as much social media content from YouTube, twitter, reddit, etc. as possible to try and understand timelines of “innovation” moving across groups.&lt;/p&gt;
+&lt;p&gt;I intend to capitalize on a starting point provided by an unclassified US Army report on remote and tele-operated weapons, the substantial reporting around these DIY weapons in Syria and Iraq, and forums like Reddit’s &lt;a href=&quot;https://www.reddit.com/r/shittytechnicals&quot;&gt;/r/ShittyTechnicals/&lt;/a&gt;. In addition, arms researchers like CalibreObscura have used methodologies that might be borrowed and learned from. It is unlikely that I will do interviews with current/former combatants for a variety of reasons, both ethical and practical.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 65.93059936908517%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABuiZ0PCJH/8QAGhAAAwADAQAAAAAAAAAAAAAAAQIRAAMEEv/aAAgBAQABBQJdpAfpYBe1p4SFI0Gf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BV//EABsQAAEEAwAAAAAAAAAAAAAAAAABESExEiIy/9oACAEBAAY/Amyk6JQXWyyj/8QAGxABAAICAwAAAAAAAAAAAAAAAQARITFBYXH/2gAIAQEAAT8ht243bL8CuuZoJfIlgRjbIwCP/9oADAMBAAIAAwAAABCvP//EABYRAAMAAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxCIiP/EABYRAQEBAAAAAAAAAAAAAAAAAAARIf/aAAgBAgEBPxDUP//EABwQAQACAwEBAQAAAAAAAAAAAAEAQREhMVGR0f/aAAgBAQABPxAfsPKgx+wqLTEX6h+4d8QxLCtaryGT9h0mTAO7Z//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;shamii&quot;
+        title=&quot;shamii&quot;
+        src=&quot;/static/6024fb87aa2aed169d0ca9f792aa9cfc/88218/shamii.jpg&quot;
+        srcset=&quot;/static/6024fb87aa2aed169d0ca9f792aa9cfc/7237a/shamii.jpg 148w,
+/static/6024fb87aa2aed169d0ca9f792aa9cfc/0cfdf/shamii.jpg 295w,
+/static/6024fb87aa2aed169d0ca9f792aa9cfc/88218/shamii.jpg 590w,
+/static/6024fb87aa2aed169d0ca9f792aa9cfc/21e38/shamii.jpg 634w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+&lt;a href=&quot;https://www.dailymail.co.uk/news/article-2245815/Syrian-rebels-unveil-Mad-Max-style-home-tank-controlled-Playstation-gamepad.html&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Sham II from Daily Mail&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Critical Lens&lt;/h2&gt;
+&lt;p&gt;Doing this research in the international security studies context and still following the post-structural framing we’ve been introduced to so far is a point of some anxiety. I’m committed to take as empirical an approach as I can to this work, but I think the analysis of bureaucratic data might highlight interesting details on the “who” involved in these innovations. For example, how do these innovations shift power relationships and who serves to drive those innovations forward? Where are the inventors and makers coming from, and what kind of power do they hold within these organizations relative to others?&lt;/p&gt;
+&lt;h2&gt;Wrapping Up&lt;/h2&gt;
+&lt;p&gt;Anyway, all this said, I’m excited to do this work. While many are still living the conflicts that birthed these deadly creations, the past decades of multi-party asymmetric conflict have left a trove of media and data to be considered in understanding just how technical and management innovation emerge in organizations to weak to engage in conventional warfare. My hope is this work can serve to make some small contribution in highlighting mechanisms to interdict the worst of these innovations, especially those used in the targeting of non-combatants.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Reflecting on 2019]]></title><description><![CDATA[2019 has been a weird combination of my most exhausting, fulfilling, chaotic, and structured year to date. Midway through 2018, I decided…]]></description><link>https://log.andrewlb.com/reflecting-2019/</link><guid isPermaLink="false">https://log.andrewlb.com/reflecting-2019/</guid><pubDate>Tue, 31 Dec 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
