@@ -111,15 +111,15 @@ exports.createPages = async ({ graphql, actions }) => {
   const dedupedTags = dedupeTags(result.data.allMarkdownRemark)
   // Iterate over categories and create page for each
   dedupedTags.forEach(tag => {
-    console.log(
-      "For Tags",
-      result.data.allMarkdownRemark.edges
-        .filter(({ node }) => {
-          console.log("Finding node for tag", tag, node)
-          return node.frontmatter.tags.includes(tag)
-        })
-        .map(({ node }) => node.id)
-    )
+    // console.log(
+    //   "For Tags",
+    //   result.data.allMarkdownRemark.edges
+    //     .filter(({ node }) => {
+    //       console.log("Finding node for tag", tag, node)
+    //       return node.frontmatter.tags.includes(tag)
+    //     })
+    //     .map(({ node }) => node.id)
+    // )
     createPage({
       path: `tag/${tag}`,
       component: TagListTemplate,

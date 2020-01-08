@@ -1,6 +1,20 @@
 import React from "react"
+import styled from "styled-components"
 import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
+
+const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+const RightLink = styled.div`
+  align-items: bottom;
+  display: flex;
+  a {
+    padding: ${rhythm(1)};
+  }
+`
 
 class Layout extends React.Component {
   render() {
@@ -10,29 +24,39 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <>
-          <h1
-            style={{
-              ...scale(1.5),
-              marginBottom: rhythm(0.5),
-              marginTop: 0,
-            }}
-          >
-            <Link
+        <Header>
+          <div>
+            <h1
               style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
+                ...scale(1.5),
+                marginBottom: rhythm(0.5),
+                marginTop: 0,
               }}
-              to={`/`}
             >
-              {title}
+              <Link
+                style={{
+                  boxShadow: `none`,
+                  textDecoration: `none`,
+                  color: `inherit`,
+                }}
+                to={`/`}
+              >
+                {title}
+              </Link>
+            </h1>
+            <h3 style={{ marginTop: "0", marginBottom: rhythm(1.5) }}>
+              Writing on Product, Politics, and Design
+            </h3>
+          </div>
+          <RightLink>
+            <Link style={{ boxShadow: `none` }} to={`/writing`}>
+              Writing
             </Link>
-          </h1>
-          <h3 style={{ marginTop: "0", marginBottom: rhythm(1.5) }}>
-            Writing on Product, Politics, and Design
-          </h3>
-        </>
+            <Link style={{ boxShadow: `none` }} to={`/security`}>
+              Security
+            </Link>
+          </RightLink>
+        </Header>
       )
     } else {
       header = (
