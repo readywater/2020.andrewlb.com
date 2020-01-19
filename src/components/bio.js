@@ -58,10 +58,11 @@ const Bio = () => {
           }}
         />
         <p>
-          Written by <strong>{author}</strong>. He lives in Copenhagen with his
-          wife Ayla and his son Emil.{` `}Andrew builds{" "}
+          Written by <strong>{author}</strong>.{` `}Andrew builds{" "}
           <a href="https://knowsi.com">Knowsi</a> and is a{" "}
-          <Link to="/security">Security Studies MA student</Link>.
+          <Link to="/security">Security Studies MA student</Link>. He is a
+          Canadian/American dual citizen living with his wife and son in
+          Copenhagen.
           <br />
           <a href={`https://twitter.com/${social.twitter}`}>
             You should follow Andrew on Twitter

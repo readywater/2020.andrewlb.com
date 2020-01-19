@@ -1,7 +1,7 @@
 ---
-title: The Initial Thesis Idea
+title: MA Thesis Idea on Innovation & Conflict
 date: "2020-01-09T23:12:03.284Z"
-description: "Innovation and security have always been placed together, but what about today's battlefield? In my thesis, I'm hoping to explore how "
+description: "An initial look at my MA thesis proposal exploring innovation and conflict. This will change a lot over time, but wanted to share the starting point."
 image: ./img/shamii2.jpg
 category: security
 tags:
@@ -11,7 +11,7 @@ tags:
   - "2020"
 ---
 
-![](./img/robotgun.webp)
+![](./img/robotgun.jpg)
 [`Image from Popular Science`](https://www.popsci.com/technology/article/2013-05/ten-improvised-weapons-made-syrian-rebels/?image=8)
 
 Security and Innovation are described as going hand-in-hand. The logic is pretty simple: existential threats spur on unconventional allocation of resources towards R&D to outpace the enemy at the national level, and lack of resources and necessity drives improvisation and innovation on the ground.

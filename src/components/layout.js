@@ -6,9 +6,13 @@ import { rhythm, scale } from "../utils/typography"
 const Header = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 `
 
 const RightLink = styled.div`
+  @media (max-width: 700px) {
+    display: none;
+  }
   align-items: bottom;
   display: flex;
   a {
