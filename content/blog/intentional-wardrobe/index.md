@@ -60,7 +60,7 @@ Ultimately, no system that I put together in an afternoon is going to replace a 
 - To track frequency of wears across the different pieces of clothes I have
 - To track what I need to repair, tailor, or clean more effectively.
 
-Understanding Notion as I did, I believed that it would look like:
+Understanding Notion as I did, I believed that it would look like when implemented:
 
 1. Item (with properties)
 2. Several Collections of Items (Aggregation of properties)
