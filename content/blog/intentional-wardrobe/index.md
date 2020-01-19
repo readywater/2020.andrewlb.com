@@ -1,7 +1,7 @@
 ---
 title: A More Intentional Wardrobe
 date: "2020-01-20T22:12:03.284Z"
-description: “I have too many jackets and had to do something about it. This is a short walkthrough and reflection on an experiment in organizing my wardrobe.”
+description: "I have too many jackets and had to do something about it. This is a short walkthrough and reflection on an experiment in organizing my wardrobe."
 image: ./img/a2.png
 category: writing
 tags:
@@ -12,7 +12,7 @@ tags:
 ---
 
 ![My Buzz Rickson A2](./img/a2.png)
-I have an affinity for jackets and bags. These two central functions to protect and to carry somehow stand out in my mind as being what this whole clothing endeavour is about. In the quest for a more perfect bag and a more perfect jacket, I’ve tried many form factors and many materials, only to come to the conclusion recently that maybe this search has evolved into more of a collection and less of a solution.
+I have an affinity for jackets and bags. These two central functions to protect and to carry somehow stand out in my mind as being what this whole clothing endeavour is about. In the quest for a more perfect bag and a more perfect jacket, I’ve tried many form factors and many materials. However, somewhere along the line this search evolved into more of a collection and less of a solution.
 
 I recently took stock of the jackets I had, and realized that some of them hadn’t been worn in some time. The same could be said for many of the other types of clothing. I have my daily wears (which were being worn out), but a lot of the clothing that had inspired me at the point of purchase or that I’d long contemplated wasn’t being worn and explored.
 
@@ -22,9 +22,13 @@ Further, despite my attempts at the Marie Kondo approach (which definitely works
 
 The digital closet or mirror idea is a trope that I’ve seen quite a bit from the tangible interface/new media world, not to mention the genius that is [Clueless](https://youtu.be/XNDubWJU0aU). What if computers could help us look good with what we have (though software business models being what they are, we’d be sold a lot), and make the inferences and connections between different pieces of clothing for us. No need for colour coordinating, fit experiments, or quotidian creativity.
 
+![Clueless Wardrobe](./img/clueless.gif)
+
 Elsewhere in my life, I’d been using different tools that “automated” aspects of personal fitness for years. Strava and TrainingPeaks both have scaling training plans that tie into your phone and your Garmin, effectually offloading the responsibility to plan and personalize. But I’ve come to believe this was creating an intellectual weakness in how I approached maintaining the body. When a training plan ended, or if I got knocked off it somehow by work, a cold, or travel, the return to that curated path felt unnatural. Despite the exhaustive metrics surrounding me, I didn’t know how I got there, so I didn’t know how (or why) to continue.
 
 More recently, I’ve been using plans from the MT Institute, which just come as a weekly calendar of “Do this.” No tracking, and their app is basically just a text document with a password. It was infuriating at first. But because of that friction, it’s forced a planning and engagement with my fitness that I haven’t had in years. Somewhat naturally by extension, I started to learn the how and why of getting somewhere and keeping going.
+
+![The MT Institute App](./img/mti.jpg)
 
 This relates to the wardrobe because the fabric we wrap ourselves in serves to work a kind of daily muscle. In some ways, we are incredibly limited. We have a limited wardrobe, filtered through biases and the influence of media and the social scenes that we came to age in, to address a specific set of needs around environmental conditions (rain, temperature), cultural conditions (formality and clique), and personal conditions (mood, aspiration, functional exigencies).
 
