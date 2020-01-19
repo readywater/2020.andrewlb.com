@@ -1,0 +1,372 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.722 'Lato',sans-serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'Lato',sans-serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;color:hsla(0,0%,0%,0.9);font-family:'Neuton',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;color:hsla(0,0%,0%,0.9);font-family:'Neuton',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;color:hsla(0,0%,0%,0.9);font-family:'Neuton',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;color:hsla(0,0%,0%,0.9);font-family:'Neuton',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;color:hsla(0,0%,0%,0.9);font-family:'Neuton',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;color:hsla(0,0%,0%,0.9);font-family:'Neuton',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;}ul{margin-left:1.722rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.722rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;font-size:0.85rem;line-height:1.722rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;font-size:1rem;line-height:1.722rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;}blockquote{margin-left:0;margin-right:1.722rem;margin-top:0;padding-bottom:0;padding-left:1.93725rem;padding-right:0;padding-top:0;margin-bottom:1.722rem;font-size:1.1487rem;line-height:1.722rem;color:hsla(0,0%,0%,0.59);border-left:0.64575rem solid;border-color:#612423;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.722rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.722rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.722rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.722rem;margin-bottom:calc(1.722rem / 2);margin-top:calc(1.722rem / 2);}li > ul{margin-left:1.722rem;margin-bottom:calc(1.722rem / 2);margin-top:calc(1.722rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.722rem / 2);}code{font-size:0.85rem;line-height:1.722rem;}kbd{font-size:0.85rem;line-height:1.722rem;}samp{font-size:0.85rem;line-height:1.722rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.148rem;padding-right:1.148rem;padding-top:0.861rem;padding-bottom:calc(0.861rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}a{color:#4665b7;text-decoration:none;}a:hover,a:active{color:hsla(0,0%,0%,0.8);}h1,h2,h3,h4,h5,h6{margin-top:3.444rem;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.722rem;color:hsla(0,0%,0%,0.8);font-weight:400;}blockquote cite:before{content:"— ";}@media only screen and (max-width:480px){blockquote{margin-left:-1.2915rem;margin-right:0;border-left:0.32288rem solid;border-color:#612423;padding-left:0.96862rem;}}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.5f81339daa9828444137.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.18.12"/><style data-styled="ciomPy kybElG UoSJW jXgUcd ilmQEB bCmlkr iHdVIn gwNELf" data-styled-version="4.4.1">
+/* sc-component-id: sc-bdVaJa */
+.UoSJW{width:100%;}
+/* sc-component-id: sc-bwzfXH */
+.jXgUcd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;position:relative;height:2em;border-bottom:1px solid #ddd;font-size:inherit;}
+/* sc-component-id: sc-htpNat */
+.ilmQEB{padding:0;margin:0;border:0;position:absolute;color:#9b9b9b;bottom:0;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;-webkit-transform-origin:left top;-ms-transform-origin:left top;transform-origin:left top;font-size:1em;cursor:text;pointer-events:none;width:66.6%;-webkit-transform:none;-ms-transform:none;transform:none;}
+/* sc-component-id: sc-bxivhb */
+.bCmlkr{padding:0;margin:0;border:none;outline:none;font-size:1em;} .bCmlkr::-webkit-input-placeholder{color:#9b9b9b;opacity:0;-webkit-transition:opacity 0.2s cubic-bezier(0.6,0.04,0.98,0.335);transition:opacity 0.2s cubic-bezier(0.6,0.04,0.98,0.335);} .bCmlkr::-moz-placeholder{color:#9b9b9b;opacity:0;-webkit-transition:opacity 0.2s cubic-bezier(0.6,0.04,0.98,0.335);transition:opacity 0.2s cubic-bezier(0.6,0.04,0.98,0.335);} .bCmlkr:-ms-input-placeholder{color:#9b9b9b;opacity:0;-webkit-transition:opacity 0.2s cubic-bezier(0.6,0.04,0.98,0.335);transition:opacity 0.2s cubic-bezier(0.6,0.04,0.98,0.335);} .bCmlkr::placeholder{color:#9b9b9b;opacity:0;-webkit-transition:opacity 0.2s cubic-bezier(0.6,0.04,0.98,0.335);transition:opacity 0.2s cubic-bezier(0.6,0.04,0.98,0.335);}
+/* sc-component-id: background__Button-sc-1vxa3aj-0 */
+.gwNELf{border-radius:5px;background:#eee;border:1px solid #eee;padding:0.4305rem;cursor:pointer;} .gwNELf:hover{border:1px solid #000;background:#fff;} .gwNELf button{-webkit-appearance:none;border-radius:0;border-width:0;background:transparent;margin:0;padding:0;display:inline-block;}
+/* sc-component-id: mailsignup__ButtonBlock-sc-10ge6di-0 */
+.iHdVIn{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:none;-ms-flex-wrap:none;flex-wrap:none;width:100%;margin-top:0.861rem;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;} .iHdVIn p{-webkit-flex:1 1 0;-ms-flex:1 1 0;flex:1 1 0;margin-left:0.861rem;margin-bottom:0;font-size:0.861rem;line-height:1.2915rem;}
+/* sc-component-id: blog-post__Nav-p1fbaw-0 */
+.kybElG{position:-webkit-sticky;position:sticky;top:0;left:0;right:0;background:#fff;padding:0.4305rem 0;z-index:1;margin:1rem 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;} .kybElG li{margin-right:1rem;list-style:none;-webkit-flex:none;-ms-flex:none;flex:none;width:auto;} .kybElG li a{border-radius:5px;background:#eee;border:1px solid #eee;padding:0.4305rem;} .kybElG li a:hover{border:1px solid #000;background:#fff;}
+/* sc-component-id: blog-post__Minutes-p1fbaw-1 */
+.ciomPy{display:inline-block;position:relative;} .ciomPy.left .min,.ciomPy.left .word{right:auto;left:0;} .ciomPy .sizer{display:block;opacity:0;} .ciomPy .min,.ciomPy .word{-webkit-transition:opacity 0.4s;transition:opacity 0.4s;position:absolute;top:0;right:0;} .ciomPy .min{opacity:1;} .ciomPy .word{opacity:0;} .ciomPy:hover .min{opacity:0;} .ciomPy:hover .word{opacity:1;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=165917740891aabf1e0c3610d0f1f5ab"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=165917740891aabf1e0c3610d0f1f5ab"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=165917740891aabf1e0c3610d0f1f5ab"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=165917740891aabf1e0c3610d0f1f5ab"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=165917740891aabf1e0c3610d0f1f5ab"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=165917740891aabf1e0c3610d0f1f5ab"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=165917740891aabf1e0c3610d0f1f5ab"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=165917740891aabf1e0c3610d0f1f5ab"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=165917740891aabf1e0c3610d0f1f5ab"/><title data-react-helmet="true">A More Intentional Wardrobe | Andrew Lovett-Barron - Writing on Product, Politics, and Design</title><meta data-react-helmet="true" name="description" content="“I have too many jackets and had to do something about it. This is a short walkthrough and reflection on an experiment in organizing my wardrobe.”"/><meta data-react-helmet="true" property="og:title" content="A More Intentional Wardrobe"/><meta data-react-helmet="true" property="og:description" content="“I have too many jackets and had to do something about it. This is a short walkthrough and reflection on an experiment in organizing my wardrobe.”"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Andrew Lovett-Barron"/><meta data-react-helmet="true" name="twitter:title" content="A More Intentional Wardrobe"/><meta data-react-helmet="true" name="twitter:description" content="“I have too many jackets and had to do something about it. This is a short walkthrough and reflection on an experiment in organizing my wardrobe.”"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-482f57f241ddc236099e.js"/><link as="script" rel="preload" href="/styles-097bd50dfd9589f9e64d.js"/><link as="script" rel="preload" href="/app-70e424680283e50ad50e.js"/><link as="script" rel="preload" href="/commons-443555f6239c4b74e6f5.js"/><link as="fetch" rel="preload" href="/page-data/writing/intentional-wardrobe/page-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;position:relative;max-width:41.328rem;padding:2.583rem 1.2915rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Andrew Lovett-Barron<!-- --> <span style="font-size:.8rem">Writing on Product, Politics, and Design</span></a></h3></header><main style="display:flex;flex-wrap:wrap"><article><header><h1 style="margin-top:1.722rem;margin-bottom:0">A More Intentional Wardrobe</h1><p style="font-size:0.87055rem;line-height:1.722rem;display:block;margin-bottom:1.722rem"><div style="display:flex;justify-content:flex-start"><div class="blog-post__Minutes-p1fbaw-1 ciomPy left"><div class="sizer">1900<!-- --> <!-- -->words to read</div><div class="min">7<!-- --> minutes to read</div><div class="word">1900<!-- --> <!-- -->words to read</div></div> <div style="display:inline;margin:0 0.4305rem"> <!-- -->—<!-- --> </div><div style="display:inline">Written on <!-- -->January 20, 2020</div></div><div style="display:flex;justify-content:flex-start;margin-bottom:0.4305rem"><div><span>Published under<!-- --> <a href="/writing">Writing</a></span> <div style="display:inline">with tags<a href="/tag/fashion"> <!-- -->Fashion</a><a href="/tag/product"> <!-- -->Product</a><a href="/tag/notion"> <!-- -->Notion</a><a href="/tag/organizing"> <!-- -->Organizing</a></div></div></div></p></header><ul class="blog-post__Nav-p1fbaw-0 kybElG"><li><a href="#newsletter">Follow Newsletter</a></li><li><a href="#comment">Leave Comments</a></li></ul><section><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1e897bd831c3f8d72c5ff636cb7734d9/5f584/a2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 121.08843537414967%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAABYlAAAWJQFJUiTwAAAFo0lEQVQ4yz2V2XIb1xGGByABYt83Yt+BGWCAwb4TxEaBMkWJELVRlK0SVZJlu2yXyxeuxJUXyU2ucpvHSFXu8h55hy8NOJWLLmDOmfnP3//f3Ud5rJZYZhLMM3HOJFb5FBe5NNt8hm0xSycW5fevr/j33//El1WbQSLBopBnWa1yaRg8GQx5djbn2WLNL5+/RzESEVSfnbrXjiHR9rnoBT1MY0F0n4ebmcF//vVX/vm3X/nHX64ZlzK05ZBBOsEgm2ZYyjOtqQw0jfvblyidbBI97KMmsf/tRrz04yFasp5NxZgNdP78esNNI8urzZjXrx/o1Gr082kBFzCtwrJlcNZu83D/DmUmHxohH0bYTzMSoFvMMWwPGAyWdFp9CsKi12wyH7T56uqO6+t3sncue0M6ao1pQ2c9nLCdLvj583co/WSMuoCVJaqi4exsy3R2ycV6R693RqvRpN9qcHm5k7WnbB/dMB5fsJb9slqnpWusp2dMB1M+vf+IMhIN9YCHsMdGSswZ9Od02lNGwyXlSpXJdE2302Mx3zCdrNntPsqhX7G7/UQynUGvNxj2pnSNFp++EcBJ1EtTwMJ2M+lMmlZrimGMqWoNec5ws/vAizff0hUZNK3F85efeXLzgeXmFf5QiNF4xfXVCzbjCd++f0DRhWHRacV9YiKTy6LVOqiqQTZXoFRWef/hN+6+/onN+kb22szml7x/+I3R9DEnDtuB9XZzw6I7+MNlPRYmbTvGYTOTTKUoljRhViCXy9NuT3hz/yMvXn1mcX6F3hxSb3SF5RcGow2mIzPz2YJxv0+/0ePu9jVKXRyO2I5w2I9JpdNUhV04EqFSqTEcrrh6cs96c8uofy57bSqawfbxOzR9gKIorM4v6Lc7tBsd3r68F4ZBL8ETMw5Je8+qUFRxuRz0BwvOF09ZLJ/S7y9Fw4lIUqVYrnN59Q2JdPEAuJg/EsAupXyB3fVOAH1OPEcKTpeNYrFMLl/BZrMwFm2e7R4YjVY09D6t5oB4MkuuUOXi8o7IafIAeLG+ptvqUSkUuNpeomT8buwC6PI4RL8qeQH0el3y4hVvXn2kLyWhVho09R4xAWk2Ozy//YDH6zsAbi8kAymrTCrB8vwMJRBwY7WY8QV8omGOTLZIIBhgvbzi7dsv6LqkU6jQMYayHuLm5o4ffvidUDh8AFyebyXlHul0ivP5FCUkqTpddqLRKJFo7MAwHA5Kl4jDd98Lsy5apS4ajgmJWQ1huNo8xSuDYw84m6zotdpkBHA8GaL4nTbckm48EScUjYgpVdLJU7rdEbvnH9HUhmg04my2JRAKkkhI77fGKGYFk0kAx0sGHen5nMyAQQcl6LRzcnJMOBomehqjUFJJxk9ZLR4L4AM1tUmvM5bSeUG2oOLze6ioOkeW4wPD+WzFTIZDMhmXamijeN0Ojo9NBEN+vPJyXvQqZGW4Lrc8WmxpqKow7DAZnsk4S+IWw0pVDeuJ9X8pn8tgGIlJDumwMopP0t1TD0g9egSwVK6hF5L0KymGVRldZTnZEJZ1jdKpm2TYhdtpOXyzBxzJlNkXtkVqWSsXUOLC8Ej08IvbgaAfXVpIy8Zp5U/RJdRUmHqpRCWbIuSxEg85cTvM/wdsGR2MRgPzsSLmFf8AtJr2hX0i1sdF4DEpKaGw1URUenz/G7Rb8LtFa4uJYwmrrJmEhNlsolnXqatVFMEoVwUwISnb5cElL6ajPholGRCylrEekZGOSe/DYSXmPMF7coTdaj4AH0kz7M006qpE9cBWLQtgOOTBL/nHhXLJZaGblMtJ2GoyMDTp74rDQk4YxgUkIOESA20CfCTNYJPvcjEvSbmH9oC1agklJdpExZCkRF7ulOL+Ooj40aJ+GqcBNPlfifjIBVyE5QCfgLnkQKsc5HAek4uK9j4HZotC26jxX3nnwsurzwfjAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="My Buzz Rickson A2"
+        title="My Buzz Rickson A2"
+        src="/static/1e897bd831c3f8d72c5ff636cb7734d9/799d3/a2.png"
+        srcset="/static/1e897bd831c3f8d72c5ff636cb7734d9/00d96/a2.png 148w,
+/static/1e897bd831c3f8d72c5ff636cb7734d9/0b23c/a2.png 295w,
+/static/1e897bd831c3f8d72c5ff636cb7734d9/799d3/a2.png 590w,
+/static/1e897bd831c3f8d72c5ff636cb7734d9/2a3d6/a2.png 885w,
+/static/1e897bd831c3f8d72c5ff636cb7734d9/5f584/a2.png 1176w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+I have an affinity for jackets and bags. These two central functions to protect and to carry somehow stand out in my mind as being what this whole clothing endeavour is about. In the quest for a more perfect bag and a more perfect jacket, I’ve tried many form factors and many materials, only to come to the conclusion recently that maybe this search has evolved into more of a collection and less of a solution.</p>
+<p>I recently took stock of the jackets I had, and realized that some of them hadn’t been worn in some time. The same could be said for many of the other types of clothing. I have my daily wears (which were being worn out), but a lot of the clothing that had inspired me at the point of purchase or that I’d long contemplated wasn’t being worn and explored.</p>
+<p>Further, despite my attempts at the Marie Kondo approach (which definitely works), I’d hit a point of diminishing return. I really like the clothes that I have. Though I suffer a bit from the <a href="https://www.telegraph.co.uk/men/fashion-and-style/11432284/Blokewear-the-clothes-men-love-that-women-hate.html">Blokewear</a> thing. They either fit a style or an aspiration that I wanted, they were mostly of a quality that was worth preserving, and sometimes there was even an emotional connection or event tied to them. So another option was needed.</p>
+<h2>A More Perfect Closet</h2>
+<p>The digital closet or mirror idea is a trope that I’ve seen quite a bit from the tangible interface/new media world, not to mention the genius that is <a href="https://youtu.be/XNDubWJU0aU">Clueless</a>. What if computers could help us look good with what we have (though software business models being what they are, we’d be sold a lot), and make the inferences and connections between different pieces of clothing for us. No need for colour coordinating, fit experiments, or quotidian creativity.</p>
+<p>Elsewhere in my life, I’d been using different tools that “automated” aspects of personal fitness for years. Strava and TrainingPeaks both have scaling training plans that tie into your phone and your Garmin, effectually offloading the responsibility to plan and personalize. But I’ve come to believe this was creating an intellectual weakness in how I approached maintaining the body. When a training plan ended, or if I got knocked off it somehow by work, a cold, or travel, the return to that curated path felt unnatural. Despite the exhaustive metrics surrounding me, I didn’t know how I got there, so I didn’t know how (or why) to continue.</p>
+<p>More recently, I’ve been using plans from the MT Institute, which just come as a weekly calendar of “Do this.” No tracking, and their app is basically just a text document with a password. It was infuriating at first. But because of that friction, it’s forced a planning and engagement with my fitness that I haven’t had in years. Somewhat naturally by extension, I started to learn the how and why of getting somewhere and keeping going.</p>
+<p>This relates to the wardrobe because the fabric we wrap ourselves in serves to work a kind of daily muscle. In some ways, we are incredibly limited. We have a limited wardrobe, filtered through biases and the influence of media and the social scenes that we came to age in, to address a specific set of needs around environmental conditions (rain, temperature), cultural conditions (formality and clique), and personal conditions (mood, aspiration, functional exigencies).</p>
+<p>But in other ways, it is incredibly liberating. It presents a daily opportunity for creativity, exploration, and novelty with the things that we already own, that are being created, or that others have left behind. With all the cultural weight that goes into forging a particular piece of clothing — anatomy, cultural context, history, material requirements, cost requirements, style, and similar — there’s the daily opportunity for something new to emerge.</p>
+<p>Despite having that opportunity every day (and me more than many with my absurd jacket collection), why wasn’t I working that muscle? I felt there might be a hint in the three things that these text-based training plans were giving me: productive friction, a need for planning, and additive practice. So I’m doing an experiment.</p>
+<h2>Getting Organized</h2>
+<p>I’ve thankfully had a fair bit of experience working across different tools to project management. Everything from spreadsheets to Basecamp to Trello to Podio were potential options. I’d been aware of Notion for a while (mostly via a constant stream of Medium posts about either going to Notion and never looking back, or leaving notion and looking back in sadness).</p>
+<p>Anyway, while my understanding of what Notion could do was pretty loose, the core of it seemed to be just relational databases with a handful of configurable views. Without thinking about it too hard, I thought that was all I needed.</p>
+<p>After all, think about how you structure a wardrobe. You have lots of different types of clothing, all of which fulfill usually one or two functions. They have different properties to them: some are warm, others are waterproof, some are both. Some are made of leather, others of synthetic fabrics, still others of cotton. Some are blue, others gray, others black (at least in my case). So one can broadly generalize “clothing” as something with properties that serves to shield some part of your body. Of course, there are other things. Shoes, accessories, bags, etc. We’ll get to that.</p>
+<p>In general though, an outfit ends up being some combination of those pieces of clothing, plus some of the other things. That combination is most fundamentally constrained by the cultural and physical environment, and what you have available. Then you get the next level down: constraints emerging from ones own taste and context — where did you learn to dress yourself? And then you get additional constraints emerging from the combinations with contrast, clashing, and complementary mixes coming up.</p>
+<p>Ultimately, no system that I put together in an afternoon is going to replace a sense of style and intuition, but what I wanted to accomplish a few things:</p>
+<p><strong>Creative</strong></p>
+<ul>
+<li>To visualize or summarize how a set of things might look together without “going searching”</li>
+<li>To wear more of my clothes more consistently in combinations I hadn’t tried before</li>
+<li>To save the combinations I knew worked</li>
+</ul>
+<p><strong>Practical</strong></p>
+<ul>
+<li>To be able to “schedule” what I was going to wear in advance (i.e. put things out for the next day as part of my other evening responsibilities)</li>
+<li>To track frequency of wears across the different pieces of clothes I have</li>
+<li>To track what I need to repair, tailor, or clean more effectively.</li>
+</ul>
+<p>Understanding Notion as I did, I believed that it would look like:</p>
+<ol>
+<li>Item (with properties)</li>
+<li>Several Collections of Items (Aggregation of properties)</li>
+<li>Schedule of Collections (Record of Use)</li>
+</ol>
+<p>So I set out to do that.</p>
+<h2>Using Notion</h2>
+<p>Using notion to realize the initial vision was simple. At its most basic, Notion’s data manifests as a table or text. I started by creating a list of as much as I could from memory, and then filling that into the spreadsheet. From there, I started to fill out the properties (i.e. columns) that made sense. Name, photo, tags, size, colour. Then more subjective things, like fit and potentially style: things that I could search by. I then went full Mari Kondo on my closet, getting everything out and photographing the lot against a white(ish) background.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/246acd5cb4ab244e1e2c2294aa90b0ac/3a811/ss01.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 64.46991404011462%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC/UlEQVQ4yzWTO48cVRCFJyVzgkgIibyeZ/f09Ov2Y/rdPY+d8dq7ixnWax6yZ20SjC0CDIEtmRU/wCsLCeEECctECDmwZAREEJHwcz7q9kJwpep7q06dOqe6U88XxHmFpULGXZNyPGF7tM9nJx9y89oBamzi9Pts95dsr7/Lsqk5vn7MrGiIbMXtzYbtumIvmuL3hnTCtGCalQx8xa1gxv2g4k7h8+Tkfb7crIl33mHf7/HX6Ql/P/2K384e8evZN/z+7Xf8+cMLXn//jOcP7/L0k/s82X5KJ69mNIsVIxVwevMeDw4/YHDhDfYHF/Hefovemxf4PO7yYrvLLw/v8PLru/x075hnN47459Uf/Pz8JV98fMLZg8f8eHpGJy0rMgH14xTbjxiaEyauT5QVuIF8GxaWMcZyXCYiizlx5NgMBgam7eNGKWM3YCR1I8ntxHlNOdslmGYMLYfu0BAJMubrKzTLNX3TZkcSLw5NdgYmXYl3hmP6ktszLbojiaVmkDR0g5xONE2Z7V5GCaATxEy8AF8EHkpyX7oatsfEUQR+jKtUe6dzxjKFH2TYUmNJ7NRrrHxOJ0lz8nrWPoTJOejVvZz1KkcblssWzKMZH83eY7Vc0TdspnUjgIpluSSra+pFiTG2sT0lgGXTjmtJVy/UDJU0KLF8YSDsg6SgTGOuSFGahzKiRVIsMAVwJdpHUh9WFaOJaOyHdLwoaQPdUY+qgRdFzWHTUJe1gApgFbK5lrJYRlwS/ZJq3kqhGQYSe6UwtP4D1ADngIEwTSUOOKgrWdYV8xZQS5Jx+Wop7tv0xJSsatq8Jt8wbda4eYEhDG0V0dFg+mhgR9ZEi52IjsskpcjL9s5wExxViEY2l8RVL85wwylKVSJTgheF7YZo1i3D/0/LUHbtoMzZLhesmzmuMKzShKM9+QFKKbZD/LzBEOfL9LDd4XKWC0PvfGQ/1h2SFlBTHslDkUb4siI6QbuuYvmOFdFUyTrZOJKvTYjCOU5cMBYzh+Ky6Xj8C+Vq3SlHW8sZAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Spreadsheet of Clothes"
+        title="Spreadsheet of Clothes"
+        src="/static/246acd5cb4ab244e1e2c2294aa90b0ac/799d3/ss01.png"
+        srcset="/static/246acd5cb4ab244e1e2c2294aa90b0ac/00d96/ss01.png 148w,
+/static/246acd5cb4ab244e1e2c2294aa90b0ac/0b23c/ss01.png 295w,
+/static/246acd5cb4ab244e1e2c2294aa90b0ac/799d3/ss01.png 590w,
+/static/246acd5cb4ab244e1e2c2294aa90b0ac/2a3d6/ss01.png 885w,
+/static/246acd5cb4ab244e1e2c2294aa90b0ac/ae92f/ss01.png 1180w,
+/static/246acd5cb4ab244e1e2c2294aa90b0ac/3a811/ss01.png 2792w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>This was the project of an afternoon, done during my son’s naps and an hour my wife was able to buy me. After I got everything in the database (all clothes, shoes, and bags anyway), I started to explore setting them up as separate views and creating the relational structure that would define the “outfit” idea.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/54265456351d98ac773511a38ce588cc/020d3/ss02.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAADOUlEQVQ4yzWT204bVxSG/RKNlIpG4SiwwSY+ewZ7bM+Mx+MZG2MI2JhDEwguRMYNSVMaFFAjhNvSKj1E6V0vqpKItJHSPEmlqomqVqr6JF/XDOrF0oz23vr3v77170ChZJNUc0TTKpmcRn1+nhmtQDSZ8csoV2Q/y3Q8RSSW5FoijW5VsKt1fz+pZGksNjFsh+lEikDeLItQgWAkxvziEj/+8JQrV4cYHh1n4Mog3V4P27YJh8N+hUIhfv7lJc+ePWdkZJSxsXHOz1/w5eNvGBgaJVB2Z/FchmMpcddgdXmBwaFhBt4b9IUfHR8TDAalJkQsyLuXL/PT2RknJydcuvQOoyLaP+nz3dPvLwRN2yVbNIlJy/G0guXYWBWH8ckI2YLBweEhalYjly+SVlQmwxF2P9zj/v4DYglBEEtwu9tjo7PNaHBKHAoLTzCaUoSJglupoxkWetkRFHkiws6suGim5a97vK8JO80okzMrsl4hoWpMhKP+2YBbb5DTLV9Q0XTu3H2Iac0Si6ZY2+iy3b3Lg8Nj8qYrl9Q5fPQZd+7ts7//EWZBIROPsLX5Pus3bzIWihAoScuqtDYVjWPX5tna+ZhYsoSSrWJYS/RPn/Db73+xs7NHIpGT/785e37O1kqVWi6Enp5grqzS63YYnggT8NpNZy9aK1ouqXSBUFjc5hwGhyfZ+qDH2z//5ejgiJy09sebf+j3+xjqJHUzQSE1zq3lCt3d24xMCMPUjIZXHpd4ZgbLrVMsOah5Q0SL5IXV1s6uuG/IhQ6t1Rt+Bp1aFcd1sewKc/NzflJC0zECHuT/BWMZlVqzJSyL/qA0o4TpVNGrNX8tL4PxvqaEuL3UxJIhKXldQu2SkIBPRRMXDr2Wg6K+uLzMk2+/IpNRMHST9fUbvH79K61Wk0ajwebmJs1Wm1evXnJvr0tGyRCZnubrx6ccPDzg6ljwwqEXD89us91mu7NBOi1PzjBYaa9x+sXn/n+9Xuf6wnXK8hQ/2b+PpmWlNF9waXGBo0+PGPQEVbHsuQzLO7Uch7W1FbJanqI4rM02uNXpCKsqbnWWUtnGEX6t9rKEPUtB18moM3JWp7Wy6g/2PyUE7C3oz/IKAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Too Many Jackets"
+        title="Too Many Jackets"
+        src="/static/54265456351d98ac773511a38ce588cc/799d3/ss02.png"
+        srcset="/static/54265456351d98ac773511a38ce588cc/00d96/ss02.png 148w,
+/static/54265456351d98ac773511a38ce588cc/0b23c/ss02.png 295w,
+/static/54265456351d98ac773511a38ce588cc/799d3/ss02.png 590w,
+/static/54265456351d98ac773511a38ce588cc/2a3d6/ss02.png 885w,
+/static/54265456351d98ac773511a38ce588cc/ae92f/ss02.png 1180w,
+/static/54265456351d98ac773511a38ce588cc/020d3/ss02.png 2880w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>The outfit is where things didn’t quite work as I wanted. Structurally, it’s relatively simple, just a matter of creating relationships to the different Clothing items. This ends up looking something like this, with a few variables that help with filtering and a photo for reference.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e6c3585e206d987d7d4c8426cff4e2e8/b3d4b/ss03.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 147.19827586206898%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAdCAYAAACqhkzFAAAACXBIWXMAABYlAAAWJQFJUiTwAAADyUlEQVRIx31V227bVhD0xwTNxVYlS6JEUqQkkiKp+8VOnGsf0utbHlIUeSiKokDRNG6ABL24ifOxk52llqEtOw8LHlGHc3ZnZvfs7TdaWB3fw3S1geOHCKIRkvEM/iAqfg8T9AYxstkCJ4++wjAdI53M0en1cdjx8GWrg3q7W8bezYM6nv/0Au/OP+CPV6c4e3eO/99/wJ+nr/H02x9w9v4cv798hV9+/Q0vT//CP/+d4e9/z/D6zVs96OCwjcYWjOB7tmh2fT0xny3hBgNdM/ie/1vwXcNxMRzlqDUdBbTQDPmyK+mzhK4A8UkQvme03B5CoaEfp/D7kVLCzDxZ94QOUtJPMlnHRYb8yMC4cSB/cm0ZdXohsukcqUSUjRHnE4yEYz4HkiUzjbKJHlgCEsAXMJ7EcpQXed6uN7HarLFYLXHjdg0UkO/u1Fuy/lQq35clE5VldYO+BoFMMR7GskI5nYrzYO4hJVVl61VRTJAgSpQjglQ3tL1ArTJdbjCer7RUgtu+HdsYoBsOlWBT1TIkv8yQoBFD+CLXl4F2APkhlasCWobkd5jmqnZMAZL0SrASsK0cDvQjqmrlWIZUnirH+RSJxGSxVj9SDDvYktgzs/JDZlJtpyLDnnJLyxCYWYZbL5q9djKkyl5/qKatAjJDCkCPZdOFZLnQPs7nSyw2dzXbqwGFN/LHqG74JMpIBeHBd8SH5r39rfd2SqYQbD9HBOBvAtkmisK2osrt7f/VQ6+1DbNjG9FnHF/kh5nwyRZjyZPlWkudrY4uuGEHkDzRh+wKisBuYehhwmm3N1AnHDrF9GFYRzW2UXYKy/O2YOwW8lTtgkbXQysIse84uNVoKnfkUTmUfV/I86ZErcohQSzDKkf7LQeRG+PZ7Cl+3HyPJ6N7mB/d1cm9efAY63yMnx8+wIuTE4SuLwdse5lkF40/uMBHTQA9t4/j7AibdI3YH5VTKZQIpAmWyQiLOIHTcTXLomQRhP1KHx4cOuUoUh9KueuH9xHmqZTcQE3+13I5spqkoa1RlmzzsJiJkWZATgtAUdlLsJl/LfENXI+UOBdG3JWikD/jkG1FcRpttwB0Exwvv9NwupGYuVleD5dNveNDcsOyOY3N4GzJYZYhynOMFyuJtc7GZDy93ocENC+ydHqOZVkvawXBUNvQ8QN9WtdcC8jWK26wVJueV6ndenZ3WKmfLdlUZqnMpHoH22gj+HWtttPLVhZB/e20qc5DBQyLi9+GxmWwnWnDsmgXepHlcv5VxxcnDac0h8JsfaTUcB/Xl0v+CLoy1DnLxZyaAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Model of an Outfit"
+        title="Model of an Outfit"
+        src="/static/e6c3585e206d987d7d4c8426cff4e2e8/799d3/ss03.png"
+        srcset="/static/e6c3585e206d987d7d4c8426cff4e2e8/00d96/ss03.png 148w,
+/static/e6c3585e206d987d7d4c8426cff4e2e8/0b23c/ss03.png 295w,
+/static/e6c3585e206d987d7d4c8426cff4e2e8/799d3/ss03.png 590w,
+/static/e6c3585e206d987d7d4c8426cff4e2e8/2a3d6/ss03.png 885w,
+/static/e6c3585e206d987d7d4c8426cff4e2e8/b3d4b/ss03.png 928w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Then, when browsing, I can view the individual outfits with a description and a focus on the jacket.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/214e54d4a5d98d12bdcea22c2c96f703/573ad/ss04.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 83.80681818181817%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAABYlAAAWJQFJUiTwAAAEI0lEQVQ4y22T+0/TVxiH+0/skizZdCpMmCAgtKUtUFoKBUqh0BstlLtOkXuhE2TcJiB3UAIomoHTkczEGTOnWzLc8IIOEcVtgAjsH3l2vt/C4g/74ZP3nJNznvdz3ryv4misilRzKmnpJoymZLQJWrSJOvSGRFJSDRiMepz5btKzrISGRRAZE0t6ZgYWa5Yc09KDb72+QlxeH4pYtYaB3kaG+xppDZRT7rNSUpDF6eO5nPGXUH/Sw9r8bW5enSY0NJrDoZ9zNlDDtelhLgy1MXy+Qaiejb+XWHm1iuKYOp6xwWaGegM01ZVSWpCNz23hREkugdpiHA4XpcVVeBxlREer2b8vlHyXnSuT/Qz2fslAdw2DPQ38ufqU5ZWXwmG8hosjnQz1t+IXwDJfLqWFNmpOevHYMzCnZpOSWUH0MT3KY0pCQo6QYU5nfPRrznfVC2Ct+F2A1y8XWX7xUnKo4cJYD5MXe+nu8DPS3yYcdzA+1IVV1MZtLyfTWkxk2FF0Si0HD4RhMpro723hXFu1ANYzOtDC6ooEXJEc6piaHObyxABT433MXbvE3OwU31+/zNy3M/i81YyMzVBZVIHqSBSHQiLRJ+g5XmyjxV/KQI+f0f6zrCw/CgLjBHD6yiTfXB3n9s057v/4A/fu3GL+3h1+/uUBh8PVXLp8jZq6DsLDY4k6qsZiTqHMaxY19tHX7ZfLtbz0kOd7Dmdmp7l16zsW5n/lkdCT33/jj0cLXBobITJSSVdzK5ZMB/sPRhAWFiPqbKdKdEGgxkdvZwMjg208X1rg+fKLoMPrN2Z59myRjbUN/lpd5c3aGqtLz0SrTKBRqsgwGDnw6WdUVpwS8Eb8VUVi7RBdUcS59jrRPl2svFjcBWp03P3pLltbW2xv77C1ucn227dsrq+x8GAeXUIyH3z4MZ/sC+FsZSU3Jvpob66m+osCGqp9dLTWMjrczevXr3iy+DTo8N79+zJQ0j87O7I21tdlqNfj4733P+LQwXDCDofT+VUtPZ1+6qqKqZeA7fVMTIyy/uYNDx8/RhGtjKeqzk9D0xlq/QFqG5rwB5pl1TUGxMjlEKPUoIxPIDHZiNPtIteRR1a2VSgLm1i7vAXibRPHT51GcSQ6FqM5k6KyClk2Zz75vmJKKk6Q5/ag1CaSYDChTU5BqzcSp01CJcqg1afI0iQZUScmE6dJICouHkWk6H5TugW72yvL5nCTY3eRI6LNKdZi9Ky5DrLFmcWWR65IKLmWkiQaU/+T3mSWEyoiYuIwZWRhz/fuAoJyegrJc3nkBEGgE0tOnrxPs2SjE44l6J4kaLxwKjs0pGVgzXPiLizCW1QqOy0sKZfdJKWkoRGZpey63W9LAOn8XUkONUmGIFClS5LpUlSLsVKLqNqVvP8fqd65s3dPGpJ/AZMh+opGAykJAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Thumbnail of an Outfit"
+        title="Thumbnail of an Outfit"
+        src="/static/214e54d4a5d98d12bdcea22c2c96f703/799d3/ss04.png"
+        srcset="/static/214e54d4a5d98d12bdcea22c2c96f703/00d96/ss04.png 148w,
+/static/214e54d4a5d98d12bdcea22c2c96f703/0b23c/ss04.png 295w,
+/static/214e54d4a5d98d12bdcea22c2c96f703/799d3/ss04.png 590w,
+/static/214e54d4a5d98d12bdcea22c2c96f703/573ad/ss04.png 704w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>In this case, I would frame this part as the “Productive Friction” component. Before I was just collecting data and constraints, now this is combining these pieces into a greater whole that (hopefully) works out.</p>
+<p>Though this solution is “good enough” for now, I can’t wait for Notion to develop an API to query these objects and relationships directly, or to programatically establish filters. Basically, my ideal would be to create a collection of items with tags, and then have those items laid out in a gallery so I could see them visually. As it stands, there’s still a bit too much friction.</p>
+<p>The manual way to do this is to create a view for a table, and then filter according to relationships. Unfortunately, since those filters can’t be assigned to a variable, the whole thing has to be done manually (as far as I know). The ideal would be to pass in a series of properties to the view that could manipulate the filter, but here we are.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/14c0ea923c17cd9499b67323b844e570/fa901/ss05.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 64.01826484018265%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACYklEQVQ4y31Sy27aUBD1r7SLqEohvN/GNjbGT2ywMSQmhZQktBBIC4lSqa9F1HbRKPtuoq6qfubp3BsRVVGSxdGM78ycOZ4ZIVeuoaZoyJSqSGTy2MmVkMwVsZ3Kkl/kSOVLyBQryBKYLYsyKlIDxZrE/VxNRunoAmndgxDvx/j88QyO6yAIA6iahtPlHFdXP7Ber6CoGiS1CbPdgdvtwSJrtn1YXpfDCyIeU90uJN2CsFotcPnlHP2oh8V8hsnrMdkp/v65IX8Eo2XAcj0olOx0AvR2h3D8AC3HuyMLd2N6I0JVhzCn4ulkiNGrfbw7XWJ5MsPR4QHW708QdHz4ng/ddKAaNmwi6kQD2KRMt1yu0HQpp9fnvqS1IESDCIM+dY4ijMcH2ItjxPEeRqMhXN+H43UgU2KjZfECkeYt0ghk3aA3E3KzhXqjycHmKYjkBIOYJ9cJvKihoyarmAz3MY2HsEkdWxyLleoKAjdE0O1Dd9pcKeNgsSwtVmCb8kIK2t5tEXXXbZf7dthDgzWh2bCiOlm2XZVUKfReoaYsbxNjFyOMJ4f4ffMLTrMMrZpGJfMCs+kI19c/sZVM85PZnM/mhJLZAj+t+zEG4fjNFMvDCEZlCx0tC7WaRD7xDN++nlFRGal7ZP9j5943g6CpEvZ8CaaYgF1/CTHzHKFRxPfLT6TklihdKN+puSN7oAEnlBQZrtlA25Rh6XVochmL412cf7jAdjrHkxghw1OEm29BpmG+pTlO6GDbfgjDC+gkbL6xVL744AwfU8tnWBAlKIZF93W7sSptjm+TzuOx33pK4T9uEtPORIdf+AAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="A Single Outfit"
+        title="A Single Outfit"
+        src="/static/14c0ea923c17cd9499b67323b844e570/799d3/ss05.png"
+        srcset="/static/14c0ea923c17cd9499b67323b844e570/00d96/ss05.png 148w,
+/static/14c0ea923c17cd9499b67323b844e570/0b23c/ss05.png 295w,
+/static/14c0ea923c17cd9499b67323b844e570/799d3/ss05.png 590w,
+/static/14c0ea923c17cd9499b67323b844e570/2a3d6/ss05.png 885w,
+/static/14c0ea923c17cd9499b67323b844e570/ae92f/ss05.png 1180w,
+/static/14c0ea923c17cd9499b67323b844e570/fa901/ss05.png 2190w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Finally, actually making a day-to-day decision is tied to seeing those combinations and those other external needs. In other words, the need for planning. Filtering by the relevant constraint is the key part here. From there, I can take a look at the options and what I need for the day, and make decisions on the margins.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8e38371affb593ea9bd2ff9c4277c81c/440c4/ss06.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 101.96078431372551%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABYlAAAWJQFJUiTwAAADpklEQVQ4y41VS4/bVBid31MmzXPi2E4cOw87fsZOPImdxzhOgjPt0Mm0hZaq06lY0BUgQDBlhZAQWyRWSPwBVqz4QYfv3rQ0AoSyuHLs+Dv3nPud8/koXxEgiCp6rg/HH0K3XAh1BblSBey/t+tuuUrrBHl+raJwUkNJkFCka7kmo8x+V0UcsQdtowel1UGt0cSdfIkXFKsScm+KcyUCoveKgsyB2AYVUYastVGlGqnZ4qsqKztAgwArYh3HZQEFKhIVFYbtoCbXcSLVITYUiB0LajBFsVbngIVKDQLVSZaFXLHCN9oxFBWYqy3s7BH09AMIwwWCyQRPrhaYT+boOw5ef/MKk2QJJwgRRlNYXkCbaujS8XjDEepaB41WlxSqBCg1YZ9/hMH2Gt79p5CiDOnFJf7843dcXjyGY7Tx4w9fY5ndQxhPMU/XCE4jDtAxHcwWKwxGMWw6fyb7qCQ3oS8v0Xv/IVrpA0hxBi9OcHv7HcbxDGEYIDvPOLt+OIJJzWMNZIAtw0IwivgG3uCUsyaGCqzNhxgSw9HmY2jxPQhtEz4VTxdLAonofBvUgA7isxSnkxm6xIwVt3sWfxbPFzCc/jvJySOSll1huHiK3nwLUXcQkozBeAJ3EELVLVhWD6skgm73CcjmxbbnY7VcUQM9NDvGjiHrasMLUTUHKBh9lAwftZYOn6Swc9HpZYXkKQTqjSZcJgMVCFCzA3QdH3W1DbXb2wFyzzFv0TVPfssVyhDIT8vZGmmacYkyFZiux89QbRvoktRwOOCWYnZjBi+9NfbfKXiTiGMClalRr2YXiJwQRj9AVVLxxWcv8PrTa7iShufpKX6+fY5StbaXot3iDPcjdkyRE+sq7qeP4fljdCwbZfLqt1/e4KfPn8GrNPDbV5/g11++p/dP8M/6o/0btljMKtR5N4y5xJ7bJ3+1kZzF2Kzn0JQWBr6P65uXPMM8lv8HeKdQgdnr4uHVBu44QVPVIROgrHURzVMk6wzjWUKs6/9i99+ANBxMN8D2yQvk1AB3WyH8yQOyhUk2innUWDJYtw8ArOG9QgmaOcTo/IbCH6Gs2LCGawLsEcM5kuUao+mc2+QghuxMhHqTu39KA2FGSyHTtrsmNukFstkQpmWQDzWaOMJhTWEDluWT5ZQN3Ua7S4AOFmdbuH4IkxJyoOQdIBuUo+kZAcZ8KLBiNkztYMCTw+7ZcMgfypABMsnJKkNEHdV0kw/QXOmdgfc/Dfv1fwHRSdaamBvhpwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Filter View"
+        title="Filter View"
+        src="/static/8e38371affb593ea9bd2ff9c4277c81c/799d3/ss06.png"
+        srcset="/static/8e38371affb593ea9bd2ff9c4277c81c/00d96/ss06.png 148w,
+/static/8e38371affb593ea9bd2ff9c4277c81c/0b23c/ss06.png 295w,
+/static/8e38371affb593ea9bd2ff9c4277c81c/799d3/ss06.png 590w,
+/static/8e38371affb593ea9bd2ff9c4277c81c/2a3d6/ss06.png 885w,
+/static/8e38371affb593ea9bd2ff9c4277c81c/ae92f/ss06.png 1180w,
+/static/8e38371affb593ea9bd2ff9c4277c81c/440c4/ss06.png 1632w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Calendaring is usable but a bit inefficient. This is an example of the past few days to test out this whole idea. Unfortunately, Notion lacks integration with Google calendar, so the calendar view itself ends up being quite limited.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/701b32b3aab6abd4bc4b65354371105f/dad77/ss07.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 25.548141086749286%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA4ElEQVQY01WR63KCMBCF80C2igRCINwCKI1Kax2vMzq+/0scd1Es/XFmv8lkz55shNQGyuTQWYm5ivHph/BCjalUvQaeBdE/jnMLu/xCTH126bBYddBpAeFHCVSSwY9TTOkiG7K4sWc54tf5xJNw3Rb7yxWNW2N3PGN7OCG1DURARiFN6aoGhviDmiQN4RSscWoezsw15BCRQVJYZGVF9SlRNC3OtzscRd58/+Jnf4Ip63ea2Sv1mIc68YKe2ZzF4YTOq/79tnUwtkbdrpDQfv5M1HufY7HRsOOIdsf/wIYPnf2oNI2kBEgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="ss07"
+        title="ss07"
+        src="/static/701b32b3aab6abd4bc4b65354371105f/799d3/ss07.png"
+        srcset="/static/701b32b3aab6abd4bc4b65354371105f/00d96/ss07.png 148w,
+/static/701b32b3aab6abd4bc4b65354371105f/0b23c/ss07.png 295w,
+/static/701b32b3aab6abd4bc4b65354371105f/799d3/ss07.png 590w,
+/static/701b32b3aab6abd4bc4b65354371105f/2a3d6/ss07.png 885w,
+/static/701b32b3aab6abd4bc4b65354371105f/ae92f/ss07.png 1180w,
+/static/701b32b3aab6abd4bc4b65354371105f/dad77/ss07.png 2098w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>What was useful (again, an API would be better) was filtering calendars by day, and then adding the view inline as shown below. This allows a trivial dashboard to be created, though again, it’s not particularly useful without a way to dig into the relations.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/469bf312bc8b119e043adfd109d5c72d/020d3/ss08.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 57.013888888888886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACUUlEQVQoz3WSy2sTURSHR9wKStW2UAnUPkKTzEweM0knmWQyk5lk8uojTW1LCRRqrVSxXVRLFXe16EKogm4EUUREBFe60IW49a/6vDPYkoouDnfmnnO/3zm/eyXbq+PUGhTKFXKaysjwEGY6w7u7axw+2md3Z42JqMrLgx1udD0Oe9f49fED33/+oFe1mTGyRIYv0TFz3N9/iGS7VSy3RtlxyShTSNJZhgZGOFxt8ezFEXsPtjh3eZwn26s4epS9zgJfHj/l/ddvFBUVM5ZgcOAC2YlxNrfuIXmNFm6jje3VUGITAniGeOQqB2vzvHl7RO96l/MXR3m+UUceHWR3aYVXt7d5/ekz2uQkrqoyNjJEInKFxZUNJMvzac13xdh1EskUkbEoclxloVnhzq1lFE1jckqhUTZIJOJYpoUv7Gl2FpHlJFpKI56QUWSVadNBMoo2TrVOThSmc3lSWQM5k0UvWLQ7y8x1l8hbNlFVQ9UFNK0TE5CYkhL/08haLlzDb5GT8paD35rFKNkhTBEwRST0fAm33sJvtsmLXEaIJcXhIKeKNRlARG0Qyp8I9qWCULerPtlCKQQGm4mULi7JYX1zg2qrQ7niU6p4oaieL57UHccxLAQGHZa908B4MkPFb7O6tU+8OEu9s05QV6pUw9rMdOEUpB8qmaJD12+GHoYji005rWFYLgu9m1i1GUquGL09J0SaITQAnhq7H+iId1gRDzvo4MRDEZphCm9nhFhDjFoO/QyETdsNL++/HQaqwcM+6bCvUO4zO7jBvyH/8vA3zVCAIPp5UrUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Dashboard View"
+        title="Dashboard View"
+        src="/static/469bf312bc8b119e043adfd109d5c72d/799d3/ss08.png"
+        srcset="/static/469bf312bc8b119e043adfd109d5c72d/00d96/ss08.png 148w,
+/static/469bf312bc8b119e043adfd109d5c72d/0b23c/ss08.png 295w,
+/static/469bf312bc8b119e043adfd109d5c72d/799d3/ss08.png 590w,
+/static/469bf312bc8b119e043adfd109d5c72d/2a3d6/ss08.png 885w,
+/static/469bf312bc8b119e043adfd109d5c72d/ae92f/ss08.png 1180w,
+/static/469bf312bc8b119e043adfd109d5c72d/020d3/ss08.png 2880w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Notion is a pretty impressive tool. It’s a great way to create content and build up something data-driven pretty quickly. Ultimately, it got me a lot further than I expected, but if the <a href="https://www.notion.so/Does-Notion-have-an-API-I-can-use-4541b07a5caa46dba0026624646118c0">Notion public API wasn’t already a critical part of their roadmap</a>, I would probably be trying to figure out how to export all this work and build a small custom solution.</p>
+<p>End of the day, a custom solution would be better, but as a catch all for organization (eg. You can see in the screenshot that I’m also using Notion to plan and track these posts), I’m pretty happy.</p>
+<h2>Getting to Outcomes</h2>
+<p>Technical details of how I’m approaching this aside, does it actually work?</p>
+<p>I’m not sure yet. I’ve worn colours and individual pieces over the past few days which I haven’t touched in months. One pair of shoes had to be dusted off (though thankfully I’d taken good care of them previously). So only a few days in, I do feel like it’s having an impact.</p>
+<p>My hope is to follow this pattern for a little while. This is where the additive practice part comes into play. A decade ago, I followed blogs like the <a href="https://www.thesartorialist.com/">The Sartorialist</a> and <a href="http://www.facehunter.org/">FaceHunter</a>, but never understood quite how someone got from where I was to where some of the repeat subjects on those blogs found themselves. Now, I don’t feel that same need, but I do want to use what I have for the greatest utility and the greatest fun. In this case, it means the goal is to reduce my sense of decision fatigue and increase the variability and interest in what I wear. So I’ll practice. I’ll follow this post up in a few weeks or months with the outcomes.</p></section><hr style="margin-bottom:1.722rem"/></article><footer><div style="display:flex;flex:1 0 0;flex-wrap:nowrap;margin-bottom:4.305rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.861rem;margin-bottom:0;min-width:50px;border-radius:100%"><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAIEBQb/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB6s45mumgz5mxNIH/xAAcEAACAgIDAAAAAAAAAAAAAAABAgADBBEQMTL/2gAIAQEAAQUCLaCb4uvCwZKrEcOvb1ew5E//xAAVEQEBAAAAAAAAAAAAAAAAAAAgIf/aAAgBAwEBPwGD/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRAAAgIBBQAAAAAAAAAAAAAAAAEQEQIhIjJRcf/aAAgBAQAGPwI5XDS1Zilu7otD9h0f/8QAHRAAAgIBBQAAAAAAAAAAAAAAAREAUUEQITFhcf/aAAgBAQABPyFwYWRPY40Tq6hMuAdEZvbuMvZgA/kVCQc//9oADAMBAAIAAwAAABAD30P/xAAZEQACAwEAAAAAAAAAAAAAAAABEBEhMUH/2gAIAQMBAT8QFDOrq//EABYRAQEBAAAAAAAAAAAAAAAAABEBIP/aAAgBAgEBPxArj//EAB4QAQACAgIDAQAAAAAAAAAAAAEAESExQVFxgZHh/9oACAEBAAE/EEO2GL7m6VnRnpRKi6o4GvIykzY/R53iHLSarBHpiRdiX9jiSwTU34HBxP/Z" alt="Andrew Lovett-Barron" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/e0a588dfd9955e12c8d44cb247594f6f/30d3a/profile-pic.jpg 1x,
+/static/e0a588dfd9955e12c8d44cb247594f6f/66c95/profile-pic.jpg 1.5x,
+/static/e0a588dfd9955e12c8d44cb247594f6f/aacbd/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/e0a588dfd9955e12c8d44cb247594f6f/30d3a/profile-pic.jpg 1x,
+/static/e0a588dfd9955e12c8d44cb247594f6f/66c95/profile-pic.jpg 1.5x,
+/static/e0a588dfd9955e12c8d44cb247594f6f/aacbd/profile-pic.jpg 2x" src="/static/e0a588dfd9955e12c8d44cb247594f6f/30d3a/profile-pic.jpg" alt="Andrew Lovett-Barron" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Andrew Lovett-Barron</strong>.<!-- --> <!-- -->Andrew builds<!-- --> <a href="https://knowsi.com">Knowsi</a> and is a<!-- --> <a href="/security">Security Studies MA student</a>. He is a Canadian/American dual citizen living with his wife and son in Copenhagen.<br/><a href="https://twitter.com/readywater">You should follow Andrew on Twitter</a>, <a href="https://www.linkedin.com/in/andrewlb/">Linkedin</a>, or just <a href="mailto:alb@andrewlb.com">email him</a>.</p></div><div id="newsletter"><h3 style="margin:0;margin-top:0;margin-bottom:0.4305rem">Subscribe to my Newsletter</h3><p style="font-size:0.861rem;line-height:1.2915rem">Once or twice a month. I write about software products, design, politics (with a focus on security), and reflections.</p><form style="margin-top:1.722rem" id="newsform"><label for="name"><div class="sc-bdVaJa UoSJW"><div class="sc-bwzfXH jXgUcd"><label class="sc-htpNat ilmQEB" for="name">Name</label><input type="text" class="sc-bxivhb bCmlkr" id="name" name="name" value=""/></div></div></label><br/><label for="email"><div class="sc-bdVaJa UoSJW"><div class="sc-bwzfXH jXgUcd"><label class="sc-htpNat ilmQEB" for="email">Email</label><input type="email" class="sc-bxivhb bCmlkr" id="email" name="email" value=""/></div></div></label><div style="display:none"><label for="hp">HP</label><input type="text" name="hp" id="hp" value=""/></div><div class="mailsignup__ButtonBlock-sc-10ge6di-0 iHdVIn"><a class="background__Button-sc-1vxa3aj-0 gwNELf"><button type="submit" name="submit" id="submit" class="center">Subscribe</button></a><p>By subscribing, I consent to andrewlb.com emailing me about blog and product updates.</p></div></form></div></footer><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/thesis/01-idea/">← <!-- -->MA Thesis Idea on Innovation &amp; Conflict</a></li><li></li></ul></nav><mailsignup></mailsignup><div id="comment"><div class="just-comments" data-apikey="adbf3de4-0508-4600-9524-a2425165e346" data-disablesociallogin="true" data-hideattribution="true"></div></div></main><footer>© <!-- -->2020<!-- -->,<!-- --> <a href="https://www.andrewlb.com">andrewlb.com</a> and<!-- --> <a href="https://www.stupidsystems.com">Stupid Systems LLC</a></footer></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-11256323-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/writing/intentional-wardrobe/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-70e424680283e50ad50e.js"],"component---src-templates-blog-post-js":[],"component---src-templates-category-list-js":["/component---src-templates-category-list-js-00b90cec4a27fb38cad5.js"],"component---src-templates-tag-list-js":["/component---src-templates-tag-list-js-a988336be9043292abba.js"],"component---src-templates-tags-js":["/component---src-templates-tags-js-77b9848c41f64c6438f1.js"],"component---src-pages-404-js":["/component---src-pages-404-js-d08a54280d03226d286e.js"],"component---src-pages-index-js":["/component---src-pages-index-js-1abfc4deb1e1c8f38cf7.js"],"component---src-pages-tags-js":["/component---src-pages-tags-js-21979d80121325e5b0bf.js"]};/*]]>*/</script><script src="/commons-443555f6239c4b74e6f5.js" async=""></script><script src="/app-70e424680283e50ad50e.js" async=""></script><script src="/styles-097bd50dfd9589f9e64d.js" async=""></script><script src="/webpack-runtime-482f57f241ddc236099e.js" async=""></script></body></html>
