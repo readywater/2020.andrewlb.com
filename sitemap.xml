@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://log.andrewlb.com/security/failed_states/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/short/audible_to_goodreads/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/writing/intentional-wardrobe/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/security/thesis/01-idea/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/writing/reflecting-2019/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://log.andrewlb.com/security</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/short</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/writing</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://log.andrewlb.com/security</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://log.andrewlb.com/tag/security</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://log.andrewlb.com/tag/essay</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://log.andrewlb.com/tag/terrorism</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://log.andrewlb.com/tag/failed-states</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/code</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/reading</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/audible</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -14,7 +19,6 @@
 <url> <loc>https://log.andrewlb.com/tag/fashion</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/product</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/notion</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://log.andrewlb.com/tag/security</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/thesis</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/makersbreakers</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/2020</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -27,6 +31,8 @@
 <url> <loc>https://log.andrewlb.com/tags/audible/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/code/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/emil/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://log.andrewlb.com/tags/essay/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://log.andrewlb.com/tags/failed-states/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/fashion/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/knowsi/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/makersbreakers/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -36,6 +42,7 @@
 <url> <loc>https://log.andrewlb.com/tags/reading/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/reflection/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/security/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://log.andrewlb.com/tags/terrorism/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/thesis/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
