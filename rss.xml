@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Andrew Lovett-Barron]]></title><description><![CDATA[Some writing by Andrew.]]></description><link>https://log.andrewlb.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Jan 2020 12:17:20 GMT</lastBuildDate><item><title><![CDATA[A More Intentional Wardrobe]]></title><description><![CDATA[I have an affinity for jackets and bags. The two central functions to protect and to carry somehow stand out in my mind as being what this…]]></description><link>https://log.andrewlb.com/intentional-wardrobe/</link><guid isPermaLink="false">https://log.andrewlb.com/intentional-wardrobe/</guid><pubDate>Mon, 20 Jan 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Andrew Lovett-Barron]]></title><description><![CDATA[Some writing by Andrew.]]></description><link>https://log.andrewlb.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Feb 2020 11:28:27 GMT</lastBuildDate><item><title><![CDATA[Import your Audible Library to Goodreads]]></title><description><![CDATA[Photo by Mohammad Metri I wrote a rudimentary python script to bulk import your Audible library to Goodreads. I’ll caveat with a statement…]]></description><link>https://log.andrewlb.com/short/audible_to_goodreads/</link><guid isPermaLink="false">https://log.andrewlb.com/short/audible_to_goodreads/</guid><pubDate>Fri, 07 Feb 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.75062972292191%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAByWrkrEB//8QAGBAAAwEBAAAAAAAAAAAAAAAAAAIRARD/2gAIAQEAAQUCVbrKsheU/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQMBAT8Bp//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABcQAAMBAAAAAAAAAAAAAAAAAAAgMSH/2gAIAQEABj8C0pU//8QAGRABAQADAQAAAAAAAAAAAAAAAQARIXFB/9oACAEBAAE/IQ3AgaDPZy8RtLc3/9oADAMBAAIAAwAAABBUL//EABgRAAIDAAAAAAAAAAAAAAAAAAABESEx/9oACAEDAQE/EEkYUf/EABYRAQEBAAAAAAAAAAAAAAAAABEBEP/aAAgBAgEBPxArn//EABoQAAIDAQEAAAAAAAAAAAAAAAERACExQXH/2gAIAQEAAT8QMimTvfIdscRUK6xZCNzyFMAkcqqM/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;you are what you read&quot;
+        title=&quot;you are what you read&quot;
+        src=&quot;/static/2f52cf9db28877eae611366411d3e758/88218/you-are-what-you-read.jpg&quot;
+        srcset=&quot;/static/2f52cf9db28877eae611366411d3e758/7237a/you-are-what-you-read.jpg 148w,
+/static/2f52cf9db28877eae611366411d3e758/0cfdf/you-are-what-you-read.jpg 295w,
+/static/2f52cf9db28877eae611366411d3e758/88218/you-are-what-you-read.jpg 590w,
+/static/2f52cf9db28877eae611366411d3e758/77d57/you-are-what-you-read.jpg 885w,
+/static/2f52cf9db28877eae611366411d3e758/5a917/you-are-what-you-read.jpg 1180w,
+/static/2f52cf9db28877eae611366411d3e758/0c460/you-are-what-you-read.jpg 5955w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+Photo by &lt;a href=&quot;https://unsplash.com/@mohammadmetri?utm_source=unsplash&amp;#x26;utm_medium=referral&amp;#x26;utm_content=creditCopyText&quot;&gt;Mohammad Metri&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I wrote a rudimentary python script to bulk import your Audible library to Goodreads. I’ll caveat with a statement: this is still pretty manual, but it automates the parts that are most time consuming. Overall, it shouldn’t take more than 5min to get your whole audible library into Goodreads. Then maybe just re-run the process every few months.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/readywater/b71c11428a151654474cdb673756319e&quot;&gt;You can view the script here&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Get Your Audible Data&lt;/h2&gt;
+&lt;p&gt;It procedurally builds off of another script that &lt;a href=&quot;https://www.themodernnomad.com/audible-statistics-extractor/&quot;&gt;exports your audible library&lt;/a&gt; , which is required to get it working. To run this script, &lt;a href=&quot;https://www.audible.com/lib?purchaseDateFilter=all&amp;#x26;programFilter=all&amp;#x26;sortBy=PURCHASE_DATE.dsc&amp;#x26;pageSize=50&quot;&gt;visit your audible library&lt;/a&gt; and run the script on each page by hitting &lt;code class=&quot;language-text&quot;&gt;command-option J&lt;/code&gt; to open your console (in Chrome and most other browsers), and run this script (which is just a minified version of the &lt;a href=&quot;https://www.static-18.themodernnomad.com/wp-content/uploads/2019/01/Audible-ScreenScraperJanuary2019.txt&quot;&gt;one linked above&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gist.githubusercontent.com/readywater/b71c11428a151654474cdb673756319e/raw/02f4e875aa1e55986c6e08a9dffd818bd7d92163/minified_audible_table_generator.js&quot;&gt;Link to script&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This will grab your library and turn the page into an html table. You can then easily select all on this table and paste it into google sheets or excel. Make sure to remove the repeated header data, but keep the top line.&lt;/p&gt;
+&lt;p&gt;You need to do this &lt;strong&gt;for each page&lt;/strong&gt; of the library, so if you have 50+ books, simply go through each. Save the output; you can keep the file in an excel format or export to CSV.&lt;/p&gt;
+&lt;h2&gt;Convert the Data into a Goodreads Format&lt;/h2&gt;
+&lt;p&gt;From here, you’ll want to run &lt;a href=&quot;https://gist.github.com/readywater/b71c11428a151654474cdb673756319e&quot;&gt;the python script&lt;/a&gt;. Save the file to whatever directly you’ve stored your audible spreadsheet and open your terminal. On Mac, do this by typing &lt;code class=&quot;language-text&quot;&gt;command space&lt;/code&gt; and writing &lt;code class=&quot;language-text&quot;&gt;terminal&lt;/code&gt; in the spotlight search.&lt;/p&gt;
+
+        &lt;deckgo-highlight-code language=&quot;python&quot;&gt;
+          &lt;code slot=&quot;code&quot;&gt;import pandas as pd
+from isbntools.app import *
+
+df = pd.read_excel(r&amp;#39;/path/to/the/saved/excel.xlsx&amp;#39;)
+
+# Fetch ISBN from title and author using isbn tools
+df[&amp;#39;isbn&amp;#39;] = df.apply(lambda x : isbn_from_words(x.Title + &amp;quot; &amp;quot; + x.Author), axis=1 )
+# Convert Dates
+df[&amp;quot;Buy Date&amp;quot;] = pd.to_datetime(df[&amp;quot;Buy Date&amp;quot;], format=&amp;quot;%m-%d-%y&amp;quot;, exact=False).dt.strftime(&amp;#39;%Y-%m-%d&amp;#39;)
+#df[&amp;quot;Buy Date&amp;quot;] = df[&amp;quot;Buy Date&amp;quot;]
+# Add to audible
+df[&amp;quot;Bookshelves&amp;quot;] = &amp;quot;audible&amp;quot;
+# Map the Date Read to the Buy Date as a loose proxy
+df[&amp;quot;Date Read&amp;quot;] = df.apply(lambda x: x[&amp;quot;Buy Date&amp;quot;] if x[&amp;quot;Time Left&amp;quot;] &amp;lt; 30 else None, axis=1)
+# This doesn&amp;#39;t actually register, but the export that Goodreads provides is Exclusive Shelf for the read status
+df[&amp;quot;Exclusive Shelf&amp;quot;] = df.apply(lambda x: &amp;quot;read&amp;quot; if x[&amp;quot;Time Left&amp;quot;] &amp;lt; 30 else &amp;quot;currently-reading&amp;quot; if x[&amp;quot;Time Left&amp;quot;]/x[&amp;quot;Minutes&amp;quot;] &amp;lt; .8 else &amp;quot;to-read&amp;quot;, axis=1)
+# So I fix it by just appending the status to Bookshelves depending on read status. i.e. if less than 30min left, it&amp;#39;s read. If you&amp;#39;ve listened to more than 20% of it, it&amp;#39;s Currently Reading
+df[&amp;quot;Bookshelves&amp;quot;] = df.apply(lambda x: x[&amp;quot;Bookshelves&amp;quot;] + &amp;quot; &amp;quot; + &amp;quot;read&amp;quot; if x[&amp;quot;Time Left&amp;quot;] &amp;lt; 30 else x[&amp;quot;Bookshelves&amp;quot;] + &amp;quot; &amp;quot; + &amp;quot;currently-reading&amp;quot; if x[&amp;quot;Time Left&amp;quot;]/x[&amp;quot;Minutes&amp;quot;] &amp;lt; .8 else x[&amp;quot;Bookshelves&amp;quot;] + &amp;quot; &amp;quot; + &amp;quot;to-read&amp;quot;, axis=1)
+# Rename Buy Date to Date Added
+df.rename(columns={&amp;quot;Buy Date&amp;quot; : &amp;quot;Date Added&amp;quot;},inplace = True)
+
+df.to_csv(r&amp;#39;/path/to/export/audible-goodreads-import.csv&amp;#39;)
+print (&amp;quot;Done&amp;quot;)&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+      
+&lt;p&gt;Before running the script, you’ll want to change two things. Open then python script and change line 17: &lt;code class=&quot;language-text&quot;&gt;df = pd.read_excel(r’/path/to/the/saved/excel.xlsx’)&lt;/code&gt; to the path to your file and line 35: &lt;code class=&quot;language-text&quot;&gt;df.to_csv(r’/path/to/export/audible-goodreads-import.csv’)&lt;/code&gt; to your export CSV format.&lt;/p&gt;
+&lt;p&gt;Then simply run &lt;code class=&quot;language-text&quot;&gt;py audible-goodreads-import.py&lt;/code&gt; in terminal, and you should get a file output with the CSV.&lt;/p&gt;
+&lt;p&gt;From there, simply &lt;a href=&quot;https://www.goodreads.com/review/import&quot;&gt;go to your goodread account’s import page&lt;/a&gt; and follow the import instructions.&lt;/p&gt;
+&lt;p&gt;It will import and update current read status, ratings, correct ISBN, and add it to an “audible” bookshelf.&lt;/p&gt;
+&lt;h2&gt;Next steps&lt;/h2&gt;
+&lt;p&gt;Hopefully this serves to compliment other solutions out there, or as a starting point for someone who wants to put together a better solution for non-technical folk.&lt;/p&gt;
+&lt;p&gt;If you encounter bugs or improve the script somehow, please leave a comment below or in the &lt;a href=&quot;https://gist.github.com/readywater/b71c11428a151654474cdb673756319e&quot;&gt;GitHub gist&lt;/a&gt;. If this works out for folk, I might put together something a bit more automated and a bit more user friendly eventually, but for a quick script thrown together while watching &lt;a href=&quot;https://www.netflix.com/dk-en/title/81026300&quot;&gt;Next in Fashion&lt;/a&gt;, this works nicely.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A More Intentional Wardrobe]]></title><description><![CDATA[I have an affinity for jackets and bags. The two central functions to protect and to carry somehow stand out in my mind as being what this…]]></description><link>https://log.andrewlb.com/intentional-wardrobe/</link><guid isPermaLink="false">https://log.andrewlb.com/intentional-wardrobe/</guid><pubDate>Mon, 20 Jan 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
@@ -50,7 +117,7 @@ I have an affinity for jackets and bags. The two central functions to protect an
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 177.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAkABQDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAECAwQFBv/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHbnftHOdMUvitWRA8LUAP/xAAdEAABBAIDAAAAAAAAAAAAAAABAAMQERNBEhQh/9oACAEBAAEFAsLt4HV13V5dCNxu45GiSiv/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AV//xAAWEQEBAQAAAAAAAAAAAAAAAAARACD/2gAIAQIBAT8BIz//xAAbEAABBAMAAAAAAAAAAAAAAAAAEBExMyAhgf/aAAgBAQAGPwK1i4tNsRlKcX//xAAfEAADAAAGAwAAAAAAAAAAAAAAAREQITFRcZFBYfD/2gAIAQEAAT8hbMrRye/2z6U1YG2nWEezvGpO1KK/ApaOA1cx3dT/2gAMAwEAAgADAAAAENDMAHAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPxBf/8QAFhEBAQEAAAAAAAAAAAAAAAAAEQAg/9oACAECAQE/EBDP/8QAIRABAAEEAQQDAAAAAAAAAAAAAREAITFBURBhcaGBkbH/2gAIAQEAAT8QgcaCy5TL81k2Z2e6UCGQQ8u+aNAiowTQkPJEHQkpK+OpYFyMl/dGgcsefdQ5PumUJBo7/tKYBAg0FKNxbVq//9k=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 177.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAkABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAIDBAUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAdx0KjnOkSaw1blQPDyAH//EABwQAAICAgMAAAAAAAAAAAAAAAECABITFCAhMf/aAAgBAQABBQLAxOs01m52EuJZZYkE9t7/AP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BX//EABYRAQEBAAAAAAAAAAAAAAAAABEAIP/aAAgBAgEBPwEjP//EABwQAAICAgMAAAAAAAAAAAAAAAABMTMQESAygf/aAAgBAQAGPwK3RcWvnKOyJR5n/8QAJBAAAgECBAcBAAAAAAAAAAAAAAERITEQQWHRUXGBkaHB4fH/2gAIAQEAAT8hd9ck7mr87mndHuKJql2IXBYK+WNX3i+qftDrEWIc2nMaR//aAAwDAQACAAMAAAAQMNcA8A//xAAWEQEBAQAAAAAAAAAAAAAAAAARACD/2gAIAQMBAT8QIz//xAAWEQEBAQAAAAAAAAAAAAAAAAARACD/2gAIAQIBAT8QEM//xAAfEAEAAgIBBQEAAAAAAAAAAAABABEhQTEQUXGR0fH/2gAIAQEAAT8QXIUoAUajJ3dVBeqoFYyRk4sGNPR0GdLe18da2l3j9iXPofZ+HjAsCjWhirsLPHEa1rjRU//Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
