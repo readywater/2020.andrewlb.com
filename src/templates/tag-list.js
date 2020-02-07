@@ -65,7 +65,10 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: { id: { in: $ids } }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { id: { in: $ids }, frontmatter: { published: { eq: true } } }
+    ) {
       edges {
         node {
           excerpt

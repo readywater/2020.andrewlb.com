@@ -169,6 +169,13 @@ const Background = () => {
           }
         }
       }
+      ikea: file(absolutePath: { regex: "/ikea.png/" }) {
+        childImageSharp {
+          fixed(width: 150, height: 75) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
 
       site {
         siteMetadata {
@@ -331,21 +338,7 @@ const Background = () => {
               Public Interest Tech Fellow <small>(2017-2018)</small>
             </p>
           </li>
-          <li>
-            <Image
-              fixed={data.ciid.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-              }}
-            />
 
-            <p>
-              Design Resident <small>(2018-Now)</small>
-            </p>
-          </li>
           <li>
             <Image
               fixed={data.innofounder.childImageSharp.fixed}
@@ -357,7 +350,21 @@ const Background = () => {
               }}
             />
             <p>
-              Lead Design Mentor <small>(2018-Now)</small>
+              Lead Design Mentor <small>(2018-2020)</small>
+            </p>
+          </li>
+          <li>
+            <Image
+              fixed={data.ikea.childImageSharp.fixed}
+              alt={author}
+              style={{
+                marginRight: rhythm(1 / 2),
+                marginBottom: 0,
+                minWidth: 50,
+              }}
+            />
+            <p>
+              Product Manager, CoCreate Platform <small>(2019-Now)</small>
             </p>
           </li>
         </List>

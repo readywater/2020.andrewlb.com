@@ -4,6 +4,7 @@ date: "2020-01-09T23:12:03.284Z"
 description: "An initial look at a thesis idea exploring technical innovation and conflict. This will change a lot over time, but wanted to share the starting point."
 image: ./img/shamii2.jpg
 category: security
+published: true
 tags:
   - security
   - thesis

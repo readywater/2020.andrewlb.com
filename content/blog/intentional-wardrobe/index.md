@@ -4,6 +4,7 @@ date: "2020-01-20T22:12:03.284Z"
 description: "I have too many jackets and had to do something about it. This is a short walkthrough and reflection on an experiment in organizing my wardrobe."
 image: ./img/a2.png
 category: writing
+published: true
 tags:
   - fashion
   - product
