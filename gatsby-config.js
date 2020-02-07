@@ -36,6 +36,9 @@ module.exports = {
         plugins: [
           `gatsby-remark-reading-time`,
           {
+            resolve: `gatsby-remark-highlight-code`,
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,

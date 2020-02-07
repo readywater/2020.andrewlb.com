@@ -76,7 +76,24 @@ export const Minutes = styled.div`
   }
 `
 
+const Article = styled.article`
+  .deckgo-highlight-code-carbon {
+    max-width: 800px;
+    overflow-x: scroll;
+  }
+`
+
 class BlogPostTemplate extends React.Component {
+  componentDidMount = async () => {
+    try {
+      const deckdeckgoHighlightCodeLoader = require("@deckdeckgo/highlight-code/dist/loader")
+
+      await deckdeckgoHighlightCodeLoader.defineCustomElements(window)
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -88,7 +105,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article>
+        <Article>
           <header>
             <h1
               style={{
@@ -179,7 +196,7 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-        </article>
+        </Article>
         <footer>
           <Bio />
         </footer>
