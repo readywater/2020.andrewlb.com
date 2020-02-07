@@ -59,6 +59,9 @@ class Layout extends React.Component {
             <Link style={{ boxShadow: `none` }} to={`/security`}>
               Security
             </Link>
+            <Link style={{ boxShadow: `none` }} to={`/short`}>
+              Shorts
+            </Link>
           </RightLink>
         </Header>
       )
