@@ -106,6 +106,13 @@ const Background = () => {
           }
         }
       }
+      diverge: file(absolutePath: { regex: "/diverge.png/" }) {
+        childImageSharp {
+          fixed(width: 150, height: 75) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       fitfaj: file(absolutePath: { regex: "/fitfaj.png/" }) {
         childImageSharp {
           fixed(width: 150, height: 75) {
@@ -230,6 +237,25 @@ const Background = () => {
               />
 
               <p>Consent Management for Researchers</p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://divergeweekly.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                fixed={data.diverge.childImageSharp.fixed}
+                alt={author}
+                style={{
+                  marginRight: rhythm(1 / 2),
+                  marginBottom: 0,
+                  minWidth: 50,
+                }}
+              />
+
+              <p>Weekly Design and Global Affairs Newsletter</p>
             </a>
           </li>
           <li>

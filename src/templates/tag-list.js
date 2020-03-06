@@ -83,6 +83,7 @@ export const query = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            published
             category
             tags
             image {
