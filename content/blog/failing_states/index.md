@@ -4,7 +4,7 @@ date: "2020-02-14T22:12:03.284Z"
 description: This was my term paper for the first module in my Security Studies MA. Sharing here as a writing sample and because I enjoyed the process of writing this paper.
 image: ./img/090919-afghan-peace.jpg
 category: security
-published: true
+published: yes
 tags:
   - security
   - essay

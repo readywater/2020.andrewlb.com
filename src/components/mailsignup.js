@@ -77,11 +77,10 @@ class EmailSignup extends Component {
             marginBottom: rhythm(0.25),
           }}
         >
-          Subscribe to my Newsletter
+          Subscribe to Diverge Weekly
         </h3>
         <p style={{ fontSize: rhythm(0.5), lineHeight: rhythm(0.75) }}>
-          Once or twice a month. I write about software products, design,
-          politics (with a focus on security), and reflections.
+          I write a weekly email on design and global affairs.
         </p>
         <form
           style={{
@@ -96,17 +95,6 @@ class EmailSignup extends Component {
             this.setState({ success: true })
           }}
         >
-          <label htmlFor="name">
-            <FloatingLabelInput
-              type="text"
-              name="name"
-              label="Name"
-              id="name"
-              onChange={this.handleChange}
-              value={this.state.name || ""}
-            />
-          </label>
-          <br />
           <label htmlFor="email">
             <FloatingLabelInput
               type="email"
@@ -139,8 +127,8 @@ class EmailSignup extends Component {
               </button>
             </Button>
             <p>
-              By subscribing, I consent to andrewlb.com emailing me about blog
-              and product updates.
+              By subscribing, I consent to andrewlb.com and divergeweekly.com
+              emailing me.
             </p>
           </ButtonBlock>
         </form>
