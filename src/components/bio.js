@@ -58,11 +58,12 @@ const Bio = () => {
           }}
         />
         <p>
-          Written by <strong>{author}</strong>.{` `}Andrew builds{" "}
-          <a href="https://knowsi.com">Knowsi</a> and is a{" "}
-          <Link to="/security">Security Studies MA student</Link>. He is a
-          Canadian/American dual citizen living with his wife and son in
-          Copenhagen.
+          Written by <strong>{author}</strong>.{` `}Andrew{" "}
+          <a href="https://stupidsystems.com">consults</a>, builds{" "}
+          <a href="https://knowsi.com">Knowsi</a>, writes{" "}
+          <a href="https://divergeweekly.com">Diverge Weekly</a>, and is a part
+          time <Link to="/security">Security Studies MA student</Link>. He lives
+          with his wife and son in Copenhagen.
           <br />
           <a href={`https://twitter.com/${social.twitter}`}>
             You should follow Andrew on Twitter
