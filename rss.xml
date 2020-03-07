@@ -1,4 +1,102 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Andrew Lovett-Barron]]></title><description><![CDATA[Some writing by Andrew.]]></description><link>https://log.andrewlb.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 06 Mar 2020 21:11:27 GMT</lastBuildDate><item><title><![CDATA[Failing States Fail Terrorists Too]]></title><description><![CDATA[NATO forces investigating an VBIED. Credit: Omar Sobhani/Reuters This was my term paper for the first module in my Security Studies MA…]]></description><link>https://log.andrewlb.com/failing_states/</link><guid isPermaLink="false">https://log.andrewlb.com/failing_states/</guid><pubDate>Fri, 21 Feb 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Andrew Lovett-Barron]]></title><description><![CDATA[Some writing by Andrew.]]></description><link>https://log.andrewlb.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 07 Mar 2020 16:05:02 GMT</lastBuildDate><item><title><![CDATA[On Remote Work and the Coronavirus]]></title><description><![CDATA[With the coronavirus probably hitching a ride in one of your co-workers, it’s possible that your work (especially if you exist in that oh-so…]]></description><link>https://log.andrewlb.com/remotework/</link><guid isPermaLink="false">https://log.andrewlb.com/remotework/</guid><pubDate>Sat, 07 Mar 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 59.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEA//EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//aAAwDAQACEAMQAAABzSKnJg5T/8QAGRAAAwEBAQAAAAAAAAAAAAAAAAECEhEx/9oACAEBAAEFAtFs0zTdT7S6/wD/xAAWEQEBAQAAAAAAAAAAAAAAAAAAERL/2gAIAQMBAT8BrT//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPwGH/8QAGBAAAwEBAAAAAAAAAAAAAAAAAAERIDH/2gAIAQEABj8CFHDmP//EABsQAQACAgMAAAAAAAAAAAAAAAEAESExQVGR/9oACAEBAAE/ISicMs0xuK6muF8mQsgXPU//2gAMAwEAAgADAAAAECvv/8QAFhEBAQEAAAAAAAAAAAAAAAAAABGB/9oACAEDAQE/EJxL/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEhEf/aAAgBAgEBPxDSrKf/xAAcEAEBAAICAwAAAAAAAAAAAAABEQAhMUFRYdH/2gAIAQEAAT8QMCU2Tpx0RY2cr0YvQTzH5hCA9JkTDN8YavYNMz//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;28days&quot;
+        title=&quot;28days&quot;
+        src=&quot;/static/eb9268e6f75d3328dbc0e2efdf32f752/88218/28days.jpg&quot;
+        srcset=&quot;/static/eb9268e6f75d3328dbc0e2efdf32f752/7237a/28days.jpg 148w,
+/static/eb9268e6f75d3328dbc0e2efdf32f752/0cfdf/28days.jpg 295w,
+/static/eb9268e6f75d3328dbc0e2efdf32f752/88218/28days.jpg 590w,
+/static/eb9268e6f75d3328dbc0e2efdf32f752/73963/28days.jpg 600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+With the coronavirus probably hitching a ride in one of your co-workers, it’s possible that your work (especially if you exist in that oh-so-nebulous world of knowledge work) is implementing a more permissive remote work policy. &lt;/p&gt;
+&lt;p&gt;Many of you will think “I can’t do that.” Many of you might be right, since a lot of very real, outcome-driving work happens in the interstitial space between “actual work” and socializing.  But I would suggest that there is a  balance to be struck that will allow you to work remotely or mostly remotely, thereby reducing your risk of exposure (or at least &lt;a href=&quot;https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine&quot;&gt;flattening the curve&lt;/a&gt; so that local healthcare systems don’t get overwhelmed).&lt;/p&gt;
+&lt;p&gt;I’ve been working mostly remotely since mid 2017, when I realized with a bit of a shock that the fellowship I had accepted was for a remote team. Turns out it works out well, but oh my god, was the learning curve painful. Currently, I work mostly remotely as a product manager, a job that I would not have guessed would  fit that mode.&lt;/p&gt;
+&lt;p&gt;So here are a few tips on the remote work thing, with the goal of inspiring you to give it a try.&lt;/p&gt;
+&lt;h2&gt;Create an Accountability Structure&lt;/h2&gt;
+&lt;p&gt;This is the biggest thing and also should be table stakes. Some folk have intense internalized accountability, and they might just get the work done because of fear, pride, whatever. I’m not one of those. I am both very goal-oriented and very exploration-motivated, so I’ll work frantically and gleefully, but my attention will turn on a dime without some accountability structure to keep it in place.&lt;/p&gt;
+&lt;p&gt;For me, what I found worked best was consistent deadlines and dramatic transparency about responsibilities. Every week I broadcast to the team my goals, deadlines, and expected outcomes as a baseline, and then run my team’s product specific standup. I also keep a lot of documentation. 90% of that isn’t read until it’s needed, or not at all, but the act of documenting helps makes things concrete, and it’s a motivator for me knowing its done and making it public to the team. Currently, I run the documentation with Notion, where I keep everything from year-scoped strategy, to feature specs and data models, to weekly notes and to-do lists.&lt;/p&gt;
+&lt;h2&gt;Over Communicate, but Not Like That&lt;/h2&gt;
+&lt;p&gt;Language by itself is low bandwidth. The reason why face-to-face meetings are so vital is that trust is built through being in the room, showing openness, communicating physically, demonstrating emotion, taking risk, etc. There’s a lot communicated outside of just words. Unfortunately, one of those things might be coronavirus. So let’s compromise.&lt;/p&gt;
+&lt;p&gt;You can work remotely and still have high bandwidth communication. &lt;em&gt;What you shouldn’t do is be a sociopath on Slack&lt;/em&gt;. Not everything needs to be liked, but communication and requests DO need to be acknowledged. Not everyone needs to see the gif, but sometimes a gif drives the point home. Basically, focus on the quality of your communication and the context that it creates, instead of becoming a one-human version of the PRC’s surveillance state.&lt;/p&gt;
+&lt;p&gt;A concrete example: your team’s engineer shares what she just pushed to staging, asking for feedback. You acknowledge and give a timeframe for feedback, so expectations are set. Somewhere in that time period, give it a look. Instead of just rambling off feedback in slack, make a list. Open a notes application (I use BearApp) or your issue tracking software, and make a list of what you’re seeing. Maybe take some screenshots, maybe record a screencast of a bug. Copy and paste your feedback (or links to the feedback) into a slack thread responding to the request, and tag the engineer in your response so she knows that the feedback is there. Probably you’ll have a discussion about it. Probably everything will move on easily.&lt;/p&gt;
+&lt;p&gt;In this case, the communication is focused, high quality, but also flexible enough to respond to the needs of the problem and is pretty damn fast. When so much of communication is performance, the thing you need to be “performing” when working remotely is competence and a focus on outcomes.&lt;/p&gt;
+&lt;h2&gt;Take Your Damn Breaks and Put On Some Pants&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.29629629629629%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMBAv/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABjNunpBL/xAAaEAABBQEAAAAAAAAAAAAAAAABAAIDESEx/9oACAEBAAEFAn6GXGLCi10nQv/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwGNf//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPwGsf//EABkQAAIDAQAAAAAAAAAAAAAAAAARARAhQf/aAAgBAQAGPwLJZLx0hcr/xAAbEAACAgMBAAAAAAAAAAAAAAAAAREhMUFxkf/aAAgBAQABPyHS+JEzd6KlDbrZVZuOjNQ7OjA//9oADAMBAAIAAwAAABCDD//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8Qe6Wf/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERMf/aAAgBAgEBPxDUIZ//xAAcEAEAAwADAQEAAAAAAAAAAAABABEhMUFhgZH/2gAIAQEAAT8QqreDgD+JLsUhBeHfp9l9AU0bLtxjgj3qXqrQDmjI1Svc/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Me casually on my way to the office&quot;
+        title=&quot;Me casually on my way to the office&quot;
+        src=&quot;/static/9be4bebf241bf6414a0070ce3cc2356f/88218/offtowork.jpg&quot;
+        srcset=&quot;/static/9be4bebf241bf6414a0070ce3cc2356f/7237a/offtowork.jpg 148w,
+/static/9be4bebf241bf6414a0070ce3cc2356f/0cfdf/offtowork.jpg 295w,
+/static/9be4bebf241bf6414a0070ce3cc2356f/88218/offtowork.jpg 590w,
+/static/9be4bebf241bf6414a0070ce3cc2356f/77d57/offtowork.jpg 885w,
+/static/9be4bebf241bf6414a0070ce3cc2356f/0a772/offtowork.jpg 1080w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Me casually on my way to the office&lt;/figcaption&gt;
+  &lt;/figure&gt;
+Once you get used to working remotely and find your stride, it can be very, very easy to suddenly wake up on the other side of the day with a brilliantly demolished to-do list, but no clothes and a hole where lunch was supposed to be.&lt;/p&gt;
+&lt;p&gt;I love the experience of being so engrossed in making something, I don’t even notice time and the world passing by. That’s gotten a bit less desirable now that I’m a parent (because I want to be spending that time with my son, frankly), but nonetheless it can be great feeling if you like and value your work. However, it can also be unhealthy and unsustainable.&lt;/p&gt;
+&lt;p&gt;When colocated with other workers (i.e. in an office), there is rarely continuous flow. You get up, you stretch, you get coffee, you run an errand, you get pulled into a brainstorm, you chat with a colleague about their weekend, you play foosball, you get your ass handed to you because you grew up in Canada without a foosball table and why are all the European designers so absurdly good at this game and ugh whatever. The work day has its core of work, but this core is supported by the daily conversations, rituals, and inefficiencies that being human brings with it.&lt;/p&gt;
+&lt;p&gt;Some folk use things like Pomodoro or “stand up” reminders to keep themselves on track. I occasionally use a countdown clock called a Time Timer if I need to do something that I desperately don’t want to do, but just needs to get done. It’s like a time prison. But mostly, I wouldn’t do that. Maybe set a reminder for yourself if you find you missed lunch once or twice. Make a point of getting up to get water, or treating yourself to lunch outside of the house. The point is to create rituals and habits, so that healthy breaks from your work are not only consistent but also so obvious as to be practically invisible.&lt;/p&gt;
+&lt;h2&gt;Be Aware of Dead Reckoning&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 41.35593220338983%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAACOUlEQVQozx2S60uTARSHX0wt1G0OtZw5bdOpc+reOS2UyLQv0g2KSoXSyiCEPgh9iZBUQkK8QYIy0pw6l+7u5mV7h9t0OqdB/9LTu304nMPh8JzfuQjuSJwXr4cQBIFKTTkDz3tpb22hoFBBcXEJD5+9Inj6l/XAAZvBMI5QBOd+NBu7oyeE0/8IJVN4pRhbu3sIG/49nr7szwKLCgpRKRSoVSpKS0opKlLR0/sYX+yMZYeL394g/kQKfzzF7vE5+6cXSOlLDpJJfFKU7ZAMXPME6BsaJkcGastvYLxVjVGno6ZKh7ZCi6W9A//JBcHkJQHZZ8yfSOOToQEZHkqcEYon8Bwesun1Idi2XEwvrdAmitTerOBOUyNWYwOmGgO3m0WGPozgip2zLZ3gPjrDc3TKjnQsA9N4YyncUhxvRJKBETzhCML8Lzs2V4jBt8PcMxu5KzZnoQ/arHRaWhn7sYB9L86KL4w9GGU9JPEnkmB0bJKOrm467/dgc+4wOTNL3+AbhLkVB33vPlIjK2qpN6BRqylTqjDV1mIxW/j09TvLnghzay4W1j0sbvmZXXVSptFk956fn0uT2UxFpQalshDh28wiCqWSvLxcRNGCaDJhqq9DtFjR62vRGRqYsjmZdwSZsXuY3/Ax/nOV65Va1EoFzQYd9XUGqvR68vNyEJ70D2Y7Zcwsj9jV3YPZLFLXYEQtq83kG0UrI1/GGZ2Y5vPUAhNLGzwaeM+VzGdcu0q1fMRi+Ssytf8BwBBe3w9AXooAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;hunt&quot;
+        title=&quot;hunt&quot;
+        src=&quot;/static/4c79bfd5ff301f17717639ee301ebba1/799d3/hunt.png&quot;
+        srcset=&quot;/static/4c79bfd5ff301f17717639ee301ebba1/00d96/hunt.png 148w,
+/static/4c79bfd5ff301f17717639ee301ebba1/0b23c/hunt.png 295w,
+/static/4c79bfd5ff301f17717639ee301ebba1/799d3/hunt.png 590w,
+/static/4c79bfd5ff301f17717639ee301ebba1/2a3d6/hunt.png 885w,
+/static/4c79bfd5ff301f17717639ee301ebba1/ae92f/hunt.png 1180w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+Things slip. It’s just how it goes. With every decision, and action, a little bit of error is introduced into the system. With each subsequent action, a little bit more error is introduced, and over time, these errors compound and you’re not where you  thought you were. &lt;/p&gt;
+&lt;p&gt;This is the essence of dead reckoning: a navigation technique that takes your previous position and estimates your current position based off of speed, travel time, etc. Except every position determined from dead reckoning is an estimate, not the truth. And so to reduce the error on that estimate, we need a way of identifying that “truth.” This cuts across the two big risks of remote work: 1) alignment with your team and stakeholders, and 2) actual delivery of value when outside of a co-located accountability structure. &lt;/p&gt;
+&lt;p&gt;When we work outside of the co-located office, we lose the ease with which alignment can happen on a team working towards a common goal. This alignment certainly isn’t always correct, but it’s easier for the team mindset to take over. When working remotely, it’s easy to look at a low-bandwidth message on Slack or Microsoft Teams (which is terrible) and infer alignment from shared language used. But the mental model that you and your other conversant might hold can diverge pretty wildly, and lacking the added nuance of higher bandwidth modes of communication (like face-to-face, or as I like to call it, corona-close) the signal that you’re actually misaligned might not show up until it is too late. As a general rule, any time someone says “Great, we’re aligned on that” I take a minute to spell out exactly what it is that I’m doing next.&lt;/p&gt;
+&lt;h2&gt;Be Kind To Yourself&lt;/h2&gt;
+&lt;p&gt;Finally, be kind to yourself and others who are trying remote work for the first time. It’s not going to be for everyone. It might suck, it might be awesome, but it’ll absolutely be different. Give yourself space to fail the first month or two, and be open about what’s working and not working with your colleagues. Please extend the same generosity of spirit to them as well, and experiment with different tools, processes, and similar until you find something that sticks. With my current team, we’ve been through three different tools and several rounds of iteration before we hit something that really feels comfortable.&lt;/p&gt;
+&lt;p&gt;Ultimately, this need to work remotely is coming from an inherent fragility in our existing ways of working. Flatter organizations and open office environments can certainly lead to a stronger network effect and more co-creation within organizations, but it also gets you Gweneth Paltrow in Contagion (which I’m guessing was cross-marketing for Goop?).&lt;/p&gt;
+&lt;p&gt;So I hope this helps. Don’t go too far down the productivity rabbit hole, but rather be reflective, be communicative, and be kind to yourself.&lt;/p&gt;
+&lt;p&gt;Also, if you’re looking for more on design and global affairs (like Coronavirus), subscribe to my newsletter &lt;a href=&quot;https://divergeweekly.com&quot;&gt;Diverge Weekly&lt;/a&gt;, where we explore how design emerges around the world and how design impacts issues of health, security, trade, and climate.&lt;/p&gt;
+&lt;p&gt;Also wash your goddamn hands.
+&lt;img src=&quot;/3734bbb9e832121eb701d8b6a301b46d/hands.gif&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Failing States Fail Terrorists Too]]></title><description><![CDATA[NATO forces investigating an VBIED. Credit: Omar Sobhani/Reuters This was my term paper for the first module in my Security Studies MA…]]></description><link>https://log.andrewlb.com/failing_states/</link><guid isPermaLink="false">https://log.andrewlb.com/failing_states/</guid><pubDate>Fri, 21 Feb 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
@@ -96,18 +194,12 @@ Al Shabaab Technical. Credit: &lt;a href=&quot;https://www.accord.org.za/conflic
 &lt;p&gt;Ultimately, the conclusion I draw is that the terrorism of situated terrorist organizations can emerge anywhere, and that failing states are not significantly more likely to give rise to these groups and actions than stable states (Newman, 2007, pp. 483–484). Instead, if we acknowledge that failing states exist along a continuum of failing, then a potential way forward is to explore how specific populations at risk of radicalization might be failed by the state and its institutions, as “all states consistently fail some portions of their population” (Simons and Tucker, 2007, p. 400). This framing allows us to shift the language of failing states away from the unit of the state and its potential as a threat, and onto the specifics of how, where, and by what degree the state is failing the individual.&lt;/p&gt;
 &lt;p&gt;This shift away from the state-level of analysis points to effective ways in which the emergence of terrorist organizations can be stymied at the local level (Simons and Tucker, 2007, pp. 394–400). As Shapiro observes, terrorist organizations face a dilemma in which control and efficiency are in tension with security and covertness (Shapiro, 2013, p. 56). While the failure of state institutions can serve to shift their focus towards security as with al-Qa’ida after the retreat of the Taliban from state power, we should consider how else to put maximum pressure on terrorist organizations in order to undermine their ability to execute in a coherent and centralized fashion (Shapiro, 2013, p. 270). Simons and Tucker’s suggestion that engagement with local forms of governance and alliance outside of the norms articulated in the failing-versus-stable-state narrative (as constructed by the principles of human security) might be one path towards putting that pressure on terrorist organizations (Simons and Tucker, 2007, pp. 397–398). In the case of Afghanistan, they point out that: “Westerners seldom look at the world the way non-Western locals do, and thus seldom know where or how to look for what terrorists might be up to.” (Simons and Tucker, 2007, p. 396) By engaging critically with the dimensions through which a state (either ones own or another’s) fails some group or individual, then perhaps the voids and vacuums in which a terrorist threat might take root can be ferreted out.&lt;/p&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1ee69f02b1e8fb08753b19b5c37661d3/b7832/DSC_7530.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 66.47230320699708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECA//EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAGXlsLKC//EABkQAAMBAQEAAAAAAAAAAAAAAAABEgIRA//aAAgBAQABBQK0WjpK0Z81yT//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEgH/2gAIAQMBAT8BnEv/xAAWEQADAAAAAAAAAAAAAAAAAAAAARL/2gAIAQIBAT8BplM//8QAGBAAAgMAAAAAAAAAAAAAAAAAABABIUH/2gAIAQEABj8CKMUL/8QAGxABAAMAAwEAAAAAAAAAAAAAAQARMSFBYaH/2gAIAQEAAT8hRjSaXJ4+pQp6nDNIi8J//9oADAMBAAIAAwAAABCIP//EABYRAQEBAAAAAAAAAAAAAAAAAAARYf/aAAgBAwEBPxDBL//EABURAQEAAAAAAAAAAAAAAAAAAABh/9oACAECAQE/ELLP/8QAHRABAAICAgMAAAAAAAAAAAAAAQARIUExcVHh8P/aAAgBAQABPxChcItFPEJhNKcfbir0RQGI8QaCtvnuBQAde5//2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -125,8 +217,9 @@ Al Shabaab Technical. Credit: &lt;a href=&quot;https://www.accord.org.za/conflic
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
     &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Bundy Ranch Standoff&lt;/figcaption&gt;
+  &lt;/figure&gt;
 The Bundy Ranch standoff and the question of domestic terrorism? Credit: Unknown.&lt;/p&gt;
 &lt;p&gt;Terrorism does not emerge from failing states any more than it emerges from stable ones (Newman, 2007). Rather, terrorism emerges from terrorist organizations, which in turn emerge and are situated where diverse populations come into conflict (Piazza, 2006, p. 170). Similarly, failing states do not emerge from terrorism, though as we have seen in the case of Somalia (Menkhaus, 2007; Verhoeven, 2009) and Afghanistan (Hehir, 2007; Simons and Tucker, 2007; Shapiro, 2013), situated terrorism can serve to rationalize the failing state label when applied by powerful state and institutional actors like the United States (Bøås and Jennings, 2005, p. 387).&lt;/p&gt;
 &lt;p&gt;In this analysis, it can be concluded that terrorism and failing states do not have a causal relationship, but rather a relativistic normative relationship can be constructed by elite, state, and institutional actors in order to functionally engage with the terrorist organization, the so-called failing state, or both (Hehir, 2007, p. 328). But if the label of failing state is one that can be constructed, then it can be dismantled as well. The label of failing states should not be a sentence carried by an entire state, but rather its constituent dimensions — with the many ways in which a state is failing or succeeding — should be considered in turn (Simons and Tucker, 2007, p. 400). When an understanding of terrorism is situated and performed by an organization forced to operate in the liminal spaces of state failure (Shapiro, 2013, pp. 265–269), the path to effectively combatting terrorist organizations lies not in constructing sweeping relationships between terrorism and failing states, but in forming relationships with local inhabitants to co-create stability and security.&lt;/p&gt;
@@ -221,18 +314,12 @@ print (&amp;quot;Done&amp;quot;)&lt;/code&gt;
 &lt;p&gt;It will import and update current read status, ratings, correct ISBN, and add it to an “audible” bookshelf.&lt;/p&gt;
 &lt;h2&gt;Next steps&lt;/h2&gt;
 &lt;p&gt;Hopefully this serves to compliment other solutions out there, or as a starting point for someone who wants to put together a better solution for non-technical folk.&lt;/p&gt;
-&lt;p&gt;If you encounter bugs or improve the script somehow, please leave a comment below or in the &lt;a href=&quot;https://gist.github.com/readywater/b71c11428a151654474cdb673756319e&quot;&gt;GitHub gist&lt;/a&gt;. If this works out for folk, I might put together something a bit more automated and a bit more user friendly eventually, but for a quick script thrown together while watching &lt;a href=&quot;https://www.netflix.com/dk-en/title/81026300&quot;&gt;Next in Fashion&lt;/a&gt;, this works nicely.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A More Intentional Wardrobe]]></title><description><![CDATA[I have an affinity for jackets and bags. The two central functions to protect and to carry somehow stand out in my mind as being what this…]]></description><link>https://log.andrewlb.com/intentional-wardrobe/</link><guid isPermaLink="false">https://log.andrewlb.com/intentional-wardrobe/</guid><pubDate>Mon, 20 Jan 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;If you encounter bugs or improve the script somehow, please leave a comment below or in the &lt;a href=&quot;https://gist.github.com/readywater/b71c11428a151654474cdb673756319e&quot;&gt;GitHub gist&lt;/a&gt;. If this works out for folk, I might put together something a bit more automated and a bit more user friendly eventually, but for a quick script thrown together while watching &lt;a href=&quot;https://www.netflix.com/dk-en/title/81026300&quot;&gt;Next in Fashion&lt;/a&gt;, this works nicely.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A More Intentional Wardrobe]]></title><description><![CDATA[I have an affinity for jackets and bags. The two central functions to protect and to carry somehow stand out in my mind as being what this…]]></description><link>https://log.andrewlb.com/intentional-wardrobe/</link><guid isPermaLink="false">https://log.andrewlb.com/intentional-wardrobe/</guid><pubDate>Mon, 20 Jan 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1e897bd831c3f8d72c5ff636cb7734d9/5f584/a2.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 121.08843537414967%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAABYlAAAWJQFJUiTwAAAFo0lEQVQ4yz2V2XIb1xGGByABYt83Yt+BGWCAwb4TxEaBMkWJELVRlK0SVZJlu2yXyxeuxJUXyU2ucpvHSFXu8h55hy8NOJWLLmDOmfnP3//f3Ud5rJZYZhLMM3HOJFb5FBe5NNt8hm0xSycW5fevr/j33//El1WbQSLBopBnWa1yaRg8GQx5djbn2WLNL5+/RzESEVSfnbrXjiHR9rnoBT1MY0F0n4ebmcF//vVX/vm3X/nHX64ZlzK05ZBBOsEgm2ZYyjOtqQw0jfvblyidbBI97KMmsf/tRrz04yFasp5NxZgNdP78esNNI8urzZjXrx/o1Gr082kBFzCtwrJlcNZu83D/DmUmHxohH0bYTzMSoFvMMWwPGAyWdFp9CsKi12wyH7T56uqO6+t3sncue0M6ao1pQ2c9nLCdLvj583co/WSMuoCVJaqi4exsy3R2ycV6R693RqvRpN9qcHm5k7WnbB/dMB5fsJb9slqnpWusp2dMB1M+vf+IMhIN9YCHsMdGSswZ9Od02lNGwyXlSpXJdE2302Mx3zCdrNntPsqhX7G7/UQynUGvNxj2pnSNFp++EcBJ1EtTwMJ2M+lMmlZrimGMqWoNec5ws/vAizff0hUZNK3F85efeXLzgeXmFf5QiNF4xfXVCzbjCd++f0DRhWHRacV9YiKTy6LVOqiqQTZXoFRWef/hN+6+/onN+kb22szml7x/+I3R9DEnDtuB9XZzw6I7+MNlPRYmbTvGYTOTTKUoljRhViCXy9NuT3hz/yMvXn1mcX6F3hxSb3SF5RcGow2mIzPz2YJxv0+/0ePu9jVKXRyO2I5w2I9JpdNUhV04EqFSqTEcrrh6cs96c8uofy57bSqawfbxOzR9gKIorM4v6Lc7tBsd3r68F4ZBL8ETMw5Je8+qUFRxuRz0BwvOF09ZLJ/S7y9Fw4lIUqVYrnN59Q2JdPEAuJg/EsAupXyB3fVOAH1OPEcKTpeNYrFMLl/BZrMwFm2e7R4YjVY09D6t5oB4MkuuUOXi8o7IafIAeLG+ptvqUSkUuNpeomT8buwC6PI4RL8qeQH0el3y4hVvXn2kLyWhVho09R4xAWk2Ozy//YDH6zsAbi8kAymrTCrB8vwMJRBwY7WY8QV8omGOTLZIIBhgvbzi7dsv6LqkU6jQMYayHuLm5o4ffvidUDh8AFyebyXlHul0ivP5FCUkqTpddqLRKJFo7MAwHA5Kl4jDd98Lsy5apS4ajgmJWQ1huNo8xSuDYw84m6zotdpkBHA8GaL4nTbckm48EScUjYgpVdLJU7rdEbvnH9HUhmg04my2JRAKkkhI77fGKGYFk0kAx0sGHen5nMyAQQcl6LRzcnJMOBomehqjUFJJxk9ZLR4L4AM1tUmvM5bSeUG2oOLze6ioOkeW4wPD+WzFTIZDMhmXamijeN0Ojo9NBEN+vPJyXvQqZGW4Lrc8WmxpqKow7DAZnsk4S+IWw0pVDeuJ9X8pn8tgGIlJDumwMopP0t1TD0g9egSwVK6hF5L0KymGVRldZTnZEJZ1jdKpm2TYhdtpOXyzBxzJlNkXtkVqWSsXUOLC8Ej08IvbgaAfXVpIy8Zp5U/RJdRUmHqpRCWbIuSxEg85cTvM/wdsGR2MRgPzsSLmFf8AtJr2hX0i1sdF4DEpKaGw1URUenz/G7Rb8LtFa4uJYwmrrJmEhNlsolnXqatVFMEoVwUwISnb5cElL6ajPholGRCylrEekZGOSe/DYSXmPMF7coTdaj4AH0kz7M006qpE9cBWLQtgOOTBL/nHhXLJZaGblMtJ2GoyMDTp74rDQk4YxgUkIOESA20CfCTNYJPvcjEvSbmH9oC1agklJdpExZCkRF7ulOL+Ooj40aJ+GqcBNPlfifjIBVyE5QCfgLnkQKsc5HAek4uK9j4HZotC26jxX3nnwsurzwfjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -250,8 +337,9 @@ print (&amp;quot;Done&amp;quot;)&lt;/code&gt;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
     &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;My Buzz Rickson A2&lt;/figcaption&gt;
+  &lt;/figure&gt;
 I have an affinity for jackets and bags. The two central functions to protect and to carry somehow stand out in my mind as being what this whole clothing endeavour is about. In the quest for a more perfect bag and a more perfect jacket, I’ve tried many form factors and materials. However, somewhere along the line this search evolved into more of a collection than a solution.&lt;/p&gt;
 &lt;p&gt;Taking stock of this jackets collection, I realized that many hadn’t been worn in some time and the same could be said for the rest of my wardrobe. I have my most comfortable quotidian wears, but a lot of the clothing that had inspired me up to the point of acquisition wasn’t being used according to that aspiration or inspiration.&lt;/p&gt;
 &lt;p&gt;Further, despite my attempts at the Marie Kondo approach (which definitely works), I’d hit a point of diminishing return. I really like the clothes that I have, though I suffer a bit from the &lt;a href=&quot;https://www.telegraph.co.uk/men/fashion-and-style/11432284/Blokewear-the-clothes-men-love-that-women-hate.html&quot;&gt;Blokewear&lt;/a&gt; thing between Engineered Garments’s infinity pockets and Acronym nerdy functionality. They fit an acquired, developed, or aspired style most times; they were mostly of a quality that was worth preserving and repairing vs. replacing; and sometimes there was even an emotional connection or story tied to them. So another option was needed.&lt;/p&gt;
@@ -260,18 +348,12 @@ I have an affinity for jackets and bags. The two central functions to protect an
 &lt;p&gt;&lt;img src=&quot;/92f371cb4ab7338a6afabd67f16a8d6a/clueless.gif&quot; alt=&quot;Clueless Wardrobe&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Elsewhere in my life, I’d been using different tools that “automated” the creative and planning side of personal fitness. Strava and TrainingPeaks both have scaling training plans that tie into your phone and your Garmin, effectually offloading the responsibility to plan and personalize. But I’ve come to believe this was creating an intellectual weakness in how I approached maintaining the body. When a training plan ended, or if I got knocked off it somehow by work, a cold, or travel, the return to that curated path felt unnatural. Despite the exhaustive metrics surrounding me, I didn’t know how I got there, so I didn’t know how (or why) to continue.&lt;/p&gt;
 &lt;p&gt;More recently, I’ve been using plans from the MT Institute, which just come as a weekly list of “Do this.” There’s no tracking or technical sophistication: their app is basically just a text document with a password with a few links to youtube videoes for how to do certain exercises. It was infuriating at first. But because of that friction, it has forced a planning and engagement with my fitness that I haven’t had in years. Somewhat naturally by extension, I started to learn the how and why of getting somewhere and keeping going.&lt;/p&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 225px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d79281fe549fcf9d061e3cefb2840fda/02583/mti.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 177.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAkABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAIDBAUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAdx0KjnOkSaw1blQPDyAH//EABwQAAICAgMAAAAAAAAAAAAAAAECABITFCAhMf/aAAgBAQABBQLAxOs01m52EuJZZYkE9t7/AP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BX//EABYRAQEBAAAAAAAAAAAAAAAAABEAIP/aAAgBAgEBPwEjP//EABwQAAICAgMAAAAAAAAAAAAAAAABMTMQESAygf/aAAgBAQAGPwK3RcWvnKOyJR5n/8QAJBAAAgECBAcBAAAAAAAAAAAAAAERITEQQWHRUXGBkaHB4fH/2gAIAQEAAT8hd9ck7mr87mndHuKJql2IXBYK+WNX3i+qftDrEWIc2nMaR//aAAwDAQACAAMAAAAQMNcA8A//xAAWEQEBAQAAAAAAAAAAAAAAAAARACD/2gAIAQMBAT8QIz//xAAWEQEBAQAAAAAAAAAAAAAAAAARACD/2gAIAQIBAT8QEM//xAAfEAEAAgIBBQEAAAAAAAAAAAABABEhQTEQUXGR0fH/2gAIAQEAAT8QXIUoAUajJ3dVBeqoFYyRk4sGNPR0GdLe18da2l3j9iXPofZ+HjAsCjWhirsLPHEa1rjRU//Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -286,8 +368,9 @@ I have an affinity for jackets and bags. The two central functions to protect an
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The MT Institute App&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;This relates to my wardrobe because the fabric we wrap ourselves in serves to work a kind of daily muscle. In some ways, we are incredibly constrained. We have a limited wardrobe, filtered through biases and the influence of media and the social scenes that we came to age in, to address a specific set of needs around environmental (rain, temperature), cultural (formality and clique), and personal conditions (mood, aspiration, functional exigencies).&lt;/p&gt;
 &lt;p&gt;But in other ways, it is incredibly liberating. It presents a daily opportunity for creativity, exploration, and novelty with the things that we already own, that are being created seasonally, or that others have left behind in the case of vintage. With all the cultural weight that goes into forging a particular piece of clothing — anatomy, cultural context, history, material requirements, cost requirements, style, and similar — there’s the daily opportunity for something new to emerge.&lt;/p&gt;
 &lt;p&gt;Despite having that opportunity (and me more than many with my absurd jacket collection), why wasn’t I working that muscle? I felt there might be a hint in the three things that these text-based training plans were giving me: productive friction, a need for planning, and additive practice. So I’m doing an experiment.&lt;/p&gt;
@@ -319,18 +402,12 @@ I have an affinity for jackets and bags. The two central functions to protect an
 &lt;h2&gt;Using Notion&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Clothing&lt;/strong&gt;
 Using Notion to realize the initial vision was simple. At its most basic, Notion’s data manifests as a table or text. I started by creating a list of as much as I could from memory (mostly jackets and sweaters), and then filling that into the spreadsheet. From there, I started to fill out the properties (i.e. columns) that made sense. Name, photo, tags, size, colour. Then more subjective things, like fit and potentially style: things that I could search by. This first part set up, I went full Mari Kondo on my closet, getting everything out and photographing the lot against a white(ish) background.&lt;/p&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/246acd5cb4ab244e1e2c2294aa90b0ac/3a811/ss01.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 64.46991404011462%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC/UlEQVQ4yzWTO48cVRCFJyVzgkgIibyeZ/f09Ov2Y/rdPY+d8dq7ixnWax6yZ20SjC0CDIEtmRU/wCsLCeEECctECDmwZAREEJHwcz7q9kJwpep7q06dOqe6U88XxHmFpULGXZNyPGF7tM9nJx9y89oBamzi9Pts95dsr7/Lsqk5vn7MrGiIbMXtzYbtumIvmuL3hnTCtGCalQx8xa1gxv2g4k7h8+Tkfb7crIl33mHf7/HX6Ql/P/2K384e8evZN/z+7Xf8+cMLXn//jOcP7/L0k/s82X5KJ69mNIsVIxVwevMeDw4/YHDhDfYHF/Hefovemxf4PO7yYrvLLw/v8PLru/x075hnN47459Uf/Pz8JV98fMLZg8f8eHpGJy0rMgH14xTbjxiaEyauT5QVuIF8GxaWMcZyXCYiizlx5NgMBgam7eNGKWM3YCR1I8ntxHlNOdslmGYMLYfu0BAJMubrKzTLNX3TZkcSLw5NdgYmXYl3hmP6ktszLbojiaVmkDR0g5xONE2Z7V5GCaATxEy8AF8EHkpyX7oatsfEUQR+jKtUe6dzxjKFH2TYUmNJ7NRrrHxOJ0lz8nrWPoTJOejVvZz1KkcblssWzKMZH83eY7Vc0TdspnUjgIpluSSra+pFiTG2sT0lgGXTjmtJVy/UDJU0KLF8YSDsg6SgTGOuSFGahzKiRVIsMAVwJdpHUh9WFaOJaOyHdLwoaQPdUY+qgRdFzWHTUJe1gApgFbK5lrJYRlwS/ZJq3kqhGQYSe6UwtP4D1ADngIEwTSUOOKgrWdYV8xZQS5Jx+Wop7tv0xJSsatq8Jt8wbda4eYEhDG0V0dFg+mhgR9ZEi52IjsskpcjL9s5wExxViEY2l8RVL85wwylKVSJTgheF7YZo1i3D/0/LUHbtoMzZLhesmzmuMKzShKM9+QFKKbZD/LzBEOfL9LDd4XKWC0PvfGQ/1h2SFlBTHslDkUb4siI6QbuuYvmOFdFUyTrZOJKvTYjCOU5cMBYzh+Ky6Xj8C+Vq3SlHW8sZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -349,21 +426,16 @@ Using Notion to realize the initial vision was simple. At its most basic, Notion
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Spreadsheet of Clothes&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;This was the project of an afternoon, quietly accomplished during my son’s naps and an hour my wife was able to buy me. After I got everything in the database (all clothes, shoes, and bags anyway), I started to explore setting them up as separate views and creating the relational structure that would define the “outfit” idea.&lt;/p&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/54265456351d98ac773511a38ce588cc/020d3/ss02.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAADOUlEQVQ4yzWT204bVxSG/RKNlIpG4SiwwSY+ewZ7bM+Mx+MZG2MI2JhDEwguRMYNSVMaFFAjhNvSKj1E6V0vqpKItJHSPEmlqomqVqr6JF/XDOrF0oz23vr3v77170ChZJNUc0TTKpmcRn1+nhmtQDSZ8csoV2Q/y3Q8RSSW5FoijW5VsKt1fz+pZGksNjFsh+lEikDeLItQgWAkxvziEj/+8JQrV4cYHh1n4Mog3V4P27YJh8N+hUIhfv7lJc+ePWdkZJSxsXHOz1/w5eNvGBgaJVB2Z/FchmMpcddgdXmBwaFhBt4b9IUfHR8TDAalJkQsyLuXL/PT2RknJydcuvQOoyLaP+nz3dPvLwRN2yVbNIlJy/G0guXYWBWH8ckI2YLBweEhalYjly+SVlQmwxF2P9zj/v4DYglBEEtwu9tjo7PNaHBKHAoLTzCaUoSJglupoxkWetkRFHkiws6suGim5a97vK8JO80okzMrsl4hoWpMhKP+2YBbb5DTLV9Q0XTu3H2Iac0Si6ZY2+iy3b3Lg8Nj8qYrl9Q5fPQZd+7ts7//EWZBIROPsLX5Pus3bzIWihAoScuqtDYVjWPX5tna+ZhYsoSSrWJYS/RPn/Db73+xs7NHIpGT/785e37O1kqVWi6Enp5grqzS63YYnggT8NpNZy9aK1ouqXSBUFjc5hwGhyfZ+qDH2z//5ejgiJy09sebf+j3+xjqJHUzQSE1zq3lCt3d24xMCMPUjIZXHpd4ZgbLrVMsOah5Q0SL5IXV1s6uuG/IhQ6t1Rt+Bp1aFcd1sewKc/NzflJC0zECHuT/BWMZlVqzJSyL/qA0o4TpVNGrNX8tL4PxvqaEuL3UxJIhKXldQu2SkIBPRRMXDr2Wg6K+uLzMk2+/IpNRMHST9fUbvH79K61Wk0ajwebmJs1Wm1evXnJvr0tGyRCZnubrx6ccPDzg6ljwwqEXD89us91mu7NBOi1PzjBYaa9x+sXn/n+9Xuf6wnXK8hQ/2b+PpmWlNF9waXGBo0+PGPQEVbHsuQzLO7Uch7W1FbJanqI4rM02uNXpCKsqbnWWUtnGEX6t9rKEPUtB18moM3JWp7Wy6g/2PyUE7C3oz/IKAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -382,22 +454,17 @@ Using Notion to realize the initial vision was simple. At its most basic, Notion
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Too Many Jackets&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Outfit&lt;/strong&gt;
 The outfit is where things didn’t quite work as I wanted. Structurally, it’s relatively simple — just a matter of creating relationships to the different Clothing items. This ends up looking something like this, with a few variables that help with filtering and a photo for reference.&lt;/p&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e6c3585e206d987d7d4c8426cff4e2e8/b3d4b/ss03.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 147.19827586206898%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAdCAYAAACqhkzFAAAACXBIWXMAABYlAAAWJQFJUiTwAAADyUlEQVRIx31V227bVhD0xwTNxVYlS6JEUqQkkiKp+8VOnGsf0utbHlIUeSiKokDRNG6ABL24ifOxk52llqEtOw8LHlGHc3ZnZvfs7TdaWB3fw3S1geOHCKIRkvEM/iAqfg8T9AYxstkCJ4++wjAdI53M0en1cdjx8GWrg3q7W8bezYM6nv/0Au/OP+CPV6c4e3eO/99/wJ+nr/H02x9w9v4cv798hV9+/Q0vT//CP/+d4e9/z/D6zVs96OCwjcYWjOB7tmh2fT0xny3hBgNdM/ie/1vwXcNxMRzlqDUdBbTQDPmyK+mzhK4A8UkQvme03B5CoaEfp/D7kVLCzDxZ94QOUtJPMlnHRYb8yMC4cSB/cm0ZdXohsukcqUSUjRHnE4yEYz4HkiUzjbKJHlgCEsAXMJ7EcpQXed6uN7HarLFYLXHjdg0UkO/u1Fuy/lQq35clE5VldYO+BoFMMR7GskI5nYrzYO4hJVVl61VRTJAgSpQjglQ3tL1ArTJdbjCer7RUgtu+HdsYoBsOlWBT1TIkv8yQoBFD+CLXl4F2APkhlasCWobkd5jmqnZMAZL0SrASsK0cDvQjqmrlWIZUnirH+RSJxGSxVj9SDDvYktgzs/JDZlJtpyLDnnJLyxCYWYZbL5q9djKkyl5/qKatAjJDCkCPZdOFZLnQPs7nSyw2dzXbqwGFN/LHqG74JMpIBeHBd8SH5r39rfd2SqYQbD9HBOBvAtkmisK2osrt7f/VQ6+1DbNjG9FnHF/kh5nwyRZjyZPlWkudrY4uuGEHkDzRh+wKisBuYehhwmm3N1AnHDrF9GFYRzW2UXYKy/O2YOwW8lTtgkbXQysIse84uNVoKnfkUTmUfV/I86ZErcohQSzDKkf7LQeRG+PZ7Cl+3HyPJ6N7mB/d1cm9efAY63yMnx8+wIuTE4SuLwdse5lkF40/uMBHTQA9t4/j7AibdI3YH5VTKZQIpAmWyQiLOIHTcTXLomQRhP1KHx4cOuUoUh9KueuH9xHmqZTcQE3+13I5spqkoa1RlmzzsJiJkWZATgtAUdlLsJl/LfENXI+UOBdG3JWikD/jkG1FcRpttwB0Exwvv9NwupGYuVleD5dNveNDcsOyOY3N4GzJYZYhynOMFyuJtc7GZDy93ocENC+ydHqOZVkvawXBUNvQ8QN9WtdcC8jWK26wVJueV6ndenZ3WKmfLdlUZqnMpHoH22gj+HWtttPLVhZB/e20qc5DBQyLi9+GxmWwnWnDsmgXepHlcv5VxxcnDac0h8JsfaTUcB/Xl0v+CLoy1DnLxZyaAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -415,21 +482,16 @@ The outfit is where things didn’t quite work as I wanted. Structurally, it’s
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Model of an Outfit&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Then, when browsing, I can view the individual outfits with a description and a focus on the jacket.&lt;/p&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/214e54d4a5d98d12bdcea22c2c96f703/573ad/ss04.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 83.80681818181817%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAABYlAAAWJQFJUiTwAAAEI0lEQVQ4y22T+0/TVxiH+0/skizZdCpMmCAgtKUtUFoKBUqh0BstlLtOkXuhE2TcJiB3UAIomoHTkczEGTOnWzLc8IIOEcVtgAjsH3l2vt/C4g/74ZP3nJNznvdz3ryv4misilRzKmnpJoymZLQJWrSJOvSGRFJSDRiMepz5btKzrISGRRAZE0t6ZgYWa5Yc09KDb72+QlxeH4pYtYaB3kaG+xppDZRT7rNSUpDF6eO5nPGXUH/Sw9r8bW5enSY0NJrDoZ9zNlDDtelhLgy1MXy+Qaiejb+XWHm1iuKYOp6xwWaGegM01ZVSWpCNz23hREkugdpiHA4XpcVVeBxlREer2b8vlHyXnSuT/Qz2fslAdw2DPQ38ufqU5ZWXwmG8hosjnQz1t+IXwDJfLqWFNmpOevHYMzCnZpOSWUH0MT3KY0pCQo6QYU5nfPRrznfVC2Ct+F2A1y8XWX7xUnKo4cJYD5MXe+nu8DPS3yYcdzA+1IVV1MZtLyfTWkxk2FF0Si0HD4RhMpro723hXFu1ANYzOtDC6ooEXJEc6piaHObyxABT433MXbvE3OwU31+/zNy3M/i81YyMzVBZVIHqSBSHQiLRJ+g5XmyjxV/KQI+f0f6zrCw/CgLjBHD6yiTfXB3n9s057v/4A/fu3GL+3h1+/uUBh8PVXLp8jZq6DsLDY4k6qsZiTqHMaxY19tHX7ZfLtbz0kOd7Dmdmp7l16zsW5n/lkdCT33/jj0cLXBobITJSSVdzK5ZMB/sPRhAWFiPqbKdKdEGgxkdvZwMjg208X1rg+fKLoMPrN2Z59myRjbUN/lpd5c3aGqtLz0SrTKBRqsgwGDnw6WdUVpwS8Eb8VUVi7RBdUcS59jrRPl2svFjcBWp03P3pLltbW2xv77C1ucn227dsrq+x8GAeXUIyH3z4MZ/sC+FsZSU3Jvpob66m+osCGqp9dLTWMjrczevXr3iy+DTo8N79+zJQ0j87O7I21tdlqNfj4733P+LQwXDCDofT+VUtPZ1+6qqKqZeA7fVMTIyy/uYNDx8/RhGtjKeqzk9D0xlq/QFqG5rwB5pl1TUGxMjlEKPUoIxPIDHZiNPtIteRR1a2VSgLm1i7vAXibRPHT51GcSQ6FqM5k6KyClk2Zz75vmJKKk6Q5/ag1CaSYDChTU5BqzcSp01CJcqg1afI0iQZUScmE6dJICouHkWk6H5TugW72yvL5nCTY3eRI6LNKdZi9Ky5DrLFmcWWR65IKLmWkiQaU/+T3mSWEyoiYuIwZWRhz/fuAoJyegrJc3nkBEGgE0tOnrxPs2SjE44l6J4kaLxwKjs0pGVgzXPiLizCW1QqOy0sKZfdJKWkoRGZpey63W9LAOn8XUkONUmGIFClS5LpUlSLsVKLqNqVvP8fqd65s3dPGpJ/AZMh+opGAykJAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -446,23 +508,18 @@ The outfit is where things didn’t quite work as I wanted. Structurally, it’s
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Thumbnail of an Outfit&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;In this case, I would frame this part as the “Productive Friction” component. Before I was just collecting data and constraints, now this is combining these pieces into a greater whole that (hopefully) works out.&lt;/p&gt;
 &lt;p&gt;Though this solution is “good enough” for now, I can’t wait for Notion to develop an API to query these objects and relationships directly, or to programatically establish filters. Basically, my ideal would be to create a collection of items with tags, and then have those items laid out in a gallery so I could see them visually. As it stands, there’s still a bit too much friction. Additionally, the actual selection of a relationship is a bit cumbersome with the naming scheme that I developed.&lt;/p&gt;
 &lt;p&gt;The manual way to do this is to create a view for a table, and then filter according to relationships. Unfortunately, since those filters can’t be assigned to a variable, the whole thing has to be done manually (as far as I know). The ideal would be to pass in a series of properties to the view that could manipulate the filter, but here we are.&lt;/p&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/14c0ea923c17cd9499b67323b844e570/fa901/ss05.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 64.01826484018265%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACYklEQVQ4y31Sy27aUBD1r7SLqEohvN/GNjbGT2ywMSQmhZQktBBIC4lSqa9F1HbRKPtuoq6qfubp3BsRVVGSxdGM78ycOZ4ZIVeuoaZoyJSqSGTy2MmVkMwVsZ3Kkl/kSOVLyBQryBKYLYsyKlIDxZrE/VxNRunoAmndgxDvx/j88QyO6yAIA6iahtPlHFdXP7Ber6CoGiS1CbPdgdvtwSJrtn1YXpfDCyIeU90uJN2CsFotcPnlHP2oh8V8hsnrMdkp/v65IX8Eo2XAcj0olOx0AvR2h3D8AC3HuyMLd2N6I0JVhzCn4ulkiNGrfbw7XWJ5MsPR4QHW708QdHz4ng/ddKAaNmwi6kQD2KRMt1yu0HQpp9fnvqS1IESDCIM+dY4ijMcH2ItjxPEeRqMhXN+H43UgU2KjZfECkeYt0ghk3aA3E3KzhXqjycHmKYjkBIOYJ9cJvKihoyarmAz3MY2HsEkdWxyLleoKAjdE0O1Dd9pcKeNgsSwtVmCb8kIK2t5tEXXXbZf7dthDgzWh2bCiOlm2XZVUKfReoaYsbxNjFyOMJ4f4ffMLTrMMrZpGJfMCs+kI19c/sZVM85PZnM/mhJLZAj+t+zEG4fjNFMvDCEZlCx0tC7WaRD7xDN++nlFRGal7ZP9j5943g6CpEvZ8CaaYgF1/CTHzHKFRxPfLT6TklihdKN+puSN7oAEnlBQZrtlA25Rh6XVochmL412cf7jAdjrHkxghw1OEm29BpmG+pTlO6GDbfgjDC+gkbL6xVL744AwfU8tnWBAlKIZF93W7sSptjm+TzuOx33pK4T9uEtPORIdf+AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -481,22 +538,17 @@ The outfit is where things didn’t quite work as I wanted. Structurally, it’s
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;A Single Outfit&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Calendar&lt;/strong&gt;
 Finally, actually making a day-to-day decision is tied to seeing those combinations and those other external needs. In other words, the need for planning. Filtering by the relevant constraint is the key here, organizing by one axis and filtering by another. I can take a look at the options and what I need for the day and make decisions on the margins.&lt;/p&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8e38371affb593ea9bd2ff9c4277c81c/440c4/ss06.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 101.96078431372551%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABYlAAAWJQFJUiTwAAADpklEQVQ4y41VS4/bVBid31MmzXPi2E4cOw87fsZOPImdxzhOgjPt0Mm0hZaq06lY0BUgQDBlhZAQWyRWSPwBVqz4QYfv3rQ0AoSyuHLs+Dv3nPud8/koXxEgiCp6rg/HH0K3XAh1BblSBey/t+tuuUrrBHl+raJwUkNJkFCka7kmo8x+V0UcsQdtowel1UGt0cSdfIkXFKsScm+KcyUCoveKgsyB2AYVUYastVGlGqnZ4qsqKztAgwArYh3HZQEFKhIVFYbtoCbXcSLVITYUiB0LajBFsVbngIVKDQLVSZaFXLHCN9oxFBWYqy3s7BH09AMIwwWCyQRPrhaYT+boOw5ef/MKk2QJJwgRRlNYXkCbaujS8XjDEepaB41WlxSqBCg1YZ9/hMH2Gt79p5CiDOnFJf7843dcXjyGY7Tx4w9fY5ndQxhPMU/XCE4jDtAxHcwWKwxGMWw6fyb7qCQ3oS8v0Xv/IVrpA0hxBi9OcHv7HcbxDGEYIDvPOLt+OIJJzWMNZIAtw0IwivgG3uCUsyaGCqzNhxgSw9HmY2jxPQhtEz4VTxdLAonofBvUgA7isxSnkxm6xIwVt3sWfxbPFzCc/jvJySOSll1huHiK3nwLUXcQkozBeAJ3EELVLVhWD6skgm73CcjmxbbnY7VcUQM9NDvGjiHrasMLUTUHKBh9lAwftZYOn6Swc9HpZYXkKQTqjSZcJgMVCFCzA3QdH3W1DbXb2wFyzzFv0TVPfssVyhDIT8vZGmmacYkyFZiux89QbRvoktRwOOCWYnZjBi+9NfbfKXiTiGMClalRr2YXiJwQRj9AVVLxxWcv8PrTa7iShufpKX6+fY5StbaXot3iDPcjdkyRE+sq7qeP4fljdCwbZfLqt1/e4KfPn8GrNPDbV5/g11++p/dP8M/6o/0btljMKtR5N4y5xJ7bJ3+1kZzF2Kzn0JQWBr6P65uXPMM8lv8HeKdQgdnr4uHVBu44QVPVIROgrHURzVMk6wzjWUKs6/9i99+ANBxMN8D2yQvk1AB3WyH8yQOyhUk2innUWDJYtw8ArOG9QgmaOcTo/IbCH6Gs2LCGawLsEcM5kuUao+mc2+QghuxMhHqTu39KA2FGSyHTtrsmNukFstkQpmWQDzWaOMJhTWEDluWT5ZQN3Ua7S4AOFmdbuH4IkxJyoOQdIBuUo+kZAcZ8KLBiNkztYMCTw+7ZcMgfypABMsnJKkNEHdV0kw/QXOmdgfc/Dfv1fwHRSdaamBvhpwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -515,21 +567,15 @@ Finally, actually making a day-to-day decision is tied to seeing those combinati
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Filter View&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Calendaring is usable but a bit inefficient. This is an example of the past few days to test out this whole idea. Unfortunately, Notion lacks integration with Google calendar, so the calendar view itself ends up being quite limited.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/98346af7e7b0db5c772a26fdfeece095/34bee/ss07.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 48.872180451127825%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABTklEQVQoz4VS2W6DQAzkf6q0IeEKdzgChFIS9Ugq9fj/r5jumDqhUqs+GGZ37dkZe62sapBUHZKiRpQXuHN83K69f0PznE2MIMmRmnr+rXhbIcoKLFauJNjeBks3kLBNsPDH3jfWfAbXfpRKruWGCYI4F3YtXvmh4HUQynrC0YWUquK8BMWERkzV9sjrFl6UwPLjzIAUS1Pwm6V5C4ipzDG557cPHJ5PaO8fcH7/RH94BLksL8mQmd4N5saFWA5EDQmolLaJVSFJKUCjqBvpfVruJsLjyyuOTyc0TYfR/KuuF0tUwmJVqGQaPGfwUiVnnVX3I9phRL7rUDZ71PtBDpREiewZIV0odsNpylQnhPyQnRs3tjNZNYOY21SsJNoStc/aTboFByxDUfa5pflQ/hqQXqSDFYVcULJn2Jk0vbXggpezt3i1fMUkUQ4q/ALnNUuVQVmhqAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -548,21 +594,14 @@ Finally, actually making a day-to-day decision is tied to seeing those combinati
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;What was useful (again, an API would be better) was filtering calendars by day, and then adding the view inline as shown below. This allows a trivial dashboard to be created, though again, it’s not particularly useful without a way to dig into the relations. The other frustrating piece is that these views seem to “reset” depending on other navigation you do within the database.&lt;/p&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/469bf312bc8b119e043adfd109d5c72d/020d3/ss08.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 57.013888888888886%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACUUlEQVQoz3WSy2sTURSHR9wKStW2UAnUPkKTzEweM0knmWQyk5lk8uojTW1LCRRqrVSxXVRLFXe16EKogm4EUUREBFe60IW49a/6vDPYkoouDnfmnnO/3zm/eyXbq+PUGhTKFXKaysjwEGY6w7u7axw+2md3Z42JqMrLgx1udD0Oe9f49fED33/+oFe1mTGyRIYv0TFz3N9/iGS7VSy3RtlxyShTSNJZhgZGOFxt8ezFEXsPtjh3eZwn26s4epS9zgJfHj/l/ddvFBUVM5ZgcOAC2YlxNrfuIXmNFm6jje3VUGITAniGeOQqB2vzvHl7RO96l/MXR3m+UUceHWR3aYVXt7d5/ekz2uQkrqoyNjJEInKFxZUNJMvzac13xdh1EskUkbEoclxloVnhzq1lFE1jckqhUTZIJOJYpoUv7Gl2FpHlJFpKI56QUWSVadNBMoo2TrVOThSmc3lSWQM5k0UvWLQ7y8x1l8hbNlFVQ9UFNK0TE5CYkhL/08haLlzDb5GT8paD35rFKNkhTBEwRST0fAm33sJvtsmLXEaIJcXhIKeKNRlARG0Qyp8I9qWCULerPtlCKQQGm4mULi7JYX1zg2qrQ7niU6p4oaieL57UHccxLAQGHZa908B4MkPFb7O6tU+8OEu9s05QV6pUw9rMdOEUpB8qmaJD12+GHoYji005rWFYLgu9m1i1GUquGL09J0SaITQAnhq7H+iId1gRDzvo4MRDEZphCm9nhFhDjFoO/QyETdsNL++/HQaqwcM+6bCvUO4zO7jBvyH/8vA3zVCAIPp5UrUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -581,8 +620,9 @@ Finally, actually making a day-to-day decision is tied to seeing those combinati
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Dashboard View&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;
 Notion is a pretty impressive tool. It’s a great way to create content and build up something data-driven pretty quickly. Ultimately, it got me a lot further than I expected, but if the &lt;a href=&quot;https://www.notion.so/Does-Notion-have-an-API-I-can-use-4541b07a5caa46dba0026624646118c0&quot;&gt;Notion public API wasn’t already a critical part of their roadmap&lt;/a&gt;, I would probably be trying to figure out how to export all this work and build a small custom solution.&lt;/p&gt;
 &lt;p&gt;End of the day, a custom solution would be better, but as a catch all tool for personal organization or project management (eg. You can see in the screenshot that I’m also using Notion to plan and track these posts), I’m pretty happy.&lt;/p&gt;
@@ -672,14 +712,7 @@ This raises some interesting questions:&lt;/p&gt;
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/965d741a2762c3d40baf15a98505049f/5e4bf/IMG_8230.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 74.98963085856491%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBAgX/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgT/2gAMAwEAAhADEAAAAWVynHpCCw//xAAaEAEAAgMBAAAAAAAAAAAAAAABAAIDESES/9oACAEBAAEFAsdtGS+pZ6qyr6svf//EABcRAQADAAAAAAAAAAAAAAAAAAABAxL/2gAIAQMBAT8Bmpl//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BV//EABgQAAMBAQAAAAAAAAAAAAAAAAABIRBR/9oACAEBAAY/AhWvKLqWf//EABoQAQEAAwEBAAAAAAAAAAAAAAEAETFBIWH/2gAIAQEAAT8hF+HbOJ8FkbKepkLoEG1//9oADAMBAAIAAwAAABBI/wD/xAAXEQADAQAAAAAAAAAAAAAAAAABEBEx/9oACAEDAQE/EDS6v//EABURAQEAAAAAAAAAAAAAAAAAABEQ/9oACAECAQE/EEj/xAAbEAEAAwADAQAAAAAAAAAAAAABABEhMUFRYf/aAAgBAQABPxAAcdTnc1WVTlR7EAy+pclb9YndQvwOIhJtfk//2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -698,7 +731,6 @@ This raises some interesting questions:&lt;/p&gt;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;2019 has been a weird combination of my most exhausting, fulfilling, chaotic, and structured year to date. Midway through 2018, I decided that I wouldn’t share anything until it was “done”, or at least passed a significant milestone. So while I usually don’t write posts like this, this year felt worth the reflection.&lt;/p&gt;
 &lt;h2&gt;Four Changes&lt;/h2&gt;
@@ -712,14 +744,7 @@ This raises some interesting questions:&lt;/p&gt;
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f8b2b78c2ae85f7e4c4bdc109052585f/93d1b/IMG_0263.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB0q5MVAdMT//EABsQAAICAwEAAAAAAAAAAAAAAAECABEDEBIT/9oACAEBAAEFAuWM8AGGI1UK6//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwGNf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAEEAwAAAAAAAAAAAAAAABEAAhBxATFR/9oACAEBAAY/AhjaD3Gp7cf/xAAbEAADAQADAQAAAAAAAAAAAAAAAREhMUFxsf/aAAgBAQABPyGmGuBNWfkO1UvSemYzIFP/2gAMAwEAAgADAAAAEJsf/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARMf/aAAgBAwEBPxBB21f/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQIBAT8QSwv/xAAcEAACAgMBAQAAAAAAAAAAAAABEQAxIUFxYVH/2gAIAQEAAT8QBDGVlXsKUFZZL13yCGQ0Bc2EBPwqPaoiQjTuuRucn//Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -738,7 +763,6 @@ This raises some interesting questions:&lt;/p&gt;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;In the summer of 2018, I was back in the US for a few weeks and had just walked out of my NREMT exam when I called Ayla to tell her I’d passed. On the topic of positive test results, she shared that she was pregnant and everything started to shift. The remainder of that year became one of preparing for something neither of us really understood: in our bodies; our identities; our relationship to work, to the world, to each other, and to the son we hadn’t yet met.&lt;/p&gt;
 &lt;p&gt;Emil showed up on April 10th, 2019 at our home in Frederiksberg. For all the classes and reading and discussions of the previous months, I wasn’t even close to prepared. Since he’s arrived, every week has been different and every week forces something new learned.&lt;/p&gt;
@@ -749,14 +773,7 @@ This raises some interesting questions:&lt;/p&gt;
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/68fd783edfe6f172351c9d43a3852f23/917c6/image1_V3.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 66.66%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACqElEQVQoz2WSW1PaQBiG84tFLIdiEFCHm46HaW8UEVoRaSnWAAnKSRCoykGaBB1BR5QSQkIgkBAghNbSxfGm0533Ymd3n+/9DguFnerox4XUgT7zWR/f0xzvzp/szif3tedew7l3sXBkIoNmMmAkAjCBrpDRD5XcURnP/DjZKKFLELajCr0IhAAkZlOBk7AThNPmffoiAuOo9SZpvy+G6w83TJOpUzTd6hLprzhigNCduZmbQx1xLgBPQEYcqvgndcwNX4a2ysVok3rsdnuj8e+RLD/Vno5DGMO2yuRl0b8EHdvnQeZnB7rsIZx066JO1Xf/OpE7vavcNFhuOJ4IQp9lW/2+CCQIgizLkiQ9VqtX2DsI2KK2ufSB/goxZ74sZtzqfMx1/0iBhzTd5Dtg8YBRFGU6nY5Go63tbbpJsxxPJN3AWYXZ5hIuTcpjSByuXXjfnn+zFgp5rt0Wer1+vz9RJsD0+fkZ8DzPIwhSq9WkoQzaBkUc6pBdBRJOud9k0Y0sunnp1ZGFFMu1B8MhsBIlqcmx1WrV6XCUy+U/02l30BdEkaYpCIwn7tKAmhP72rRHRyT2rhBTKe2tN5jxWJZHswpZjqMZpkZRk4nCDAROGYzGSqcrQmC8KY/u1KVJuLTJ/QXieI2M2/Dwe6pBS9KgxbebvQ4viYIogG4PAPULVD5uNesPpRRUREzgP6Q8+qwPzh0a8z4DHrNlA2vVCiGIfVbqNgReViZUg2EYtvHz7gGPXSedOGbF/UaIRC140IwHzETQQoB9wERg1hy6fo/HBEmRBnK30wEulXzw+nSLxFZxP0wEjSRqBuAMJrHl0r8Cn/H2zP5Uzt9e+IjI5iyuHy4Fl2a3oRUSCF1+gf8jX4VaiICJ9MPXmOmFWSWxFfD4VcAStfwFshJJ2OIMma4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -775,7 +792,6 @@ This raises some interesting questions:&lt;/p&gt;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://knowsi.com&quot;&gt;Knowsi&lt;/a&gt; emerged from a conviction that consulting as I had been doing likely wasn’t the right path forward. Coming off of an extended consulting project that had seen me back-and-forth from the UK and fairly burnt out, I had been collecting and exploring different ideas (and savings) for a small, bootstrappable Software-as-a-Service business. My theory: knowing that Emil was on his way, I wanted to have something that could bring in income and support a working lifestyle that would let me be present.&lt;/p&gt;
 &lt;p&gt;I settled on Knowsi from a host of other ideas while flying into Paris for New Years 2019. Consent management had always been a challenge in user research, with lost forms and disempowered participants. As a user researcher myself, I knew the problem well and had seen when it goes wrong. It was a discrete need, something that I was solving for myself, and was feasible with my skillset as an indie developer and designer.&lt;/p&gt;
@@ -787,14 +803,7 @@ This raises some interesting questions:&lt;/p&gt;
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d2591fba0a53e00071b1e105505b0022/d36d7/55B5B361-6422-4501-BF3F-A5EAFA7AF573.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAFzsmyWwxA//8QAGhAAAgMBAQAAAAAAAAAAAAAAAQIAAxEhEv/aAAgBAQABBQKt+sdirSAh7sdj6//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABkQAAIDAQAAAAAAAAAAAAAAAAAxARARMv/aAAgBAQAGPwIxnMWz/8QAGRAAAwEBAQAAAAAAAAAAAAAAAAERIUFh/9oACAEBAAE/Ic3CShqa+oZ0U1pS0f/aAAwDAQACAAMAAAAQi8//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxBX/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHBABAAICAwEAAAAAAAAAAAAAAQARITFBYbHB/9oACAEBAAE/EASuzjfM3jbB9hIUsqCxo7HsABWQ3sT/2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -813,7 +822,6 @@ This raises some interesting questions:&lt;/p&gt;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;This has been a long time coming. I’ve flirted with graduate school for years. In 2012, I’d been accepted to NYU’s ITP program and almost moved to New York. However, after months of soul searching, I ended up saying no because didn’t want to be in that kind of debt.&lt;/p&gt;
 &lt;p&gt;Since then, I’ve had a lot of fun: starting two businesses, working at IDEO, at the Pentagon, being a think tank fellow, and currently living a slightly charmed independent consulting/product person’s life in Denmark. But every single year I start musing about returning to school, though that idea of what I would return FOR has shifted over time.&lt;/p&gt;
@@ -825,14 +833,7 @@ This raises some interesting questions:&lt;/p&gt;
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/fdd06e636fa9ea567ec026bd215120a1/bba8e/Collage-8.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 78.57142857142857%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAgP/xAAVAQEBAAAAAAAAAAAAAAAAAAACAf/aAAwDAQACEAMQAAABumxBWI6Uf//EABsQAAICAwEAAAAAAAAAAAAAAAECABEDBCMi/9oACAEBAAEFAgvNfc6GM1Jqisja1n//xAAXEQEAAwAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/AZ1T/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAHBAAAQMFAAAAAAAAAAAAAAAAAAERIQIiMTJh/9oACAEBAAY/Al4QhgappFuljY//xAAaEAEBAAMBAQAAAAAAAAAAAAARAQAhMWFB/9oACAEBAAE/IZVajkygmHO4ynBAxSi63tyuoVHmTZS/fbn/2gAMAwEAAgADAAAAEHgf/8QAFhEBAQEAAAAAAAAAAAAAAAAAABFh/9oACAEDAQE/EMkP/8QAFhEBAQEAAAAAAAAAAAAAAAAAABFh/9oACAECAQE/EMR//8QAGxABAQADAQEBAAAAAAAAAAAAAREAITFBYYH/2gAIAQEAAT8Qg0kiBE8ff37jqgG13a3WaeDsDmJvOAmqAh4Qyvksvqh3Nvibw6bYcz//2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -851,7 +852,6 @@ This raises some interesting questions:&lt;/p&gt;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Finally, survival. This year has had a lot to do with privilege. My wife and I have benefited from the Danish child care policies. I had access to personal capital, skills, and time to start a small business. I had a network and the time to apply for a university. I had the network and skills to be selective in what I do work.&lt;/p&gt;
 &lt;p&gt;Despite this, the past year has been the busiest in my life. Keeping up with friends and social engagements has been a struggle. Beyond even the normal limits to sleep that new parents face, to get everything done I’ve had an unhealthy number of nights with just four to six hours of sleep.&lt;/p&gt;
@@ -881,14 +881,7 @@ This raises some interesting questions:&lt;/p&gt;
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/28d01810bfc402b2993dce8662c0a39a/11697/IMG_7994.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 74.3156199677939%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBAgME/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAB2osZlcZIV//EABkQAAMBAQEAAAAAAAAAAAAAAAECAxIRMv/aAAgBAQABBQLSUNFmSYKDAs9T3bev/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/AYx//8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/AW1//8QAHxAAAQMDBQAAAAAAAAAAAAAAAQARIQIQEiIxMlGh/9oACAEBAAY/AjUxDBU6RKM+rHLlBT79W//EABsQAQADAQADAAAAAAAAAAAAAAEAESExQVFx/9oACAEBAAE/IcQF2kBAvjIBFN4CaQAWdyVkYqreJUY6+5//2gAMAwEAAgADAAAAECfP/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAFBEf/aAAgBAwEBPxB1TLh//8QAFhEBAQEAAAAAAAAAAAAAAAAAAQBB/9oACAECAQE/EEZDb//EAB4QAQACAQQDAAAAAAAAAAAAAAEAETEhQVFhcZHB/9oACAEBAAE/EB0soIWHNOuDQi5TuFvh8xwJFgT23Lha0FtyHcDRSDpsy8wmgVKl1UH7P//Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -907,7 +900,6 @@ This raises some interesting questions:&lt;/p&gt;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
-  &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;So what does 2020 look like? Honestly, I don’t know yet, and to the point of my “don’t share until there’s a milestone” thing, I’ll share when it’s time.&lt;/p&gt;
 &lt;p&gt;In general, Emil is starting at daycare in the new year,so I’m going to modify my &lt;a href=&quot;http://shop.larryvsharry.com/&quot;&gt;Bullitt bike&lt;/a&gt; for daily dropoff and figure out my sleep schedule. I’m continuing to work on Knowsi, and want to explore ways to put more time into it and my customers. I’m continuing to consult with IKEA, and work with a burgeoning team there that honestly, I can’t wait to share more about.&lt;/p&gt;
