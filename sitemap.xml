@@ -10,7 +10,7 @@
 <url> <loc>https://log.andrewlb.com/security</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/short</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/coronavirus</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://log.andrewlb.com/tag/emil</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://log.andrewlb.com/tag/organization</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/remote</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/2020</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/security</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -27,6 +27,7 @@
 <url> <loc>https://log.andrewlb.com/tag/thesis</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/makersbreakers</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/reflection</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://log.andrewlb.com/tag/emil</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/knowsi</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tag/2019</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/2019/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -41,6 +42,7 @@
 <url> <loc>https://log.andrewlb.com/tags/knowsi/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/makersbreakers/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/notion/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://log.andrewlb.com/tags/organization/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/organizing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/product/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://log.andrewlb.com/tags/reading/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
