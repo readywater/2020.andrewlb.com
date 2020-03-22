@@ -1,13 +1,13 @@
 ---
 title: On Remote Work and the Coronavirus
 date: "2020-03-07T22:12:03.284Z"
-description: "Four big things happened in 2019. My son was born, Knowsi was launched, I started a grad program, and I learned a bit about how these different things came together."
+description: "With the coronavirus probably hitching a ride in one of your co-workers, it’s possible that your work is implementing a more permissive remote work policy. Here are some tips to making it work."
 image: ./img/28days.jpg
 category: writing
 published: true
 tags:
   - coronavirus
-  - emil
+  - organization
   - remote
   - "2020"
 ---
