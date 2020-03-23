@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Andrew Lovett-Barron]]></title><description><![CDATA[Some writing by Andrew.]]></description><link>https://log.andrewlb.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 22 Mar 2020 22:57:49 GMT</lastBuildDate><item><title><![CDATA[Covid Anxiety the Game]]></title><description><![CDATA[Why is it that we can see something coming and still not prepare? I’ve been asking myself this the past 10 days that we’ve been on lock-down…]]></description><link>https://log.andrewlb.com/anxietygame/</link><guid isPermaLink="false">https://log.andrewlb.com/anxietygame/</guid><pubDate>Mon, 23 Mar 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Andrew Lovett-Barron]]></title><description><![CDATA[Some writing by Andrew.]]></description><link>https://log.andrewlb.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 Mar 2020 08:21:53 GMT</lastBuildDate><item><title><![CDATA[Covid Anxiety the Game]]></title><description><![CDATA[Why is it that we can see something coming and still not prepare? I’ve been asking myself this the past 10 days that we’ve been on lock-down…]]></description><link>https://log.andrewlb.com/anxietygame/</link><guid isPermaLink="false">https://log.andrewlb.com/anxietygame/</guid><pubDate>Mon, 23 Mar 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
@@ -90,7 +90,7 @@
 &lt;h3&gt;Environment&lt;/h3&gt;
 &lt;p&gt;These were things like “one of us gets sick”, “Emil gets sick”, or “One of us loses our job.” Events that we are living with in a time of change or decision making. Something that is probably traumatic, but also something that frankly most of us will be experiencing in some way over the coming months.&lt;/p&gt;
 &lt;h3&gt;Resources&lt;/h3&gt;
-&lt;p&gt;These started as inflection points, things like “hospitals get filled to capacity”, “No testing means no idea of actual risk”, and “Internet rationing or curfews.” But these clusters could be simplified down to “Public Health”, “Risk Appetite”, and “Community and Connection” respectively. There’s a cluster of other ones as well, including Cash, Consumables and Food, Sanity, etc. Ultimately, anything that is a resource in balance.&lt;/p&gt;
+&lt;p&gt;These started as inflection points, things like “hospitals get filled to capacity”, “No testing means no idea of actual risk”, and “Internet rationing or curfews.” But these clusters could be simplified down to “Public Health”, “Risk Appetite”, and “Community and Connection” respectively. Either private or public resources that shape outcomes. There’s a cluster of other ones as well, including Cash, Consumables and Food, Sanity, etc. Ultimately, anything that is a resource in balance.&lt;/p&gt;
 &lt;h3&gt;Inflection Point&lt;/h3&gt;
 &lt;p&gt;Inflection Points are specifically in tension with the Environment category, and have a lot of overlap. These are mostly framed as a CHANGE that we will have to make a decision around. An example we listed is that “Denmark starts emphasizing Danish citizens over foreigners for medical care” (unlikely but possible), “Indefinite Lockdown is announced”, and “No one is Hiring.” In each of these cases, it requires a non-obvious response given the reality we find ourselves in.&lt;/p&gt;
 &lt;h3&gt;Catastrophe&lt;/h3&gt;
@@ -134,13 +134,13 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;The initial canvas&quot;
         title=&quot;The initial canvas&quot;
-        src=&quot;/static/5af02f0d04695eb606bf78effcd57231/799d3/canvas.png&quot;
-        srcset=&quot;/static/5af02f0d04695eb606bf78effcd57231/00d96/canvas.png 148w,
-/static/5af02f0d04695eb606bf78effcd57231/0b23c/canvas.png 295w,
-/static/5af02f0d04695eb606bf78effcd57231/799d3/canvas.png 590w,
-/static/5af02f0d04695eb606bf78effcd57231/2a3d6/canvas.png 885w,
-/static/5af02f0d04695eb606bf78effcd57231/ae92f/canvas.png 1180w,
-/static/5af02f0d04695eb606bf78effcd57231/5a2b3/canvas.png 1440w&quot;
+        src=&quot;/static/a3156156dc79819baf7c008e370c7d16/799d3/canvas.png&quot;
+        srcset=&quot;/static/a3156156dc79819baf7c008e370c7d16/00d96/canvas.png 148w,
+/static/a3156156dc79819baf7c008e370c7d16/0b23c/canvas.png 295w,
+/static/a3156156dc79819baf7c008e370c7d16/799d3/canvas.png 590w,
+/static/a3156156dc79819baf7c008e370c7d16/2a3d6/canvas.png 885w,
+/static/a3156156dc79819baf7c008e370c7d16/ae92f/canvas.png 1180w,
+/static/a3156156dc79819baf7c008e370c7d16/5a2b3/canvas.png 1440w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -150,7 +150,7 @@
   &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;First, one axis became time extending from now, +3mo, +6mo, +12mo, + 18mo, and +36 months. Then the other axis became the the “order” of decision: environment to resources, resources to inflection point, inflection to catastrophe with the two assessments beside it.&lt;/p&gt;
 &lt;h3&gt;Setting the Scene&lt;/h3&gt;
-&lt;p&gt;First, &lt;strong&gt;Environment&lt;/strong&gt; cards were chosen based off of what we were facing right now. (We started with one of us being sick, though hopefully we aren’t). Then looked at the &lt;strong&gt;resources&lt;/strong&gt; that we had access to and what we were lacking. In the above scenario, Right now, we’re well set up for supplies and consumables, but honestly, don’t feel well covered by the the public health system. This is an entirely subjective judgement: we might actually be well covered, but it’s just the feel there.&lt;/p&gt;
+&lt;p&gt;First, &lt;strong&gt;Environment&lt;/strong&gt; cards were chosen based off of what we were facing right now. (We started with one of us being sick, though hopefully we aren’t). Then looked at the &lt;strong&gt;resources&lt;/strong&gt; that we had access to and what we were lacking. In the above scenario, we’re well set up for supplies and consumables, but honestly, don’t feel well covered by the the public health system. This is an entirely subjective judgement: we might actually be well covered, but it’s just the feel there.&lt;/p&gt;
 &lt;p&gt;Next, we move on to the &lt;strong&gt;Inflection Point&lt;/strong&gt;, which in this case is the made-up “Denmark explicitly emphasizes Danish citizen wellbeing over foreign residents.” This being purely speculative, we wanted to explore what would happen.&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
@@ -180,9 +180,63 @@
     &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Looking at the first scenario&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
 &lt;h3&gt;The First Assessment&lt;/h3&gt;
-&lt;p&gt;After we laid out these four cards, along the “Now” time, we asked ourselves: “Okay, what would we do?” And at this first assessment, there actually wasn’t much. Even in a scenario where we were sick and our health as foreign workers was being devalued, we’re healthy, have resources, and have a community. So we decided that we’d simply stay home, and try to weather this sickness as best we can.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 16.944444444444443%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsSAAALEgHS3X78AAAAxUlEQVQI1zWOzUrDUBCF84ZufJ6+igsXgrRWUJpFNyZRSmzNRWIhBVsUgoEkN1IoTbgx+Zwb2gOHw/zwzTjHpsEcDny5LrosOdY1RVGQzed8Jwm/eU7qeWit6boeqzhUqPCV7CfFjz+58SLuXxSTIMLhpH3doKuKRg5UkkZ6uYDtgb3YAv9OwKddySRMCD62TJcbbv2Iu+eIsf+G0/eyJG6NwYjbth2gtrY59M6zrhuAj+uMi6uQy+sVo1nMw+JdvlMCVfwDpP7amaxeL/gAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The first assessment canvas&quot;
+        title=&quot;The first assessment canvas&quot;
+        src=&quot;/static/d78678022a00f7cb2e4e814784814561/799d3/canvas-first-assessment.png&quot;
+        srcset=&quot;/static/d78678022a00f7cb2e4e814784814561/00d96/canvas-first-assessment.png 148w,
+/static/d78678022a00f7cb2e4e814784814561/0b23c/canvas-first-assessment.png 295w,
+/static/d78678022a00f7cb2e4e814784814561/799d3/canvas-first-assessment.png 590w,
+/static/d78678022a00f7cb2e4e814784814561/2a3d6/canvas-first-assessment.png 885w,
+/static/d78678022a00f7cb2e4e814784814561/ae92f/canvas-first-assessment.png 1180w,
+/static/d78678022a00f7cb2e4e814784814561/5a2b3/canvas-first-assessment.png 1440w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The first assessment canvas&lt;/figcaption&gt;
+  &lt;/figure&gt;
+After we laid out these four cards, along the “Now” time, we asked ourselves: “Okay, what would we do?” And at this first assessment, there actually wasn’t much. Even in a scenario where we were sick and our health as foreign workers was being devalued, we’re healthy, have resources, and have a community. So we decided that we’d simply stay home, and try to weather this sickness as best we can.&lt;/p&gt;
 &lt;h3&gt;The Second Assessment&lt;/h3&gt;
-&lt;p&gt;Then we rolled a dice. Each of our catastrophy cards we had labeled with a number, since for this initial exercise we only had a few. And it rolled a 4: “A Death In the Family.” &lt;strong&gt;This was the moment where the game hit home and we both said “Fuck” in unison.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 16.944444444444443%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsSAAALEgHS3X78AAAAv0lEQVQI1z2Oy2rCUBRF84Od+D/+SqFTBwoWB52pUSK21hItxAdqBj4oGYSE+0rSu5obqgcOG/aGxfKklBRFgUshZJ2KNE0py5IkSciyDFn3Qilu/oT8dCA4/rCLz0gteR8GjDpdltGO6ecKj/8TQjRvjGngLvM8R2v92PSvpTCKYXTmbRWzOFx5DWP8Zch+E/G93eNZaxugs3QQZ6Zqm6qquNvfN60N2JL++sLT84zWy5z2IGQQfNEdf9DzF/wB57Xd1jSWzKkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The second assessment canvas&quot;
+        title=&quot;The second assessment canvas&quot;
+        src=&quot;/static/e3dc069fe4d691773ab73594d921e20f/799d3/canvas-second-assessment.png&quot;
+        srcset=&quot;/static/e3dc069fe4d691773ab73594d921e20f/00d96/canvas-second-assessment.png 148w,
+/static/e3dc069fe4d691773ab73594d921e20f/0b23c/canvas-second-assessment.png 295w,
+/static/e3dc069fe4d691773ab73594d921e20f/799d3/canvas-second-assessment.png 590w,
+/static/e3dc069fe4d691773ab73594d921e20f/2a3d6/canvas-second-assessment.png 885w,
+/static/e3dc069fe4d691773ab73594d921e20f/ae92f/canvas-second-assessment.png 1180w,
+/static/e3dc069fe4d691773ab73594d921e20f/5a2b3/canvas-second-assessment.png 1440w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;The second assessment canvas&lt;/figcaption&gt;
+  &lt;/figure&gt;
+Then we rolled a dice. Each of our catastrophy cards we had labeled with a number, since for this initial exercise we only had a few. And it rolled a 4: “A Death In the Family.” &lt;strong&gt;This was the moment where the game hit home and we both said “Fuck” in unison.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;In a scenario where our own health was at risk and we had made the decision to shelter in place, suddenly our sibling or our parent calls us with crushing news. We’re between an 8 and 12 hour flight back — itself a multiple of risk to ourselves, our loved ones, and those whose paths are simply coincident with our own.&lt;/p&gt;
 &lt;p&gt;This is where the second assessment took place. We listed what would likely have to happen: hunker in place. Look after our physical health. Look after our mental health. Find a grief councillor who can work with us remotely. Redouble our efforts to stay connected with family. Take on the responsibility of planning and estate considerations, or support the family member who does.&lt;/p&gt;
 &lt;h3&gt;The Next Turn&lt;/h3&gt;
@@ -242,11 +296,11 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href=&quot;/b3abbcae59e3404dbb0bdfe8f7c86a5d/canvas.pdf&quot;&gt;You can download the canvas here&lt;/a&gt;
+&lt;p&gt;&lt;a href=&quot;/f87d372c75f53c5a605f786953391152/canvas.pdf&quot;&gt;You can download the canvas here&lt;/a&gt;
 We didn’t play with the wildcards initially, so didn’t include that on the canvas.&lt;/p&gt;
 &lt;h3&gt;First Round&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Select an “Environment,” either what you’re must worried about now or what is already the case. Put that on “Now” and “Environment”. Then select two resource cards for what you have access to (positive) and what you are missing (negative). Then select a random incident card.&lt;/li&gt;
+&lt;li&gt;Select an “Environment,” either what you’re must worried about now or what is already the case. Put that on “Now” and “Environment”. Then select two resource cards for what you have access to (positive) and what you are missing (negative). Then select a random inflection card.&lt;/li&gt;
 &lt;li&gt;Think about what you would do in this scenario and discuss. What do you hope you’d have? What kind of decision would you make? Write it down on a posit and put it in assessment #1.&lt;/li&gt;
 &lt;li&gt;Then roll a dice or select a catastrophe card at random. Put it in the catastrophe slot.&lt;/li&gt;
 &lt;li&gt;Reflect and discuss on the new scenario given your previous decision. What changes? What can you do? How bad are things? What opportunities might exist? Write down your reflection and put it in assessment 2.&lt;/li&gt;
@@ -260,7 +314,7 @@ We didn’t play with the wildcards initially, so didn’t include that on the c
 &lt;h3&gt;Resources&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://docs.google.com/spreadsheets/d/1kxSbkwnDXJZfGT_-6vx8Yu8Xa4zb8taRV3CGYYlHy5E/edit?usp=sharing&quot;&gt;List of topics to help get started.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/b3abbcae59e3404dbb0bdfe8f7c86a5d/canvas.pdf&quot;&gt;Template canvas to print out&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/f87d372c75f53c5a605f786953391152/canvas.pdf&quot;&gt;Template canvas to print out&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[On Remote Work and the Coronavirus]]></title><description><![CDATA[With the coronavirus probably hitching a ride in one of your co-workers, it’s possible that your work (especially if you exist in that oh-so…]]></description><link>https://log.andrewlb.com/remotework/</link><guid isPermaLink="false">https://log.andrewlb.com/remotework/</guid><pubDate>Sat, 07 Mar 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
