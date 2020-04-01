@@ -184,7 +184,7 @@ class BlogPostTemplate extends React.Component {
           </header>
           <Nav>
             <li>
-              <AnchorLink href="#newsletter">Follow Newsletter</AnchorLink>
+              <AnchorLink href="#newsletter">Subscribe</AnchorLink>
             </li>
             <li>
               <AnchorLink href="#comment">Leave Comments</AnchorLink>
