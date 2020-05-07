@@ -3,6 +3,15 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 
+const LayoutStyled = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: ${props => (props.location ? rhythm(36) : rhythm(24))};
+  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+  /* background-image: linear-gradient(135deg, #f0f1f7 0%, #eaedf9 100%); */
+`
+
 const Header = styled.div`
   display: flex;
   justify-content: space-between;
@@ -17,6 +26,11 @@ const RightLink = styled.div`
   display: flex;
   a {
     padding: ${rhythm(1)};
+    border: 1px solid rgba(252, 252, 252, 0.4);
+    box-shadow: -6px -6px 12px 0 #000, 6px 6px 23px 0 rgba(45, 41, 56, 0.09),
+      inset 2px 2px 4px 0 rgba(61, 53, 138, 0.09);
+    border-radius: 5px;
+    max-height: 42px;
   }
 `
 
@@ -93,15 +107,7 @@ class Layout extends React.Component {
     }
 
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          position: "relative",
-          maxWidth: location.pathname === rootPath ? rhythm(36) : rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <LayoutStyled location={location.pathname === rootPath}>
         <header>{header}</header>
         <main style={{ display: `flex`, flexWrap: `wrap` }}>{children}</main>
         <footer>
@@ -109,7 +115,7 @@ class Layout extends React.Component {
           <a href="https://www.andrewlb.com">andrewlb.com</a> and{" "}
           <a href="https://www.stupidsystems.com">Stupid Systems LLC</a>
         </footer>
-      </div>
+      </LayoutStyled>
     )
   }
 }

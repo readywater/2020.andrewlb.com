@@ -68,7 +68,6 @@ class BlogIndex extends React.Component {
             <div id="newsletter">
               <EmailSignup />
             </div>
-            <hr />
             <div id="background">
               <Background />
             </div>

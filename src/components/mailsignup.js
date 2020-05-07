@@ -4,6 +4,24 @@ import { rhythm } from "../utils/typography"
 import FloatingLabelInput from "react-floating-label-input"
 import { Button } from "./background"
 
+const Newsletter = styled.div`
+  background: #e1e4f0;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: inset -5px -5px 10px 0 #ffffff,
+    inset 5px 5px 10px 0 rgba(81, 87, 126, 0.15);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  > .base {
+    border-radius: 8px;
+    padding: 20px;
+    background: #f2f4fc;
+    form {
+      margin: 0;
+    }
+  }
+`
+
 const ButtonBlock = styled.div`
   display: flex;
   flex-wrap: none;
@@ -58,81 +76,85 @@ class EmailSignup extends Component {
   render() {
     if (this.state.success) {
       return (
-        <div id="newsletter">
-          <h3>Thank you!</h3>
-          <p className="center">
-            Thanks for signing up! I'll do my best to keep your interest.
-            Otherwise, you can unsubscribe at any time. Just look for the
-            unsubscribe link in your email.
-          </p>
-        </div>
+        <Newsletter id="newsletter">
+          <div className="base">
+            <h3>Thank you!</h3>
+            <p className="center">
+              Thanks for signing up! I'll do my best to keep your interest.
+              Otherwise, you can unsubscribe at any time. Just look for the
+              unsubscribe link in your email.
+            </p>
+          </div>
+        </Newsletter>
       )
     }
     return (
-      <div id="newsletter">
-        <h3
-          style={{
-            margin: "0",
-            marginTop: 0,
-            marginBottom: rhythm(0.25),
-          }}
-        >
-          Subscribe to Diverge Weekly
-        </h3>
-        <p style={{ fontSize: rhythm(0.5), lineHeight: rhythm(0.75) }}>
-          I write a weekly email on design and global affairs.
-        </p>
-        <form
-          style={{
-            marginTop: rhythm(1),
-          }}
-          id="newsform"
-          onSubmit={async e => {
-            e.preventDefault()
-            const res = await this.sendSubscribeRequest()
-            console.log(res)
-            if (!res) return
-            this.setState({ success: true })
-          }}
-        >
-          <label htmlFor="email">
-            <FloatingLabelInput
-              type="email"
-              label="Email"
-              name="email"
-              id="email"
-              onChange={this.handleChange}
-              value={this.state.email || ""}
-            />
-          </label>
-          <div style={{ display: "none" }}>
-            <label htmlFor="hp">HP</label>
-            <input
-              type="text"
-              name="hp"
-              id="hp"
-              onChange={this.handleChange}
-              value={this.state.hp || ""}
-            />
-          </div>
-          <ButtonBlock>
-            <Button style={{}}>
-              <button
-                type="submit"
-                name="submit"
-                id="submit"
-                className="center"
-              >
-                Subscribe
-              </button>
-            </Button>
-            <p>
-              By subscribing, I consent to andrewlb.com and divergeweekly.com
-              emailing me.
-            </p>
-          </ButtonBlock>
-        </form>
-      </div>
+      <Newsletter id="newsletter">
+        <div className="base">
+          <h3
+            style={{
+              margin: "0",
+              marginTop: 0,
+              marginBottom: rhythm(0.25),
+            }}
+          >
+            Subscribe to Diverge Weekly
+          </h3>
+          <p style={{ fontSize: rhythm(0.5), lineHeight: rhythm(0.75) }}>
+            I write a weekly email on design and global affairs.
+          </p>
+          <form
+            style={{
+              marginTop: rhythm(1),
+            }}
+            id="newsform"
+            onSubmit={async e => {
+              e.preventDefault()
+              const res = await this.sendSubscribeRequest()
+              console.log(res)
+              if (!res) return
+              this.setState({ success: true })
+            }}
+          >
+            <label htmlFor="email">
+              <FloatingLabelInput
+                type="email"
+                label="Email"
+                name="email"
+                id="email"
+                onChange={this.handleChange}
+                value={this.state.email || ""}
+              />
+            </label>
+            <div style={{ display: "none" }}>
+              <label htmlFor="hp">HP</label>
+              <input
+                type="text"
+                name="hp"
+                id="hp"
+                onChange={this.handleChange}
+                value={this.state.hp || ""}
+              />
+            </div>
+            <ButtonBlock>
+              <Button style={{}}>
+                <button
+                  type="submit"
+                  name="submit"
+                  id="submit"
+                  className="center"
+                >
+                  Subscribe
+                </button>
+              </Button>
+              <p>
+                By subscribing, I consent to andrewlb.com and divergeweekly.com
+                emailing me.
+              </p>
+            </ButtonBlock>
+          </form>
+        </div>
+      </Newsletter>
     )
   }
 }

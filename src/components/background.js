@@ -45,6 +45,20 @@ const List = styled.ul`
     margin-right: ${rhythm(0.5)};
     margin-left: 0;
     max-width: 150px;
+    &.prod {
+      max-width: 220px;
+      &:hover {
+        .gatsby-image-wrapper {
+          opacity: 1;
+        }
+      }
+      p {
+        position: relative;
+        width: 300px;
+        max-width: 300px;
+        opacity: 1;
+      }
+    }
     position: relative;
     @media (max-width: 700px) {
       * > {
@@ -101,42 +115,14 @@ const Background = () => {
       }
       knowsi: file(absolutePath: { regex: "/knowsi.png/" }) {
         childImageSharp {
-          fixed(width: 150, height: 75) {
+          fixed(width: 300, height: 150) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       diverge: file(absolutePath: { regex: "/diverge.png/" }) {
         childImageSharp {
-          fixed(width: 150, height: 75) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      fitfaj: file(absolutePath: { regex: "/fitfaj.png/" }) {
-        childImageSharp {
-          fixed(width: 150, height: 75) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      grantcalc: file(absolutePath: { regex: "/grantcalc.png/" }) {
-        childImageSharp {
-          fixed(width: 150, height: 75) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      pedalpedal: file(absolutePath: { regex: "/pedalpedal.png/" }) {
-        childImageSharp {
-          fixed(width: 150, height: 75) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      stoke: file(absolutePath: { regex: "/stoke.png/" }) {
-        childImageSharp {
-          fixed(width: 150, height: 75) {
+          fixed(width: 300, height: 150) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -207,20 +193,21 @@ const Background = () => {
     >
       <div>
         <p>
-          For the past decade, I've contributed to awesome software by{" "}
-          <b>leading field research at IDEO</b>, getting into the weeds with{" "}
-          <b>agile teams at the Department of Defense</b> to improve delivery
-          and quality, <b>teaching design workshops to Innofounder startups</b>{" "}
-          in Denmark, and <b>building my own products</b> as an indie dev.
+          I'm a designer and product manager (with a technical streak). I create
+          products like <a href="https://knowsi.com">Knowsi</a> and write{" "}
+          <a href="https://divergeweekly.com">Diverge Weekly</a>.
         </p>
-        <p>Interested in a collaboration?</p>
+        <p>
+          I teach and consult on software product and co-design through{" "}
+          <a href="https://stupidsystems.com">Stupid Systems</a> for clients
+          like IKEA, Cookpad, Mozilla, and Innovation Fund Denmark.
+        </p>
         <Button href="mailto:alb@andrewlb.com" class="btn">
-          Let's chat
+          Curious to work together? Let's talk!
         </Button>
 
-        <h2>Recent Work</h2>
         <List>
-          <li>
+          <li className="prod">
             <a
               href="https://knowsi.com"
               target="_blank"
@@ -239,7 +226,7 @@ const Background = () => {
               <p>Consent Management for Researchers</p>
             </a>
           </li>
-          <li>
+          <li className="prod">
             <a
               href="https://divergeweekly.com"
               target="_blank"
@@ -254,65 +241,7 @@ const Background = () => {
                   minWidth: 50,
                 }}
               />
-
-              <p>Weekly Design and Global Affairs Newsletter</p>
-            </a>
-          </li>
-          <li>
-            <a
-              href="http://netgrant.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                fixed={data.grantcalc.childImageSharp.fixed}
-                alt={author}
-                style={{
-                  marginRight: rhythm(1 / 2),
-                  marginBottom: 0,
-                  minWidth: 50,
-                }}
-              />
-
-              <p>Grant Analytics, collab with Dahna Goldstein</p>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.pedalpedal.club/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                fixed={data.pedalpedal.childImageSharp.fixed}
-                alt={author}
-                style={{
-                  marginRight: rhythm(1 / 2),
-                  marginBottom: 0,
-                  minWidth: 50,
-                }}
-              />
-
-              <p>Reward yourself as a new cyclist</p>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://vimeo.com/80308354"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                fixed={data.stoke.childImageSharp.fixed}
-                alt={author}
-                style={{
-                  marginRight: rhythm(1 / 2),
-                  marginBottom: 0,
-                  minWidth: 50,
-                }}
-              />
-
-              <p>Large scale interactive installation for Nuit Blanche 2013</p>
+              <p>Weekly Design & Global Affairs Newsletter</p>
             </a>
           </li>
         </List>
@@ -346,7 +275,8 @@ const Background = () => {
             />
 
             <p>
-              Digital Service Expert <small>(2016-2017)</small>
+              Digital Service Expert (Dept of Defense){" "}
+              <small>(2016-2017)</small>
             </p>
           </li>
           <li>
