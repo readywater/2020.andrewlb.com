@@ -34,4 +34,4 @@ What I want is a Little Printer with a [Destructor Function](<https://web.archiv
 
 So let’s start with the quintessential “Bad Idea.” I present to you, _Little Printer: self powered edition_.
 
-![](Decay%202/lilprinter2.jpg)
+![](img/lilprinter2.jpg)
