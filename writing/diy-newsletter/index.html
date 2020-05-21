@@ -97,8 +97,8 @@
 <p>Finally, I had to figure out how to get the components to render the markdown appropriately.</p>
 <p>This came from me kind of misunderstanding how Remark worked, to be perfectly honest. That misunderstanding resolved itself pretty quickly after I dug into it though.</p>
 <p>I initially ended up using a plugin called <code class="language-text">gatsby-remark-custom-blocks</code>, which took blocks of text like this:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[[region | Europe]]
-|[World War II and the battle over collective memory in Eastern Europe](https://www.dw.com/en/world-war-ii-and-the-battle-over-collective-memory-in-eastern-europe/a-53356626)
+<div class="gatsby-highlight" data-language="markdown"><pre class="language-markdown"><code class="language-markdown">[[region | Europe]]
+|<span class="token url">[<span class="token content">World War II and the battle over collective memory in Eastern Europe</span>](https://www.dw.com/en/world-war-ii-and-the-battle-over-collective-memory-in-eastern-europe/a-53356626)</span>
 |On the topic of lenses, I found this article to be pretty interesting. Putin is a leader with a strong sense of national history, and his resonance towards World War II as a moment of national pride and unbelievable trauma for Russians makes for an interesting analysis.</code></pre></div>
 <p>And wrapped those in a stylable div. I still use them in the region section, to look like this:</p>
 <p><span
@@ -158,21 +158,21 @@
 	<span class="token operator">...</span>
 <span class="token punctuation">}</span></code></pre></div>
 <p>This allowed me to structure the layout of the site as react components and simply pass in key values as props. <a href="https://divergeweekly.com/issue/10/">An example from issue #10</a> is the component housing the main block.</p>
-<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span>
+<div class="gatsby-highlight" data-language="markdown"><pre class="language-markdown"><code class="language-markdown"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span>
   <span class="token attr-name">credit</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Kunrong Chen, Daily exercise, 2014<span class="token punctuation">"</span></span>
   <span class="token attr-name">quote</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>It occurred to me that no matter where I lived, geography could not save me. —  Isabel Wilkerson, The Warmth of Other Suns <span class="token punctuation">"</span></span>
 <span class="token punctuation">></span></span>
-  ![Kunrong Chen, Daily exercise, 2014](img/SFS2-EF.jpg) Hi. First, I want to
-  share a point of gratitude. My small business, [Knowsi](https://knowsi.com),
-  was awarded the [Sage Ocean Concept
-  Grant](https://ocean.sagepub.com/blog/tools-and-tech/concept-grant-winner-knowsi-interview)
-  this week by Sage Publishing. ... As always, [please subscribe to and share
-  Diverge Weekly](https://divergeweekly.com) if you haven’t and [send me a
-  note](mailto:alb@andrewlb.com) if you have questions or feedback!
+  <span class="token url">![<span class="token content">Kunrong Chen, Daily exercise, 2014</span>](img/SFS2-EF.jpg)</span> Hi. First, I want to
+  share a point of gratitude. My small business, <span class="token url">[<span class="token content">Knowsi</span>](https://knowsi.com)</span>,
+  was awarded the <span class="token url">[<span class="token content">Sage Ocean Concept
+  Grant</span>](https://ocean.sagepub.com/blog/tools-and-tech/concept-grant-winner-knowsi-interview)</span>
+  this week by Sage Publishing. ... As always, <span class="token url">[<span class="token content">please subscribe to and share
+  Diverge Weekly</span>](https://divergeweekly.com)</span> if you haven’t and <span class="token url">[<span class="token content">send me a
+  note</span>](mailto:alb@andrewlb.com)</span> if you have questions or feedback!
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span></code></pre></div>
 <p>This has some weird bits, but it’s working pretty well so far provided I want to stick with markdown.</p>
 <p>In terms of general workflow then, I usually write the main article in Bear, export to markdown into the Gatsby content folder, and do a quick copy-paste to this template I’ve created:</p>
-<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html">---
+<div class="gatsby-highlight" data-language="markdown"><pre class="language-markdown"><code class="language-markdown"><span class="token hr punctuation">---</span>
 title: The First Reflection Issue
 issue: 5
 date: "2020-04-08T09:00:00.000Z"
@@ -181,19 +181,19 @@ category: issue
 published: false
 image: img/__________.png
 tags:
-  - newsletter
-  - "2020"
-  - reflection
----
+  <span class="token list punctuation">-</span> newsletter
+  <span class="token list punctuation">-</span> "2020"
+  <span class="token title important">- reflection
+<span class="token punctuation">---</span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span> <span class="token attr-name">credit</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">quote</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  ![](img/) Hi. As always, [please subscribe to and share Diverge
-  Weekly](https://divergeweekly.com) if you haven’t and [send me a
-  note](mailto:alb@andrewlb.com) if you have questions or feedback!
+  ![](img/) Hi. As always, <span class="token url">[<span class="token content">please subscribe to and share Diverge
+  Weekly</span>](https://divergeweekly.com)</span> if you haven’t and <span class="token url">[<span class="token content">send me a
+  note</span>](mailto:alb@andrewlb.com)</span> if you have questions or feedback!
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>voices</span> <span class="token attr-name">who</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span> <span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span> <span class="token punctuation">"</span></span> <span class="token attr-name">image</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/ <span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  ![ ](img/) fdsdfsdf [ ]()
+  <span class="token url">![<span class="token content"> </span>](img/)</span> fdsdfsdf [ ]()
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>voices</span><span class="token punctuation">></span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>twitter</span> <span class="token attr-name">who</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -207,11 +207,11 @@ tags:
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>region</span><span class="token punctuation">></span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>reading</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span> <span class="token punctuation">"</span></span> <span class="token attr-name">author</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span> <span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  ![ ](img/) fdsdfsdf [ ]()
+  <span class="token url">![<span class="token content"> </span>](img/)</span> fdsdfsdf [ ]()
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>reading</span><span class="token punctuation">></span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>security</span> <span class="token attr-name">credit</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  ![Source: ](img/) []() sdfsdf
+  <span class="token url">![<span class="token content">Source: </span>](img/)</span> []() sdfsdf
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>security</span><span class="token punctuation">></span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>jobs</span><span class="token punctuation">></span></span>
@@ -219,13 +219,13 @@ tags:
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>jobs</span><span class="token punctuation">></span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sponsor</span> <span class="token attr-name">image</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://www.knowsi.com/static/tier1.png<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  ## Knowsi Knowsi manages consent for user research. Send and track participant
-  consent with custom forms and GDPR-focused tools. [Join Knowsi today for
-  free!](https://knowsi.com)
+  <span class="token title important"><span class="token punctuation">##</span> Knowsi Knowsi manages consent for user research. Send and track participant</span>
+  consent with custom forms and GDPR-focused tools. <span class="token url">[<span class="token content">Join Knowsi today for
+  free!</span>](https://knowsi.com)</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sponsor</span><span class="token punctuation">></span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>image</span> <span class="token attr-name">credit</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span> <span class="token punctuation">"</span></span> <span class="token attr-name">link</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span> <span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  ![ ](img/) sdfsdf
+  <span class="token url">![<span class="token content"> </span>](img/)</span> sdfsdf
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>image</span><span class="token punctuation">></span></span></code></pre></div>
 <p>Then simply double check that things look right on development, turn <code class="language-text">published</code> to true, and deploy to <code class="language-text">gh-pages</code>.</p>
 <h2>Everything Should Be Responsive</h2>
