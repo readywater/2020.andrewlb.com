@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Andrew Lovett-Barron]]></title><description><![CDATA[Some writing by Andrew.]]></description><link>https://log.andrewlb.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 21 May 2020 13:14:49 GMT</lastBuildDate><item><title><![CDATA[Building a Newsletter from Scratch]]></title><description><![CDATA[I wanted to share a bit about how I made Diverge Weekly, which has been an absolute joy to create and just hit 200 subscribers (you should…]]></description><link>https://log.andrewlb.com/diy-newsletter/</link><guid isPermaLink="false">https://log.andrewlb.com/diy-newsletter/</guid><pubDate>Thu, 21 May 2020 23:12:03 GMT</pubDate><content:encoded>&lt;p&gt;I wanted to share a bit about how I made &lt;a href=&quot;https://divergeweekly.com&quot;&gt;Diverge Weekly&lt;/a&gt;, which has been an absolute joy to create and just hit 200 subscribers (you should join, by the way).&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Andrew Lovett-Barron]]></title><description><![CDATA[Some writing by Andrew.]]></description><link>https://log.andrewlb.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 21 May 2020 23:51:47 GMT</lastBuildDate><item><title><![CDATA[Building a Newsletter from Scratch]]></title><description><![CDATA[I wanted to share a bit about how I made Diverge Weekly, which has been an absolute joy to create and just hit 200 subscribers (you should…]]></description><link>https://log.andrewlb.com/diy-newsletter/</link><guid isPermaLink="false">https://log.andrewlb.com/diy-newsletter/</guid><pubDate>Thu, 21 May 2020 23:12:03 GMT</pubDate><content:encoded>&lt;p&gt;I wanted to share a bit about how I made &lt;a href=&quot;https://divergeweekly.com&quot;&gt;Diverge Weekly&lt;/a&gt;, which has been an absolute joy to create and just hit 200 subscribers (you should join, by the way).&lt;/p&gt;
 &lt;p&gt;Shortly before the world descended into a pandemic, I had an idea for something I wanted to write. Last year, my friends Zahra, Marc, and I had been batting around the idea for a podcast (as one does) about design, strategy, and politics from a Canadian lens, but we were never able to coordinate between ourselves to get it together.&lt;/p&gt;
 &lt;p&gt;For the past few months, I’d been taking out some advertising with a newsletter called &lt;a href=&quot;https://densediscovery.com&quot;&gt;Dense Discovery&lt;/a&gt;, which had been started by designer and editor Kai Brach. It was thoughtfully arranged, had a good pace, was opinionated, and helped me discover some things that didn’t normally have time to deal with. So using that structure as a template, I wrote my first newsletter as a prototype — a simple structure in markdown.
 &lt;span
@@ -75,13 +75,9 @@
 &lt;p&gt;Finally, I had to figure out how to get the components to render the markdown appropriately.&lt;/p&gt;
 &lt;p&gt;This came from me kind of misunderstanding how Remark worked, to be perfectly honest. That misunderstanding resolved itself pretty quickly after I dug into it though.&lt;/p&gt;
 &lt;p&gt;I initially ended up using a plugin called &lt;code class=&quot;language-text&quot;&gt;gatsby-remark-custom-blocks&lt;/code&gt;, which took blocks of text like this:&lt;/p&gt;
-
-        &lt;deckgo-highlight-code &gt;
-          &lt;code slot=&quot;code&quot;&gt;[[region | Europe]]
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[[region | Europe]]
 |[World War II and the battle over collective memory in Eastern Europe](https://www.dw.com/en/world-war-ii-and-the-battle-over-collective-memory-in-eastern-europe/a-53356626)
-|On the topic of lenses, I found this article to be pretty interesting. Putin is a leader with a strong sense of national history, and his resonance towards World War II as a moment of national pride and unbelievable trauma for Russians makes for an interesting analysis.&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+|On the topic of lenses, I found this article to be pretty interesting. Putin is a leader with a strong sense of national history, and his resonance towards World War II as a moment of national pride and unbelievable trauma for Russians makes for an interesting analysis.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;And wrapped those in a stylable div. I still use them in the region section, to look like this:&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -108,56 +104,42 @@
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;This wasn’t really helpful for most of the things I wanted to lay out though, and it didn’t let my apply react component-level styling to those elements. Really, I was hoping to pass the markdown content into those components as props, and have it render appropriately.&lt;/p&gt;
 &lt;p&gt;The solution ended up being to use a tool called &lt;a href=&quot;https://github.com/rehypejs/rehype&quot;&gt;Rehype&lt;/a&gt;. I simply wrote the different components with their appropriate props, and added this code to the post structure.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; rehypeReact &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;rehype-react&quot;&lt;/span&gt;
 
-        &lt;deckgo-highlight-code language=&quot;javascript&quot;&gt;
-          &lt;code slot=&quot;code&quot;&gt;import rehypeReact from &amp;quot;rehype-react&amp;quot;
-
-const renderAst = new rehypeReact({
-  createElement: React.createElement,
-  components: {
-    // These are some of the components I&amp;#39;m using
-    region: Region,
-    sponsor: FeatureAd,
-    security: Security,
-    voices: Voices,
-    reading: Reading,
-    main: Main,
-    twitter: Twitter,
-    imageblock: ImageBlock,
-    classified: Classified,
-    jobs: Jobs,
-  },
-}).Compiler&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; renderAst &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;rehypeReact&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  createElement&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;createElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  components&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// These are some of the components I&apos;m using&lt;/span&gt;
+    region&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Region&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    sponsor&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; FeatureAd&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    security&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Security&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    voices&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Voices&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    reading&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Reading&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    main&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Main&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    twitter&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Twitter&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    imageblock&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ImageBlock&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    classified&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Classified&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    jobs&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Jobs&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Compiler&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Then, where the markdown data is transformed by Remark, I added&lt;/p&gt;
-
-        &lt;deckgo-highlight-code &gt;
-          &lt;code slot=&quot;code&quot;&gt;{renderAst(post.htmlAst)}&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{renderAst(post.htmlAst)}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;And made sure that the graphql interface was returning the appropriate field:&lt;/p&gt;
-
-        &lt;deckgo-highlight-code language=&quot;javascript&quot;&gt;
-          &lt;code slot=&quot;code&quot;&gt;markdownRemark(fields: { slug: { eq: $slug } }) {
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token function&quot;&gt;markdownRemark&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;fields&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; slug&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; eq&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; $slug &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
       id
-      excerpt(pruneLength: 160)
+      &lt;span class=&quot;token function&quot;&gt;excerpt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pruneLength&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;160&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
       htmlAst
-      fields {
+      fields &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
         slug
-      ...
-      }
-	...
-}&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+      &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This allowed me to structure the layout of the site as react components and simply pass in key values as props. &lt;a href=&quot;https://divergeweekly.com/issue/10/&quot;&gt;An example from issue #10&lt;/a&gt; is the component housing the main block.&lt;/p&gt;
-
-        &lt;deckgo-highlight-code language=&quot;html&quot;&gt;
-          &lt;code slot=&quot;code&quot;&gt;&amp;lt;main
-  credit=&amp;quot;Kunrong Chen, Daily exercise, 2014&amp;quot;
-  quote=&amp;quot;It occurred to me that no matter where I lived, geography could not save me. —  Isabel Wilkerson, The Warmth of Other Suns &amp;quot;
-&amp;gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;main&lt;/span&gt;
+  &lt;span class=&quot;token attr-name&quot;&gt;credit&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;Kunrong Chen, Daily exercise, 2014&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token attr-name&quot;&gt;quote&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;It occurred to me that no matter where I lived, geography could not save me. —  Isabel Wilkerson, The Warmth of Other Suns &lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   ![Kunrong Chen, Daily exercise, 2014](img/SFS2-EF.jpg) Hi. First, I want to
   share a point of gratitude. My small business, [Knowsi](https://knowsi.com),
   was awarded the [Sage Ocean Concept
@@ -165,70 +147,64 @@ const renderAst = new rehypeReact({
   this week by Sage Publishing. ... As always, [please subscribe to and share
   Diverge Weekly](https://divergeweekly.com) if you haven’t and [send me a
   note](mailto:alb@andrewlb.com) if you have questions or feedback!
-&amp;lt;/main&amp;gt;&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This has some weird bits, but it’s working pretty well so far provided I want to stick with markdown.&lt;/p&gt;
 &lt;p&gt;In terms of general workflow then, I usually write the main article in Bear, export to markdown into the Gatsby content folder, and do a quick copy-paste to this template I’ve created:&lt;/p&gt;
-
-        &lt;deckgo-highlight-code language=&quot;html&quot;&gt;
-          &lt;code slot=&quot;code&quot;&gt;---
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;---
 title: The First Reflection Issue
 issue: 5
-date: &amp;quot;2020-04-08T09:00:00.000Z&amp;quot;
-description: &amp;quot;This is issue #5, so I figured it was time for a short reflection&amp;quot;
+date: &quot;2020-04-08T09:00:00.000Z&quot;
+description: &quot;This is issue #5, so I figured it was time for a short reflection&quot;
 category: issue
 published: false
 image: img/__________.png
 tags:
   - newsletter
-  - &amp;quot;2020&amp;quot;
+  - &quot;2020&quot;
   - reflection
 ---
 
-&amp;lt;main credit=&amp;quot;&amp;quot; quote=&amp;quot;&amp;quot;&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;main&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;credit&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;quote&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   ![](img/) Hi. As always, [please subscribe to and share Diverge
   Weekly](https://divergeweekly.com) if you haven’t and [send me a
   note](mailto:alb@andrewlb.com) if you have questions or feedback!
-&amp;lt;/main&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 
-&amp;lt;voices who=&amp;quot; &amp;quot; role=&amp;quot; &amp;quot; image=&amp;quot;img/ &amp;quot;&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;voices&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;who&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;img/ &lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   ![ ](img/) fdsdfsdf [ ]()
-&amp;lt;/voices&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;voices&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 
-&amp;lt;twitter who=&amp;quot;&amp;quot;&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;twitter&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;who&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   [ ]()
-&amp;lt;/twitter&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;twitter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 
-&amp;lt;region&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;region&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   [[region | East Asia]] |[]() | [[region | South Asia]] |[]() | [[region |
   Americas]] |[]() | [[region | MENA]] |[]() | [[region | Africa]] |[]() |
   [[region | Europe]] |[]() |
-&amp;lt;/region&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;region&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 
-&amp;lt;reading title=&amp;quot; &amp;quot; author=&amp;quot; &amp;quot;&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;reading&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   ![ ](img/) fdsdfsdf [ ]()
-&amp;lt;/reading&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;reading&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 
-&amp;lt;security credit=&amp;quot;&amp;quot;&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;security&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;credit&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   ![Source: ](img/) []() sdfsdf
-&amp;lt;/security&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;security&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 
-&amp;lt;jobs&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;jobs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   [[jobad | ]] |[]() |Located in | | [[jobad | ]] |[]() |Located in | |
-&amp;lt;/jobs&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;jobs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 
-&amp;lt;sponsor image=&amp;quot;https://www.knowsi.com/static/tier1.png&amp;quot;&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;sponsor&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;https://www.knowsi.com/static/tier1.png&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   ## Knowsi Knowsi manages consent for user research. Send and track participant
   consent with custom forms and GDPR-focused tools. [Join Knowsi today for
   free!](https://knowsi.com)
-&amp;lt;/sponsor&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;sponsor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 
-&amp;lt;image credit=&amp;quot; &amp;quot; link=&amp;quot; &amp;quot;&amp;gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;image&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;credit&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   ![ ](img/) sdfsdf
-&amp;lt;/image&amp;gt;&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;image&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Then simply double check that things look right on development, turn &lt;code class=&quot;language-text&quot;&gt;published&lt;/code&gt; to true, and deploy to &lt;code class=&quot;language-text&quot;&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;Everything Should Be Responsive&lt;/h2&gt;
 &lt;p&gt;This turned into a massive pain.&lt;/p&gt;
@@ -264,157 +240,129 @@ tags:
 &lt;p&gt;Finally, I just wanted to write this once, so that the Gatsby page itself should render at the same time as the mail page, and everything should be easy.&lt;/p&gt;
 &lt;p&gt;I tried a bunchhhh of different things, and ultimately resolved on just taking the rendered HTML as it was, and transforming THAT into the mail html. The ideal would be that I’d render two different, properly formatted versions, but I couldn’t quite figure out where to do those modifications, so this became the easy point of intervention.&lt;/p&gt;
 &lt;p&gt;Here’s the code:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;onPostBuild&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    “Build Complete &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; Post Build”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;__dirname&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;mail&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;“&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-        &lt;deckgo-highlight-code language=&quot;javascript&quot;&gt;
-          &lt;code slot=&quot;code&quot;&gt;exports.onPostBuild = async () =&amp;gt; {
-  console.log(
-    “Build Complete for Post Build”,
-    path.resolve(__dirname, “public/mail/“)
-  )
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; pattern &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; “&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;mail_&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;/**/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;html”
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; files &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;globAsync&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;pattern&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; nodir&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-  const pattern = “public/mail_*/**/*.html”
-  const files = await globAsync(pattern, { nodir: true })
-
-  const inlined = files.map(async file =&amp;gt; {
-    const data = await readFileAsync(file, “utf8”)&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; inlined &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; files&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;readFileAsync&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;file&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; “utf8”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;First, I grab all the files in the mail folder which were rendered with CreatePage, and loop through them.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;resolve&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; html &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; url &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; “https&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;divergeweekly&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;com”
 
-        &lt;deckgo-highlight-code language=&quot;javascript&quot;&gt;
-          &lt;code slot=&quot;code&quot;&gt;    return new Promise(async (resolve, reject) =&amp;gt; {
-      let html = String(data)
-      const url = “https://divergeweekly.com”
+      &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; $ &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; cheerio&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;html&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-      const $ = cheerio.load(html)
-
-      $(“script”).remove() // remove scripts
-      $(“noscript”).remove() // remove scripts
-      $(“link”).remove() // remove links&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+      &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“script”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// remove scripts&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“noscript”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// remove scripts&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“link”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// remove links&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Then I remove the tags that aren’t going to be used. Links, script, and noscript. I never use jquery anymore, but for whatever reason it was a helpful default here, so I ended up relying on Cheerio just for simplicity sake.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;      &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“img&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;src&lt;span class=&quot;token operator&quot;&gt;^=&lt;/span&gt;‘&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;‘&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;prop&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“href”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;_idx&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; oldHref&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;oldHref&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“Something is weird”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; oldHref&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; _idx&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; oldHref&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;url&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-        &lt;deckgo-highlight-code language=&quot;javascript&quot;&gt;
-          &lt;code slot=&quot;code&quot;&gt;      $(“img[src^=‘/‘]”).prop(“href”, function(_idx, oldHref) {
-        if (!oldHref) {
-          console.log(“Something is weird”, oldHref, _idx)
-        } else {
-          return oldHref.append(url)
-        }
-      })
+      &lt;span class=&quot;token comment&quot;&gt;// Convert Gatsby image to image&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;gatsby&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;resp&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;image&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;wrapper”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;each&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; _this &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;
 
-      // Convert Gatsby image to image
-      $(“.gatsby-resp-image-wrapper”).each(function() {
-        const _this = this
+        &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replaceWith&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+          &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&amp;lt;img src=“&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;url &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;
+            &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+              &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“img”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+              &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“src”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;” alt=“&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“img”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“alt”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;” /&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-        $(this).replaceWith(
-          `&amp;lt;img src=“${url +
-            $(this)
-              .find(“img”)
-              .attr(“src”)}” alt=“${$(this)
-            .find(“img”)
-            .attr(“alt”)}” /&amp;gt;`
-        )
-      })
+      &lt;span class=&quot;token comment&quot;&gt;// Convert picture&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“picture”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;each&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; _this &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;
 
-      // Convert picture
-      $(“picture”).each(function() {
-        const _this = this
-
-        $(this).replaceWith(
-          `&amp;lt;img src=“${url +
-            $(this)
-              .find(“img”)
-              .attr(“src”)}” alt=“${$(this)
-            .find(“img”)
-            .attr(“alt”)}” /&amp;gt;`
-        )
-      })&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+        &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replaceWith&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+          &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&amp;lt;img src=“&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;url &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;
+            &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+              &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“img”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+              &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“src”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;” alt=“&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“img”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“alt”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;” /&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;I think went through and converted all the images to absolute links and removed the Gatsby responsive images. I wasn’t able to figure out how NOT to use Gatsby images while still leveraging the Sharp plugin for optimizing the image rendering, so this became my shortcut. It’s not the cleanest, but it works pretty well.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;      &lt;span class=&quot;token comment&quot;&gt;// Convert all links&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“a”&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;not&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;‘&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;href&lt;span class=&quot;token operator&quot;&gt;^=&lt;/span&gt;“http”&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;href&lt;span class=&quot;token operator&quot;&gt;^=&lt;/span&gt;“https”&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;href&lt;span class=&quot;token operator&quot;&gt;^=&lt;/span&gt;“mailto&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;”&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;href&lt;span class=&quot;token operator&quot;&gt;^=&lt;/span&gt;“#&quot;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&apos;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;’&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;each&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;href&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;”&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;index&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; value&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;value&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;substr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; &quot;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;“&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;“&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                value &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; url &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; value
+              &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-        &lt;deckgo-highlight-code language=&quot;javascript&quot;&gt;
-          &lt;code slot=&quot;code&quot;&gt;      // Convert all links
-      $(“a”)
-        .not(‘[href^=“http”],[href^=“https”],[href^=“mailto:”],[href^=“#&amp;quot;]&amp;#39;)’.each(function() {
-          $(this).attr(&amp;quot;href&amp;quot;,”function(index, value) {
-            if (value) {
-              if (value.substr(0, 1) !== &amp;quot;/“)“{
-                value = url + value
-              }
-
-              return url + value
-            } else {
-              console.log(“Weird.”,”index, value)
-            }
-          })
-        })&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+              &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; url &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; value
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+              console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;“Weird&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;”&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;”index&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;I think convert all the links to absolute instead of relative values.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; text &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; htmlToText&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;fromString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;$&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  wordwrap&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;130&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-        &lt;deckgo-highlight-code language=&quot;javascript&quot;&gt;
-          &lt;code slot=&quot;code&quot;&gt;const text = htmlToText.fromString($.html(), {
-  wordwrap: 130,
-})
-
-const inlined = juice($.html())&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; inlined &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;juice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;$&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Then I render a compile the rendered html into a text format as well for raw-text newsletter rendering, as well as inlining all of the css.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;      &lt;span class=&quot;token comment&quot;&gt;// Write HTML&lt;/span&gt;
+      fs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;writeFile&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;file&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; inlined&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token function&quot;&gt;reject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Inline CSS error on write file:\n\n&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;err&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-        &lt;deckgo-highlight-code language=&quot;javascript&quot;&gt;
-          &lt;code slot=&quot;code&quot;&gt;      // Write HTML
-      fs.writeFile(file, inlined, err =&amp;gt; {
-        if (err) {
-          reject()
-          console.error(`Inline CSS error on write file:\n\n${err}`)
-        }
-        resolve()
-      })
-
-      // Write Text
-      fs.writeFile(file.split(&amp;quot;.&amp;quot;)[0] + &amp;quot;.txt&amp;quot;, text, err =&amp;gt; {
-        if (err) {
-          reject()
-          console.error(`Inline CSS error on write file:\n\n${err}`)
-        }
-        resolve()
-      })
-    })
-  })
-  await Promise.all(inlined)&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+      &lt;span class=&quot;token comment&quot;&gt;// Write Text&lt;/span&gt;
+      fs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;writeFile&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;file&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;.&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;.txt&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; text&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token function&quot;&gt;reject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Inline CSS error on write file:\n\n&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;err&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; Promise&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;inlined&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Finally, I write the converted and inlined file back to disc, and also add a text file to be used in the newsletter.&lt;/p&gt;
 &lt;p&gt;All and all, this isn’t the cleanest way to approach it, but it works pretty well.&lt;/p&gt;
 &lt;p&gt;Last but not least, I write everything to the mail server and create a new campaign using the &lt;a href=&quot;https://sendy.co/api&quot;&gt;Sendy API&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I don’t actually have this implemented, but it would look something like this.&lt;/p&gt;
-
-        &lt;deckgo-highlight-code language=&quot;javascript&quot;&gt;
-          &lt;code slot=&quot;code&quot;&gt;  return fetch(&amp;quot;url+&amp;quot;/api/campaigns/create.php&amp;quot;, {
-    method: &amp;quot;POST&amp;quot;,
-    mode: &amp;quot;no-cors&amp;quot;,
-    credentials: &amp;quot;same-origin&amp;quot;,
-    headers: {
-      &amp;quot;Content-Type&amp;quot;: &amp;quot;application/x-www-form-urlencoded&amp;quot;,
-    },
-    body: new URLSearchParams({
-		plaintext: text,
-		html: inlined,
-		title: title,
-		from_name: config.from,
-		from_email: config.email,
-		reply_to: config.replyto,
-      list: config.listid,
-      boolean: true,
-      subform: true,
-    }),
-  })&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;url+&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;api&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;campaigns&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;create&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;php&quot;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    method&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;POST&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    mode&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;no-cors&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    credentials&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;same-origin&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    headers&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token string&quot;&gt;&quot;Content-Type&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;application/x-www-form-urlencoded&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    body&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;URLSearchParams&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		plaintext&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; text&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		html&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; inlined&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		title&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; title&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		from_name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; config&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;from&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		from_email&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; config&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;email&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		reply_to&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; config&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;replyto&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      list&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; config&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;listid&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      boolean&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      subform&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;Reflecting&lt;/h2&gt;
 &lt;p&gt;So. Overall, this has been a fun way to learn the details of how Gatsby works, and certainly reflected my workflow. Also, development time aside, the bulk of the TIME spent on the newsletter is content focused, which is exactly what I wanted.&lt;/p&gt;
 &lt;p&gt;I love that the newsletters are their own discrete markdown product, stored as files and folder structures, and just clean.&lt;/p&gt;
@@ -1026,33 +974,29 @@ Photo by &lt;a href=&quot;https://unsplash.com/@mohammadmetri?utm_source=unsplas
 &lt;p&gt;You need to do this &lt;strong&gt;for each page&lt;/strong&gt; of the library, so if you have 50+ books, simply go through each. Save the output; you can keep the file in an excel format or export to CSV.&lt;/p&gt;
 &lt;h2&gt;Convert the Data into a Goodreads Format&lt;/h2&gt;
 &lt;p&gt;From here, you’ll want to run &lt;a href=&quot;https://gist.github.com/readywater/b71c11428a151654474cdb673756319e&quot;&gt;the python script&lt;/a&gt;. Save the file to whatever directly you’ve stored your audible spreadsheet and open your terminal. On Mac, do this by typing &lt;code class=&quot;language-text&quot;&gt;command space&lt;/code&gt; and writing &lt;code class=&quot;language-text&quot;&gt;terminal&lt;/code&gt; in the spotlight search.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; pandas &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; pd
+&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; isbntools&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;app &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
 
-        &lt;deckgo-highlight-code language=&quot;python&quot;&gt;
-          &lt;code slot=&quot;code&quot;&gt;import pandas as pd
-from isbntools.app import *
+df &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pd&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;read_excel&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;r&apos;/path/to/the/saved/excel.xlsx&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-df = pd.read_excel(r&amp;#39;/path/to/the/saved/excel.xlsx&amp;#39;)
+&lt;span class=&quot;token comment&quot;&gt;# Fetch ISBN from title and author using isbn tools&lt;/span&gt;
+df&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;isbn&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; df&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;lambda&lt;/span&gt; x &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; isbn_from_words&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Title &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Author&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; axis&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Convert Dates&lt;/span&gt;
+df&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Buy Date&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pd&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;to_datetime&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;df&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Buy Date&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;%m-%d-%y&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; exact&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;dt&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;strftime&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;%Y-%m-%d&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#df[&quot;Buy Date&quot;] = df[&quot;Buy Date&quot;]&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Add to audible&lt;/span&gt;
+df&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Bookshelves&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;audible&quot;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Map the Date Read to the Buy Date as a loose proxy&lt;/span&gt;
+df&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Date Read&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; df&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;lambda&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Buy Date&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Time Left&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; axis&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# This doesn&apos;t actually register, but the export that Goodreads provides is Exclusive Shelf for the read status&lt;/span&gt;
+df&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Exclusive Shelf&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; df&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;lambda&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;read&quot;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Time Left&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;currently-reading&quot;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Time Left&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Minutes&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;.8&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;to-read&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; axis&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# So I fix it by just appending the status to Bookshelves depending on read status. i.e. if less than 30min left, it&apos;s read. If you&apos;ve listened to more than 20% of it, it&apos;s Currently Reading&lt;/span&gt;
+df&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Bookshelves&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; df&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;lambda&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Bookshelves&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;read&quot;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Time Left&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Bookshelves&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;currently-reading&quot;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Time Left&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Minutes&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;.8&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Bookshelves&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;to-read&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; axis&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Rename Buy Date to Date Added&lt;/span&gt;
+df&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;rename&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;columns&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Buy Date&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Date Added&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;inplace &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-# Fetch ISBN from title and author using isbn tools
-df[&amp;#39;isbn&amp;#39;] = df.apply(lambda x : isbn_from_words(x.Title + &amp;quot; &amp;quot; + x.Author), axis=1 )
-# Convert Dates
-df[&amp;quot;Buy Date&amp;quot;] = pd.to_datetime(df[&amp;quot;Buy Date&amp;quot;], format=&amp;quot;%m-%d-%y&amp;quot;, exact=False).dt.strftime(&amp;#39;%Y-%m-%d&amp;#39;)
-#df[&amp;quot;Buy Date&amp;quot;] = df[&amp;quot;Buy Date&amp;quot;]
-# Add to audible
-df[&amp;quot;Bookshelves&amp;quot;] = &amp;quot;audible&amp;quot;
-# Map the Date Read to the Buy Date as a loose proxy
-df[&amp;quot;Date Read&amp;quot;] = df.apply(lambda x: x[&amp;quot;Buy Date&amp;quot;] if x[&amp;quot;Time Left&amp;quot;] &amp;lt; 30 else None, axis=1)
-# This doesn&amp;#39;t actually register, but the export that Goodreads provides is Exclusive Shelf for the read status
-df[&amp;quot;Exclusive Shelf&amp;quot;] = df.apply(lambda x: &amp;quot;read&amp;quot; if x[&amp;quot;Time Left&amp;quot;] &amp;lt; 30 else &amp;quot;currently-reading&amp;quot; if x[&amp;quot;Time Left&amp;quot;]/x[&amp;quot;Minutes&amp;quot;] &amp;lt; .8 else &amp;quot;to-read&amp;quot;, axis=1)
-# So I fix it by just appending the status to Bookshelves depending on read status. i.e. if less than 30min left, it&amp;#39;s read. If you&amp;#39;ve listened to more than 20% of it, it&amp;#39;s Currently Reading
-df[&amp;quot;Bookshelves&amp;quot;] = df.apply(lambda x: x[&amp;quot;Bookshelves&amp;quot;] + &amp;quot; &amp;quot; + &amp;quot;read&amp;quot; if x[&amp;quot;Time Left&amp;quot;] &amp;lt; 30 else x[&amp;quot;Bookshelves&amp;quot;] + &amp;quot; &amp;quot; + &amp;quot;currently-reading&amp;quot; if x[&amp;quot;Time Left&amp;quot;]/x[&amp;quot;Minutes&amp;quot;] &amp;lt; .8 else x[&amp;quot;Bookshelves&amp;quot;] + &amp;quot; &amp;quot; + &amp;quot;to-read&amp;quot;, axis=1)
-# Rename Buy Date to Date Added
-df.rename(columns={&amp;quot;Buy Date&amp;quot; : &amp;quot;Date Added&amp;quot;},inplace = True)
-
-df.to_csv(r&amp;#39;/path/to/export/audible-goodreads-import.csv&amp;#39;)
-print (&amp;quot;Done&amp;quot;)&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-      
+df&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;to_csv&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;r&apos;/path/to/export/audible-goodreads-import.csv&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Done&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Before running the script, you’ll want to change two things. Open then python script and change line 17: &lt;code class=&quot;language-text&quot;&gt;df = pd.read_excel(r’/path/to/the/saved/excel.xlsx’)&lt;/code&gt; to the path to your file and line 35: &lt;code class=&quot;language-text&quot;&gt;df.to_csv(r’/path/to/export/audible-goodreads-import.csv’)&lt;/code&gt; to your export CSV format.&lt;/p&gt;
 &lt;p&gt;Then simply run &lt;code class=&quot;language-text&quot;&gt;py audible-goodreads-import.py&lt;/code&gt; in terminal, and you should get a file output with the CSV.&lt;/p&gt;
 &lt;p&gt;From there, simply &lt;a href=&quot;https://www.goodreads.com/review/import&quot;&gt;go to your goodread account’s import page&lt;/a&gt; and follow the import instructions.&lt;/p&gt;
