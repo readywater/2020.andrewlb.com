@@ -206,12 +206,17 @@ const Background = () => {
       <div>
         <Bio>
           <p>
-            I'm a designer and product manager (with a technical streak). I
-            create products like <a href="https://knowsi.com">Knowsi</a> and
-            write <a href="https://divergeweekly.com">Diverge Weekly</a>.
+            I'm a generalist. I usually contribute as a product manager/owner
+            (with a technical streak) or a design researcher.{" "}
           </p>
           <p>
-            I teach and consult on software product and co-design through{" "}
+            I create products like <a href="https://knowsi.com">Knowsi</a> and
+            write <a href="https://divergeweekly.com">Diverge Weekly</a>. I make
+            and sell softgoods at{" "}
+            <a href="https://methodmixed.com">Mixed Method Equipment</a>.
+          </p>
+          <p>
+            I consult on and teach about software products/teams with{" "}
             <a href="https://stupidsystems.com">Stupid Systems</a> for clients
             like IKEA, Cookpad, Mozilla, and Innovation Fund Denmark.
           </p>

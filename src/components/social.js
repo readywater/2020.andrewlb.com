@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import PropTypes from "prop-types"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { library } from "@fortawesome/fontawesome-svg-core"
@@ -29,6 +28,12 @@ const links = [
     link: "https://linkedin.com/in/andrewlb",
     icon: "linkedin",
     desc: "Respectfully only screaming inside my heart",
+  },
+  {
+    media: "instagram",
+    link: "https://instagram.com/stupidfits",
+    icon: "sticker-mule",
+    desc: "Old man fussing about clothes",
   },
 ]
 
@@ -89,7 +94,7 @@ export default class Social extends Component {
         {links.map(l => (
           <li>
             <span class="tooltiptext">{l.desc}</span>
-            <a href={l.link}>
+            <a href={l.link} target="_blank">
               <FontAwesomeIcon icon={["fab", l.icon]} size="2x" />
             </a>
           </li>
