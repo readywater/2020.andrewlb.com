@@ -5,26 +5,15 @@ import FloatingLabelInput from "react-floating-label-input"
 import { Button } from "./background"
 
 const Newsletter = styled.div`
-  background: #e1e4f0;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  box-shadow: inset -5px -5px 10px 0 #ffffff,
-    inset 5px 5px 10px 0 rgba(81, 87, 126, 0.15);
-  border-radius: 15px;
+  border: 3px solid black;
   padding: 20px;
-  margin-bottom: 20px;
-  > .base {
-    border-radius: 8px;
-    padding: 20px;
-    background: #f2f4fc;
-    form {
-      margin: 0;
-    }
-  }
+  margin: 0 0 20px 0;
+  background: #ffffff;
 `
 
 const ButtonBlock = styled.div`
   display: flex;
-  flex-wrap: none;
+  flex-wrap: wrap;
   width: 100%;
   margin-top: ${rhythm(0.5)};
   align-items: flex-start;

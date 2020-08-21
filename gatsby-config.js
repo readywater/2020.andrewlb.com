@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Andrew Lovett-Barron`,
+    title: `andrewlb`,
     subtitle: `Writing on Product, Politics, and Design`,
     author: `Andrew Lovett-Barron`,
     description: `Some writing by Andrew.`,
-    siteUrl: `https://log.andrewlb.com/`,
+    siteUrl: `https://andrewlb.com/`,
     social: {
       twitter: `readywater`,
     },
@@ -43,7 +43,15 @@ module.exports = {
         plugins: [
           `gatsby-remark-reading-time`,
           {
-            resolve: `gatsby-remark-highlight-code`,
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              escapeEntities: {},
+            },
           },
           {
             resolve: `gatsby-remark-images`,

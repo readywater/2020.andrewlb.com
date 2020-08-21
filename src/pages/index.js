@@ -16,6 +16,7 @@ export const RespLayout = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse column-reverse;
+  padding: 20px;
   .left {
     width: 40%;
     @media (max-width: 700px) {
@@ -27,6 +28,16 @@ export const RespLayout = styled.div`
     @media (max-width: 700px) {
       width: 100%;
     }
+  }
+`
+
+const Links = styled.div`
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+  font-weight: 800;
+  a {
+    padding: 0 40px 0 0;
   }
 `
 
@@ -58,21 +69,28 @@ class BlogIndex extends React.Component {
           </li>
           <li>
             <AnchorLink offset="100" href="#posts">
-              Posts
+              Writing
             </AnchorLink>
           </li>
         </RespNav>
         <RespLayout>
           <div className="left" style={{ marginRight: rhythm(1) }}>
-            {/* <Bio /> */}
-            <div id="newsletter">
-              <EmailSignup />
-            </div>
             <div id="background">
               <Background />
             </div>
           </div>
           <div className="right" id="posts">
+            <Links>
+              <Link style={{ boxShadow: `none` }} to={`/writing`}>
+                Writing
+              </Link>
+              <Link style={{ boxShadow: `none` }} to={`/security`}>
+                Security
+              </Link>
+              <Link style={{ boxShadow: `none` }} to={`/short`}>
+                Shorts
+              </Link>
+            </Links>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return <PostSummary node={node} />

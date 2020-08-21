@@ -15,10 +15,12 @@ import styled from "styled-components"
 
 export const Button = styled.a`
   border-radius: 5px;
-  background: #eee;
-  border: 1px solid #eee;
-  padding: ${rhythm(0.25)};
+  padding: ${rhythm(0.5)} ${rhythm(0.25)};
+  background-image: linear-gradient(90deg, #ff9b58 0%, #ffc25f 100%);
+  color: black;
   cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 800;
   &:hover {
     border: 1px solid #000;
     background: #fff;
@@ -34,6 +36,12 @@ export const Button = styled.a`
   }
 `
 
+const Bio = styled.div`
+  @media (max-width: 700px) {
+    text-align: center;
+  }
+`
+
 const List = styled.ul`
   list-style: none;
   margin: 0;
@@ -43,6 +51,10 @@ const List = styled.ul`
   li {
     margin-bottom: ${rhythm(0.5)};
     margin-right: ${rhythm(0.5)};
+    @media (max-width: 700px) {
+      margin-right: 0;
+      text-align: center;
+    }
     margin-left: 0;
     max-width: 150px;
     &.prod {
@@ -192,19 +204,23 @@ const Background = () => {
       }}
     >
       <div>
-        <p>
-          I'm a designer and product manager (with a technical streak). I create
-          products like <a href="https://knowsi.com">Knowsi</a> and write{" "}
-          <a href="https://divergeweekly.com">Diverge Weekly</a>.
-        </p>
-        <p>
-          I teach and consult on software product and co-design through{" "}
-          <a href="https://stupidsystems.com">Stupid Systems</a> for clients
-          like IKEA, Cookpad, Mozilla, and Innovation Fund Denmark.
-        </p>
-        <Button href="mailto:alb@andrewlb.com" class="btn">
-          Curious to work together? Let's talk!
-        </Button>
+        <Bio>
+          <p>
+            I'm a designer and product manager (with a technical streak). I
+            create products like <a href="https://knowsi.com">Knowsi</a> and
+            write <a href="https://divergeweekly.com">Diverge Weekly</a>.
+          </p>
+          <p>
+            I teach and consult on software product and co-design through{" "}
+            <a href="https://stupidsystems.com">Stupid Systems</a> for clients
+            like IKEA, Cookpad, Mozilla, and Innovation Fund Denmark.
+          </p>
+          <p>Curious to work together?</p>
+
+          <Button href="mailto:alb@andrewlb.com" class="btn">
+            Let's talk!
+          </Button>
+        </Bio>
 
         <List>
           <li className="prod">

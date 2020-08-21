@@ -23,26 +23,11 @@ class TagList extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={siteTitle} />
-        <RespNav>
-          <li>
-            <AnchorLink offset="100" href="#newsletter">
-              Newsletter
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink offset="100" href="#background">
-              About
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink offset="100" href="#posts">
-              Posts
-            </AnchorLink>
-          </li>
-        </RespNav>
         <div className="right" id="posts">
           <div>
-            <h1>{tag.charAt(0).toUpperCase() + tag.slice(1)} Articles</h1>
+            <h1 style={{ textAlign: "center" }}>
+              {tag.charAt(0).toUpperCase() + tag.slice(1)} Articles
+            </h1>
             <ul>
               {allMarkdownRemark.edges.map(({ node }) => {
                 return <PostSummary node={node} />

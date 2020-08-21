@@ -5,12 +5,6 @@ import styled from "styled-components"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import EmailSignup from "../components/mailsignup"
-import { rhythm } from "../utils/typography"
-import Image from "gatsby-image"
-import { Nav, Minutes } from "../templates/blog-post"
-import AnchorLink from "react-anchor-link-smooth-scroll"
-import { RespLayout, RespNav } from "../pages/index"
 import PostSummary from "../components/postSummary"
 
 class CategoryList extends React.Component {
@@ -23,25 +17,8 @@ class CategoryList extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={siteTitle} />
-        <RespNav>
-          <li>
-            <AnchorLink offset="100" href="#newsletter">
-              Newsletter
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink offset="100" href="#background">
-              About
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink offset="100" href="#posts">
-              Posts
-            </AnchorLink>
-          </li>
-        </RespNav>
         <div className="right" id="posts">
-          <h1>
+          <h1 style={{ textAlign: "center" }}>
             {category.charAt(0).toUpperCase() + category.slice(1)} Articles
           </h1>
           <ul>

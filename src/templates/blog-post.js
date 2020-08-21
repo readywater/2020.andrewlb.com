@@ -5,7 +5,6 @@ import styled from "styled-components"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import JustComments from "gatsby-plugin-just-comments"
 import { rhythm, scale } from "../utils/typography"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
@@ -20,7 +19,10 @@ export const Nav = styled.ul`
   margin: 1rem 0;
   display: flex;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: center;
+  background-image: linear-gradient(90deg, #ff9b58 0%, #ffc25f 100%);
+  padding: 20px 20px 0 20px;
+  align-items: center;
   li {
     margin-right: 1rem;
     list-style: none;
@@ -28,12 +30,15 @@ export const Nav = styled.ul`
     width: auto;
     a {
       border-radius: 5px;
-      background: #eee;
+      background: #fff;
       border: 1px solid #eee;
       padding: ${rhythm(0.25)};
+      color: black;
+      font-weight: 800px;
+      transition: background 0.4s;
       &:hover {
-        border: 1px solid #000;
-        background: #fff;
+        /* border: 1px solid #000; */
+        background: #ffc25f;
       }
     }
   }
@@ -77,23 +82,32 @@ export const Minutes = styled.div`
 `
 
 const Article = styled.article`
-  .deckgo-highlight-code-carbon {
-    max-width: 800px;
-    overflow-x: scroll;
+  .gatsby-highlight-code-line {
+    background-color: #feb;
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #f99;
+  }
+
+  .gatsby-highlight {
+    background-color: #fdf6e3;
+    border-radius: 0.3em;
+    max-width: 590px;
+    margin: 0.5em 0;
+    padding: 1em;
+    overflow: auto;
+    @media (max-width: 700px) {
+      margin: 0.5em auto;
+      max-width: 350px;
+      font-size: 10px;
+    }
   }
 `
 
 class BlogPostTemplate extends React.Component {
-  componentDidMount = async () => {
-    try {
-      const deckdeckgoHighlightCodeLoader = require("@deckdeckgo/highlight-code/dist/loader")
-
-      await deckdeckgoHighlightCodeLoader.defineCustomElements(window)
-    } catch (err) {
-      console.error(err)
-    }
-  }
-
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -106,7 +120,7 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <Article>
-          <header>
+          <header style={{ margin: "20px" }}>
             <h1
               style={{
                 marginTop: rhythm(1),
@@ -186,18 +200,18 @@ class BlogPostTemplate extends React.Component {
             <li>
               <AnchorLink href="#newsletter">Subscribe</AnchorLink>
             </li>
-            <li>
-              <AnchorLink href="#comment">Leave Comments</AnchorLink>
-            </li>
           </Nav>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <section
+            dangerouslySetInnerHTML={{ __html: post.html }}
+            style={{ margin: "20px" }}
+          />
           <hr
             style={{
               marginBottom: rhythm(1),
             }}
           />
         </Article>
-        <footer>
+        <footer style={{ margin: "20px" }}>
           <Bio />
         </footer>
 
@@ -227,14 +241,6 @@ class BlogPostTemplate extends React.Component {
             </li>
           </ul>
         </nav>
-        <mailsignup />
-        <div id="comment">
-          <JustComments
-            apikey="adbf3de4-0508-4600-9524-a2425165e346"
-            disablesociallogin="true"
-            hideattribution="true"
-          />
-        </div>
       </Layout>
     )
   }
